@@ -10,6 +10,10 @@ import {
   HeroSection,
 } from "./Hero.styled";
 
+import phone from "/img/phone-mobile.png";
+import chatBubble from "/img/chat-bubble.png";
+import globe from "/img/globe.png";
+
 export const Hero = () => {
   return (
     <HeroSection>
@@ -21,15 +25,15 @@ export const Hero = () => {
           <Container>
             <AdresseInfo>
               <li>
-                <img src="/img/phone-mobile.png" width={24} height={24} />
+                <img src={phone} width={24} height={24} />
                 <p>+6421581907</p>
               </li>
               <li>
-                <img src="/img/chat-bubble.png" width={24} height={24} />
+                <img src={chatBubble} width={24} height={24} />
                 <p>anna@aesthetica.co.nz</p>
               </li>
               <li>
-                <img src="/img/globe.png" width={24} height={24} />
+                <img src={globe} width={24} height={24} />
                 <p>
                   41 Raranga Street, Marshland, Christchurch 8083, New Zealand
                 </p>

@@ -7,7 +7,7 @@ import {
 } from "./Header.styled";
 
 import logo from "../../assets/img/LogoHeader.png";
-
+import svgImgs from "/symbol-defs.svg";
 import { Container } from "../shared/Container";
 
 export const Header = () => {
@@ -30,12 +30,12 @@ export const Header = () => {
         <SocialsLink>
           <a href="#">
             <svg>
-              <use href="/symbol-defs.svg#icon-facebook"></use>
+              <use href={`${svgImgs}#icon-facebook`}></use>
             </svg>
           </a>
           <a href="#">
             <svg>
-              <use href="/symbol-defs.svg#icon-instagram"></use>
+              <use href={`${svgImgs}#icon-instagram`}></use>
             </svg>
           </a>
         </SocialsLink>

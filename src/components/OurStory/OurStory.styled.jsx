@@ -1,9 +1,10 @@
 import styled from "@emotion/styled";
 import { Link } from "react-router-dom";
+import bgOurStory from "/img/bgOurStory.jpg";
 
 export const SectionStory = styled.section`
   padding: 120px 0;
-  background: url("/img/bgOurStory.jpg");
+  background: url(${bgOurStory});
   & > div {
     display: flex;
     gap: 60px;

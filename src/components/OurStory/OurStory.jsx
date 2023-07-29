@@ -8,6 +8,11 @@ import {
   SocLink,
 } from "./OurStory.styled";
 
+import svgImgs from "/symbol-defs.svg";
+import Rectangle557 from "/img/Rectangle557.jpg";
+import Rectangle558 from "/img/Rectangle558.jpg";
+import Rectangle559 from "/img/Rectangle559.jpg";
+
 export function OurStory() {
   return (
     <SectionStory>
@@ -26,20 +31,20 @@ export function OurStory() {
             <LinkTo to="/about_us">Read more</LinkTo>
             <SocLink href="#">
               <svg>
-                <use href="/symbol-defs.svg#icon-instagram"></use>
+                <use href={`${svgImgs}#icon-instagram`}></use>
               </svg>
             </SocLink>
             <SocLink href="#">
               <svg>
-                <use href="/symbol-defs.svg#icon-facebook"></use>
+                <use href={`${svgImgs}#icon-facebook`}></use>
               </svg>
             </SocLink>
           </OurStiryLink>
         </OurStoryContent>
         <OurStoryImg>
-          <img src="/img/Rectangle557.jpg" />
-          <img src="/img/Rectangle558.jpg" />
-          <img src="/img/Rectangle559.jpg" />
+          <img src={Rectangle557} />
+          <img src={Rectangle558} />
+          <img src={Rectangle559} />
         </OurStoryImg>
       </Container>
     </SectionStory>

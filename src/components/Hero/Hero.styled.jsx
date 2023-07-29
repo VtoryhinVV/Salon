@@ -1,7 +1,9 @@
 import styled from "@emotion/styled";
+import bgHero from "/public/img/bg.jpg";
+
 export const HeroSection = styled.section`
   padding-top: 32px;
-  background: url("/public/img/bg.jpg");
+  background: url(${bgHero});
 `;
 
 export const Content = styled.div`
