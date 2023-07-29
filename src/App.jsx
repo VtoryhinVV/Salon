@@ -7,7 +7,7 @@ import { Layout } from "./components/Layout/Layout";
 
 function App() {
   return (
-    <BrowserRouter basename={import.meta.env.DEV ? "/" : "/Salone/"}>
+    <BrowserRouter basename={import.meta.env.DEV ? "/" : "/Salon/"}>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<HomePage />} />
