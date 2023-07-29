@@ -5,11 +5,11 @@ import react from "@vitejs/plugin-react";
 export default defineConfig(({ command }) => {
   const config = {
     plugins: [react()],
-    base: "/Salone/",
+    base: "/Salon/",
   };
 
   if (command !== "serve") {
-    config.base = "/Salone/";
+    config.base = "/Salon/";
   }
 
   return config;
