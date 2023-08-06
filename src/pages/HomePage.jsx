@@ -8,8 +8,7 @@ export function HomePage() {
       <Hero />
       <OurStory />
 
-      <a href="google.com">asdasd</a>
-      <button>asdasd</button>
+
     </>
   );
 }
