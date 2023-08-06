@@ -16,7 +16,7 @@ export const Header = () => {
       <Container>
         <ImgLogo alt="Image" src={logo} />
         <Navigation>
-          <StyledLink to="/" end>
+          <StyledLink to="/">
             Home
           </StyledLink>
           <StyledLink to="/about_us">About Us</StyledLink>
