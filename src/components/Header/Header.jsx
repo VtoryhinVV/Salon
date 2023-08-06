@@ -4,6 +4,7 @@ import {
   ImgLogo,
   Navigation,
   SocialsLink,
+  Burger,
 } from "./Header.styled";
 
 import logo from "../../assets/img/LogoHeader.png";
@@ -38,6 +39,11 @@ export const Header = () => {
               <use href={`${svgImgs}#icon-instagram`}></use>
             </svg>
           </a>
+          <Burger>
+            <svg>
+              <use href={`${svgImgs}#icon-burger`}></use>
+            </svg>
+          </Burger>
         </SocialsLink>
       </Container>
     </HeaderNav>
