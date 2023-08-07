@@ -1,8 +1,7 @@
-import styled from "@emotion/styled";
-import bgHero from "/public/img/bg.jpg";
+import styled from '@emotion/styled';
+import bgHero from '/img/bg.jpg';
 
 export const HeroSection = styled.section`
-  padding-top: 32px;
   background: url(${bgHero});
 `;
 
@@ -44,7 +43,7 @@ export const TextContant = styled.div`
   top: 0;
   left: 50%;
   transform: translate(-50%, 0);
-
+  margin-top: 32px;
   z-index: 50;
   color: var(--white);
   padding: 24px 0;

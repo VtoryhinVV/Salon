@@ -1,5 +1,5 @@
-import styled from "@emotion/styled";
-import { NavLink } from "react-router-dom";
+import styled from '@emotion/styled';
+import { NavLink } from 'react-router-dom';
 
 export const HeaderNav = styled.header`
   align-items: center;
@@ -13,15 +13,6 @@ export const HeaderNav = styled.header`
   }
 `;
 
-export const StyledLink = styled(NavLink)`
-  color: var(--black);
-  text-decoration: none;
-
-  &.active {
-    color: #9c7f47;
-  }
-`;
-
 export const ImgLogo = styled.img`
   width: 120px;
   height: 60px;
@@ -29,7 +20,7 @@ export const ImgLogo = styled.img`
 
 export const Navigation = styled.nav`
   display: none;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1200px) {
     align-items: center;
     display: flex;
 
@@ -37,15 +28,32 @@ export const Navigation = styled.nav`
   }
 `;
 
+export const StyledLink = styled(NavLink)`
+  color: var(--black);
+  text-decoration: none;
+  &:hover,
+  &:focus {
+    color: var(--brown);
+  }
+  &.active {
+    color: #9c7f47;
+  }
+`;
 export const SocialsLink = styled.div`
   display: flex;
-
   align-items: center;
-
   gap: 24px;
-  & a > svg {
+  & a {
     width: 32px;
     height: 32px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  & a > svg {
+    width: 26px;
+    height: 26px;
     fill: #9c7f47;
   }
   @media screen and (min-width: 768px) {
@@ -67,12 +75,18 @@ export const Burger = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
+  stroke: var(--black);
+  &:hover > svg,
+  &:focus > svg {
+    stroke: var(--brown);
+  }
   & svg {
     width: 32px;
-    height: 32px;
+    height: 14px;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1200px) {
     display: none;
   }
 `;
