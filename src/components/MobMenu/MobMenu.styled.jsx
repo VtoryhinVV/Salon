@@ -10,7 +10,7 @@ export const MobMenuBlock = styled.div`
   z-index: 9999;
   width: 100%;
   & > div {
-    padding: 0;
+    padding: 0 24px;
   }
   @media screen and (min-width: 480px) {
     width: 480px;

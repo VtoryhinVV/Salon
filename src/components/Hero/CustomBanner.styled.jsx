@@ -1,4 +1,4 @@
-import styled from "@emotion/styled";
+import styled from '@emotion/styled';
 
 export const Image = styled.img`
   width: 100%;
@@ -6,6 +6,12 @@ export const Image = styled.img`
 `;
 
 export const GalleryHero = styled.div`
+  display: none;
+
+  @media (min-width: 768px) {
+    display: block;
+  }
+
   & .alice-carousel__dots {
     margin: 0;
     position: absolute;
