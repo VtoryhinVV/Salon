@@ -1,4 +1,4 @@
-import { WhyUsSection, ImgContainer, TextContainer, WhyUsText, DedicatedText } from "./WhyUs.styled"
+import { WhyUsSection, ImgContainer, TextContainer, WhyUsText, FlexText, StyledText } from "./WhyUs.styled"
 import { Container } from "../shared/Container"
 import WhyUs1 from "/img/WhyUs1.jpg"
 import WhyUs2 from "/img/WhyUs2.jpg"
@@ -16,27 +16,29 @@ export const WhyUs = () => {
                 <h2>Why us?</h2>
                 <p>At Aesthetica Clinic, we deliver premium results using top-quality products. Our commitment to excellence empowers clients to achieve their aesthetic goals with confidence and satisfaction.</p>
                 <div>
-                    <div>
-                        <WhyUsText>
-                            <DedicatedText>5+</DedicatedText> 
-                            <div>
-                                <div>Years</div>
-                                <div>of experience</div>
-                            </div>
-                        </WhyUsText>
-                        <WhyUsText>
-                            <DedicatedText>5+</DedicatedText> 
-                            <div>
-                                <div>Stars</div>
-                                <div>Google review</div>
-                            </div>
-                        </WhyUsText>
-                    </div>
                     <WhyUsText>
-                        <DedicatedText>3000+</DedicatedText> 
                         <div>
-                            <div>Happy</div>
-                            <div>clients</div>
+                            <StyledText>5+</StyledText> 
+                            <FlexText>
+                                <span>Years</span>
+                                <span>of experience</span>
+                            </FlexText>
+                        </div>
+                        <div>
+                            <StyledText>5+</StyledText> 
+                            <FlexText>
+                                <span>Stars</span>
+                                <span>Google review</span>
+                            </FlexText>
+                        </div>
+                    </WhyUsText>
+                    <WhyUsText>
+                        <div>
+                            <StyledText>3000+</StyledText> 
+                            <FlexText>
+                                <span>Happy</span>
+                                <span>clients</span>
+                            </FlexText>
                         </div>
                     </WhyUsText>
                 </div>

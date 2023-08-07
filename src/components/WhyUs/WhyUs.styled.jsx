@@ -3,6 +3,11 @@ import styled from "@emotion/styled";
 export const WhyUsSection = styled.section `
     padding: 120px 0;
 
+    h1, h2, p, span {
+        margin: 0;
+        padding: 0;
+    }
+
     & > div {
         display: flex;
         gap: 30px;
@@ -36,19 +41,25 @@ export const TextContainer = styled.div `
         flex-direction: column;
         gap: 24px;
     }
-    & > div > div {
+`
+
+export const WhyUsText = styled.div `
+    display: flex;
+    gap: 24px;
+
+    & > div {
         display: flex;
-        gap: 24px;
+        align-items: center;
+        gap: 9px;
     }
 `
 
-export const WhyUsText = styled.p `
+export const FlexText = styled.p `
     display: flex;
-    align-items: center;
-    gap: 9px;
+    flex-direction: column;
 `
 
-export const DedicatedText = styled.p `
+export const StyledText = styled.span `
     font-family: Prata;
     font-size: 40px;
 `
