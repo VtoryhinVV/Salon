@@ -2,7 +2,7 @@ import styled from '@emotion/styled';
 import { NavLink } from 'react-router-dom';
 
 export const MobMenuBlock = styled.div`
-  display: ${props => (props.open ? 'none' : 'block')};
+  display: ${props => (props.open ? 'block' : 'none')};
   background-color: var(--white);
   padding: 24px 0 40px;
   position: absolute;

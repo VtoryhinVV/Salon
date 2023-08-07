@@ -5,8 +5,8 @@ import { OurStory } from '../components/OurStory/OurStory';
 export function HomePage() {
   return (
     <>
-      {/* <Hero /> */}
-      {/* <OurStory /> */}
+      <Hero />
+      <OurStory />
     </>
   );
 }

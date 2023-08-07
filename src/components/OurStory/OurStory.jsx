@@ -1,4 +1,4 @@
-import { Container } from "../shared/Container";
+import { Container } from '../shared/Container';
 import {
   LinkTo,
   OurStiryLink,
@@ -6,12 +6,16 @@ import {
   OurStoryImg,
   SectionStory,
   SocLink,
-} from "./OurStory.styled";
+  SocLinks,
+} from './OurStory.styled';
 
-import svgImgs from "/symbol-defs.svg";
-import Rectangle557 from "/img/Rectangle557.jpg";
-import Rectangle558 from "/img/Rectangle558.jpg";
-import Rectangle559 from "/img/Rectangle559.jpg";
+import svgImgs from '/symbol-defs.svg';
+import Rectangle557 from '/img/Rectangle557.jpg';
+import MobRectangle557 from '/img/mob/Rectangle557.jpg';
+import Rectangle558 from '/img/Rectangle558.jpg';
+import MobRectangle558 from '/img/mob/Rectangle558.jpg';
+import Rectangle559 from '/img/Rectangle559.jpg';
+import MobRectangle559 from '/img/mob/Rectangle559.jpg';
 
 export function OurStory() {
   return (
@@ -29,22 +33,33 @@ export function OurStory() {
           </p>
           <OurStiryLink>
             <LinkTo to="/about_us">Read more</LinkTo>
-            <SocLink href="#">
-              <svg>
-                <use href={`${svgImgs}#icon-instagram`}></use>
-              </svg>
-            </SocLink>
-            <SocLink href="#">
-              <svg>
-                <use href={`${svgImgs}#icon-facebook`}></use>
-              </svg>
-            </SocLink>
+            <SocLinks>
+              <SocLink href="#">
+                <svg>
+                  <use href={`${svgImgs}#icon-instagram`}></use>
+                </svg>
+              </SocLink>
+              <SocLink href="#">
+                <svg>
+                  <use href={`${svgImgs}#icon-facebook`}></use>
+                </svg>
+              </SocLink>
+            </SocLinks>
           </OurStiryLink>
         </OurStoryContent>
         <OurStoryImg>
-          <img src={Rectangle557} />
-          <img src={Rectangle558} />
-          <img src={Rectangle559} />
+          <picture>
+            <source srcSet={Rectangle557} media="(min-width: 1200px)" />
+            <img src={MobRectangle557} />
+          </picture>
+          <picture>
+            <source srcSet={Rectangle558} media="(min-width: 1200px)" />
+            <img src={MobRectangle558} />
+          </picture>
+          <picture>
+            <source srcSet={Rectangle559} media="(min-width: 1200px)" />
+            <img src={MobRectangle559} />
+          </picture>
         </OurStoryImg>
       </Container>
     </SectionStory>
