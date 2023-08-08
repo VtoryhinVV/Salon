@@ -1,9 +1,24 @@
-import styled from "@emotion/styled";
-import bgHero from "/public/img/bg.jpg";
+import styled from '@emotion/styled';
+import bgHero from '/img/bg.jpg';
+import mobBgHero from '/img/mob/bghero.jpg';
 
 export const HeroSection = styled.section`
-  padding-top: 32px;
-  background: url(${bgHero});
+  /* background: url(${mobBgHero}) center cover no-repeat; */
+  background-image: url(${mobBgHero});
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  /* height: 100vh; */
+
+  & > div {
+    padding-top: 42px;
+  }
+  @media (min-width: 768px) {
+    & > div {
+      padding-top: 0;
+    }
+    background: url(${bgHero});
+  }
 `;
 
 export const Content = styled.div`
@@ -14,83 +29,140 @@ export const Content = styled.div`
 `;
 
 export const Ellipse = styled.div`
-  background-color: var(--brown);
-  border-radius: 605px/231.5px;
-  filter: blur(113px);
+  display: none;
 
-  mix-blend-mode: multiply;
-  opacity: 0.8;
-  position: absolute;
-  top: 197px;
-  left: 276px;
-  width: 70%;
-  height: 40%;
+  @media (min-width: 768px) {
+    display: block;
+    background-color: red;
+    border-radius: 605px/231.5px;
+    filter: blur(113px);
+
+    mix-blend-mode: multiply;
+    opacity: 0.8;
+    position: absolute;
+    top: 30%;
+    left: 276px;
+    width: 70%;
+    height: 40%;
+  }
 `;
 
 export const Blur = styled.div`
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 5;
-  opacity: 0.800000011920929;
-  background: var(--brown);
-  mix-blend-mode: multiply;
+  display: none;
+
+  @media (min-width: 768px) {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    opacity: 0.800000011920929;
+    background: var(--brown);
+    mix-blend-mode: multiply;
+  }
 `;
 
 export const TextContant = styled.div`
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translate(-50%, 0);
-
-  z-index: 50;
   color: var(--white);
-  padding: 24px 0;
 
-  & > div {
+  background: & > div {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin-top: 32px;
+    z-index: 50;
+    color: var(--white);
+
+    & > div {
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   }
 `;
 
 export const AdresseInfo = styled.ul`
   list-style: none;
   display: flex;
-  gap: 24px;
-  margin: 0 0 262px;
+  gap: 16px;
+  margin-top: 0;
+  flex-direction: column;
+  align-items: center;
   padding: 0;
+  margin-bottom: 100px;
   & li {
     display: flex;
     gap: 8px;
     align-items: center;
+
     & p {
       margin: 0;
     }
+    &:nth-of-type(3) p {
+      max-width: 270px;
+      text-align: center;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    gap: 24px;
+    flex-direction: row;
+    margin-bottom: 15%;
+    padding: 0;
+    & li {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      & p {
+        margin: 0;
+      }
+    }
+  }
+  @media screen and (min-width: 1400px) {
+    margin-bottom: 20%;
   }
 `;
 
 export const MainTitle = styled.div`
   text-align: center;
-
+  width: 90%;
+  margin: 0 auto;
   & h1 {
     font-family: Prata;
-    font-size: 60px;
+    font-size: 34px;
     font-weight: 400;
-    letter-spacing: 1.2px;
+    letter-spacing: 0.68px;
     text-transform: capitalize;
-    width: 90%;
+
     margin: 0 auto;
+
+    @media screen and (min-width: 768px) {
+      font-size: 60px;
+      letter-spacing: 1.2px;
+    }
   }
 
   & p {
     margin: 24px 0;
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 400;
     letter-spacing: 0.32px;
+    width: 85%;
+    margin: 24px auto;
+    @media screen and (min-width: 768px) {
+      font-weight: 700;
+      width: 100%;
+    }
   }
 
   & button {
@@ -101,5 +173,6 @@ export const MainTitle = styled.div`
     color: var(--brown);
     letter-spacing: 0.32px;
     text-transform: uppercase;
+    margin-bottom: 190px;
   }
 `;
