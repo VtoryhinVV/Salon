@@ -10,15 +10,26 @@ export const WhyUsSection = styled.section `
 
     & > div {
         display: flex;
+        flex-direction: column-reverse;
         gap: 30px;
         align-items: center;
+        text-align: center;
+
+        @media screen and (min-width: 1200px) {
+            flex-direction: row;
+            text-align: left;
+        }
     }
 `
 
 export const ImgContainer = styled.div `
     display: flex;
-    gap: 30px;
     align-items: end;
+    gap: 14px;
+
+    @media screen and (min-width: 1200px) {
+        gap: 30px;
+    }
 `
 
 export const TextContainer = styled.div `
@@ -30,11 +41,19 @@ export const TextContainer = styled.div `
 
     color: var(--black);
 
-    width: 33%;
+
+    @media screen and (min-width: 1200px) {
+        width: 33%;
+    }
+    
 
     & > h2 {
         font-family: Prata;
-        font-size: 48px;
+        font-size: 34px;
+
+        @media screen and (min-width: 1200px){
+            font-size: 48px;
+        }
     }
     & > div {
         display: flex;
@@ -45,7 +64,14 @@ export const TextContainer = styled.div `
 
 export const WhyUsText = styled.div `
     display: flex;
+    flex-direction: column;
     gap: 24px;
+    margin: 0 auto;
+
+    @media screen and (min-width: 1200px){
+        flex-direction: row;
+        margin: 0;
+    }
 
     & > div {
         display: flex;

@@ -1,16 +1,28 @@
 import { WhyUsSection, ImgContainer, TextContainer, WhyUsText, FlexText, StyledText } from "./WhyUs.styled"
 import { Container } from "../shared/Container"
-import WhyUs1 from "/img/WhyUs1.jpg"
-import WhyUs2 from "/img/WhyUs2.jpg"
-import WhyUs3 from "/img/WhyUs3.jpg"
+import WhyUsDesktop1 from "/img/WhyUsDesktop1.jpg"
+import WhyUsDesktop2 from "/img/WhyUsDesktop2.jpg"
+import WhyUsDesktop3 from "/img/WhyUsDesktop3.jpg"
+import WhyUsPhone1 from "/img/WhyUsPhone1.jpg"
+import WhyUsPhone2 from "/img/WhyUsPhone2.jpg"
+import WhyUsPhone3 from "/img/WhyUsPhone3.jpg"
 
 export const WhyUs = () => {
     return <WhyUsSection>
         <Container>
             <ImgContainer>
-                <img src={WhyUs1} alt="" width={250} height={474} />
-                <img src={WhyUs2} alt="" width={250} />
-                <img src={WhyUs3} alt="" width={250} height={474} />
+                <picture>
+                    <source srcSet={WhyUsDesktop1} media="(min-width: 1200px)" />
+                    <img src={WhyUsPhone1} />
+                </picture>
+                <picture>
+                    <source srcSet={WhyUsDesktop2} media="(min-width: 1200px)" />
+                    <img src={WhyUsPhone2} />
+                </picture>
+                <picture>
+                    <source srcSet={WhyUsDesktop3} media="(min-width: 1200px)" />
+                    <img src={WhyUsPhone3} />
+                </picture>
             </ImgContainer>
             <TextContainer>
                 <h2>Why us?</h2>
