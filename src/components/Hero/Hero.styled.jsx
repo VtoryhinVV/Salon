@@ -8,7 +8,6 @@ export const HeroSection = styled.section`
   background-size: cover;
   background-position: center;
   width: 100%;
-  /* height: 100vh; */
 
   & > div {
     padding-top: 42px;
@@ -33,7 +32,8 @@ export const Ellipse = styled.div`
 
   @media (min-width: 768px) {
     display: block;
-    background-color: red;
+    background-color: #9c7f47;
+
     border-radius: 605px/231.5px;
     filter: blur(113px);
 
@@ -41,9 +41,12 @@ export const Ellipse = styled.div`
     opacity: 0.8;
     position: absolute;
     top: 30%;
-    left: 276px;
+    left: 15%;
     width: 70%;
     height: 40%;
+    @media screen and (min-width: 900px) {
+      left: 276px;
+    }
   }
 `;
 
@@ -67,7 +70,7 @@ export const Blur = styled.div`
 export const TextContant = styled.div`
   color: var(--white);
 
-  background: & > div {
+  & > div {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -117,7 +120,7 @@ export const AdresseInfo = styled.ul`
   @media screen and (min-width: 768px) {
     gap: 24px;
     flex-direction: row;
-    margin-bottom: 15%;
+    margin-bottom: 5%;
     padding: 0;
     & li {
       display: flex;
@@ -127,6 +130,16 @@ export const AdresseInfo = styled.ul`
         margin: 0;
       }
     }
+  }
+  @media screen and (min-width: 850px) {
+    margin-bottom: 10%;
+  }
+  @media screen and (min-width: 1000px) {
+    margin-bottom: 5%;
+  }
+
+  @media screen and (min-width: 1150px) {
+    margin-bottom: 15%;
   }
   @media screen and (min-width: 1400px) {
     margin-bottom: 20%;
@@ -146,7 +159,7 @@ export const MainTitle = styled.div`
 
     margin: 0 auto;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 1000px) {
       font-size: 60px;
       letter-spacing: 1.2px;
     }
@@ -159,7 +172,7 @@ export const MainTitle = styled.div`
     letter-spacing: 0.32px;
     width: 85%;
     margin: 24px auto;
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 1000px) {
       font-weight: 700;
       width: 100%;
     }
@@ -174,5 +187,8 @@ export const MainTitle = styled.div`
     letter-spacing: 0.32px;
     text-transform: uppercase;
     margin-bottom: 190px;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 0;
+    }
   }
 `;
