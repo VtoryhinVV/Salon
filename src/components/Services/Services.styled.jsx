@@ -78,4 +78,5 @@ export const ServicesSvg = styled.svg `
 export const ServicesLink = styled(Link) `
     color: var(--brown);
     text-decoration: none;
+    width: 105px;
 `
