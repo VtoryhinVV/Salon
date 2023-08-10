@@ -1,12 +1,12 @@
 import logo from "/img/FooterLogo.jpg";
-import { FooterSection, FooterContainer, FooterList, StyledLink } from "./Footer.styled";
+import { FooterSection, FooterContainer, FooterImg, FooterList, StyledLink } from "./Footer.styled";
 import { Container } from "../shared/Container";
 
 export const Footer = () => {
     return <FooterSection>
         <Container>
             <FooterContainer>
-                <img src={logo} alt="logo" width={240} height={120}/>
+                <FooterImg src={logo} alt="logo" width={240} height={120}/>
                 <nav>
                     <FooterList>
                         <div>
