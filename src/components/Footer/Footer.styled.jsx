@@ -24,15 +24,6 @@ export const FooterContainer = styled.div`
   }
 `
 
-export const FooterImg = styled.img `
-  /* @media screen and (min-width: 768px) {
-    width: 100px;
-  }
-  @media screen and (min-width: 1200px) {
-    width: 240px;
-  } */
-`
-
 export const FooterList = styled.ul`
   list-style-type: none;
   display: flex;
@@ -51,6 +42,7 @@ export const FooterList = styled.ul`
   }
   @media screen and (min-width: 1200px) {
     gap: 120px;
+    width: 100%;
   }
 
   div {
