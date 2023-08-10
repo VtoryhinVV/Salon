@@ -11,10 +11,12 @@ import { ServicesSection,
     ServicesListHiddenContent, 
     ServicesListItemTitle, 
     ServicesSvg,
-    ServicesLink
+    ServicesLink,
+    ServicesImg
 } from "./Services.styled"
 
 import ServicesPhoto from "/img/Services.jpg";
+import ServicesPhotoMob from "/img/ServicesMob.jpg";
 import svgImgs from '/symbol-defs.svg';
 import "./style.css"
 
@@ -112,7 +114,10 @@ export const Services = () => {
                     </ServicesListItem>
                     
                 </ServicesList>
-                <img src={ServicesPhoto} alt="" height={792} />
+                <picture>
+                    <source srcSet={ServicesPhoto} media="(min-width: 1200px)" />
+                    <ServicesImg src={ServicesPhotoMob} />
+                </picture>
             </ServicesContent>
         </Container>
     </ServicesSection>
