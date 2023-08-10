@@ -40,6 +40,17 @@ export const ServicesContent = styled.div `
 
     @media screen and (min-width: 768px) {
         flex-direction: row;
+        gap: 20px;
+        align-items: flex-start;
+    }
+    @media screen and (min-width: 1200px) {
+        gap: 40px;
+    }
+
+    & > div {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
     }
 `
 
@@ -95,6 +106,40 @@ export const ServicesLink = styled(Link) `
     text-decoration: none;
     width: 105px;
     margin: 0 auto;
+
+    @media screen and (min-width: 768px) {
+        margin: 0;
+    }
+`
+
+export const ServicesButtonUnderList = styled(Link) `
+    display: none;
+    padding: 12px 24px;
+    text-decoration: none;
+
+    width: 221px;
+    text-align: center;
+
+    background-color: var(--brown);
+    color: white;
+
+    @media screen and (min-width: 768px) {
+        display: block;
+    }
+`
+export const ServicesButtonUnderImg = styled(Link) `
+    padding: 12px 24px;
+    text-decoration: none;
+
+    width: 221px;
+    text-align: center;
+
+    background-color: var(--brown);
+    color: white;
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
 `
 
 export const ServicesImg = styled.img `
