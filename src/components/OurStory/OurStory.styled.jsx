@@ -104,10 +104,22 @@ export const SocLink = styled.a`
 `;
 
 export const OurStoryImg = styled.div`
-  display: flex;
-  align-items: flex-end;
-  gap: 16px;
+  display: none;
 
+  @media screen and (min-width: 350px) {
+    display: flex;
+    align-items: flex-end;
+    gap: 0px;
+  }
+  @media screen and (min-width: 360px) {
+    gap: 5px;
+  }
+  @media screen and (min-width: 380px) {
+    gap: 10px;
+  }
+  @media screen and (min-width: 480px) {
+    gap: 16px;
+  }
   @media screen and (min-width: 1200px) {
     display: flex;
     align-items: flex-end;
