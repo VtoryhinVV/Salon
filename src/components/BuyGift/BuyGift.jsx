@@ -3,13 +3,20 @@ import { Container } from "../shared/Container"
 
 import BuyGift1 from "/img/BuyGift1.jpg"
 import BuyGift2 from "/img/BuyGift2.jpg"
+import BuyGiftMob1 from "/img/BuyGiftMob1.jpg"
+import BuyGiftMob2 from "/img/BuyGiftMob2.jpg"
 
 export const BuyGift = () => {
     return <BuyGiftSection>
         <Container>
             <BuyGiftImgContainer>
-                <img src={BuyGift1} alt="" height={474} />
-                <img src={BuyGift2} alt="" height={524} />
+                <picture>
+                    <source srcSet={BuyGift1} media="(min-width: 1200px)" />
+                    <img src={BuyGiftMob1} />
+                </picture><picture>
+                    <source srcSet={BuyGift2} media="(min-width: 1200px)" />
+                    <img src={BuyGiftMob2} />
+                </picture>
             </BuyGiftImgContainer>
             <BuyGiftTextContainer>
                 <BuyGiftTitle>

@@ -11,16 +11,43 @@ export const BuyGiftSection = styled.section `
 
     & > div {
         display: flex;
+        flex-direction: column;
         gap: 60px;
 
         align-items: center;
+
+        @media screen and (min-width: 768px) {
+            flex-direction: row;
+        }
     }
 `
 
 export const BuyGiftImgContainer = styled.div `
-    display: flex;
-    align-items: end;
-    gap: 30px;
+    display: none;
+
+    @media screen and (min-width: 350px) {
+        display: flex;
+        align-items: flex-end;
+        gap: 0px;
+    }
+    @media screen and (min-width: 360px) {
+        gap: 5px;
+    }
+    @media screen and (min-width: 380px) {
+        gap: 10px;
+    }
+    @media screen and (min-width: 480px) {
+        gap: 16px;
+    }
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        align-items: flex-end;
+        gap: 30px;
+        & picture:nth-of-type(odd) {
+            width: 100%;
+            height: 474px;
+        }
+    }
 `
 
 export const BuyGiftTextContainer = styled.div `
