@@ -5,7 +5,7 @@ export const FooterSection = styled.footer`
   padding: 60px 0;
   border-top: 1px solid var(--brown-light);
 
-  ul, li, h2, p, a {
+  li, h2, p, a {
     margin: 0;
     padding: 0;
   }
@@ -29,6 +29,8 @@ export const FooterList = styled.ul`
   display: flex;
   flex-direction: column;
   gap: 40px;
+
+  margin: 0 0 0 auto;
 
   width: 80%;
 

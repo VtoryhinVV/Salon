@@ -4,6 +4,7 @@ export const ContainerBox = styled.div`
   max-width: 100%;
   padding-left: 5px;
   padding-right: 5px;
+  box-sizing: border-box;
   @media screen and (min-width: 480px) {
     width: 480px;
     margin: 0 auto;
