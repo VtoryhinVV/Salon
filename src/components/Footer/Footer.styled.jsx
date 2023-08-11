@@ -3,18 +3,49 @@ import { Link } from 'react-router-dom';
 
 export const FooterSection = styled.footer`
   padding: 60px 0;
-  border-top: 1px solid black;
+  border-top: 1px solid var(--brown-light);
+
+  li, h2, p, a {
+    margin: 0;
+    padding: 0;
+  }
 `;
 
 export const FooterContainer = styled.div`
   display: flex;
-  justify-content: space-between;
-`;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0;
+  }
+`
 
 export const FooterList = styled.ul`
   list-style-type: none;
   display: flex;
-  gap: 120px;
+  flex-direction: column;
+  gap: 40px;
+
+  margin: 0 0 0 auto;
+
+  width: 80%;
+
+  text-align: center;
+  align-items: center;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    gap: 20px;
+    text-align: left;
+  }
+  @media screen and (min-width: 1200px) {
+    gap: 120px;
+    width: 100%;
+  }
 
   div {
     display: flex;
