@@ -21,14 +21,37 @@ export const ServicesSection = styled.section `
 
 export const ServicesTitle = styled.h2 `
     font-family: Prata;
-    font-size: 48px;
+    font-size: 34px;
     font-weight: 400;
     letter-spacing: 0.96px;
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+        font-size: 48px;
+        text-align: left;
+    }
 `
 
 export const ServicesContent = styled.div `
     display: flex;
+    flex-direction: column;
     gap: 40px;
+    align-items: center;
+
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+        gap: 20px;
+        align-items: flex-start;
+    }
+    @media screen and (min-width: 1200px) {
+        gap: 40px;
+    }
+
+    & > div {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
 `
 
 export const ServicesList = styled.ul `
@@ -38,7 +61,6 @@ export const ServicesList = styled.ul `
 
 export const ServicesListItem = styled.li `
     padding: 24px;
-    width: 637px;
 
     display: flex;
     flex-direction: column;
@@ -47,6 +69,10 @@ export const ServicesListItem = styled.li `
     border: 1px solid #BDBDBD;
 
     cursor: pointer;
+
+    @media screen and (min-width: 1200px) {
+        width: 637px;
+    }
 `
 
 export const ServicesListVisibleContent = styled.div `
@@ -79,4 +105,51 @@ export const ServicesLink = styled(Link) `
     color: var(--brown);
     text-decoration: none;
     width: 105px;
+    margin: 0 auto;
+
+    @media screen and (min-width: 768px) {
+        margin: 0;
+    }
+`
+
+export const ServicesButtonUnderList = styled(Link) `
+    display: none;
+    padding: 12px 24px;
+    text-decoration: none;
+
+    width: 221px;
+    text-align: center;
+
+    background-color: var(--brown);
+    color: white;
+
+    @media screen and (min-width: 768px) {
+        display: block;
+    }
+`
+export const ServicesButtonUnderImg = styled(Link) `
+    padding: 12px 24px;
+    text-decoration: none;
+
+    width: 221px;
+    text-align: center;
+
+    background-color: var(--brown);
+    color: white;
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+`
+
+export const ServicesImg = styled.img `
+    width: 300px;
+
+    @media screen and (min-width: 350px) {
+        width: 330px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: auto;
+    }
 `
