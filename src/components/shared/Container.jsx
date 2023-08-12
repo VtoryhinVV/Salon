@@ -5,7 +5,6 @@ export const Container = ({ children }) => {
   return <ContainerBox>{children}</ContainerBox>;
 };
 
-Container.propTypes = {
-  children: PropTypes.oneOfType([PropTypes.string, PropTypes.object])
-    .isRequired,
-};
+// Container.propTypes = {
+//   children: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
+// };
