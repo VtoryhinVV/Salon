@@ -8,7 +8,7 @@ import { BuyGift } from '../components/BuyGift/BuyGift';
 export function HomePage() {
   return (
     <>
-       <Hero />
+      <Hero />
       <OurStory />
       <WhyUs />
       <Services />

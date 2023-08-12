@@ -50,30 +50,49 @@ export const ServicesContent = styled.div `
     & > div {
         display: flex;
         flex-direction: column;
-        gap: 40px;
+        gap: 32px;
     }
 `
 
 export const ServicesList = styled.ul `
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
     list-style-type: none;
+
     padding: 0;
+    margin: 0;
 `
 
 export const ServicesListItem = styled.li `
+    position: relative;
+
     padding: 24px;
 
     display: flex;
     flex-direction: column;
     gap: 18px;
 
-    border: 1px solid #BDBDBD;
+    background-color: white; 
 
     cursor: pointer;
+
+    box-shadow: var(--shadow);
 
     @media screen and (min-width: 1200px) {
         width: 637px;
     }
 `
+
+export const ServicesOpenList = styled.div`
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+`;
 
 export const ServicesListVisibleContent = styled.div `
     display: flex;
@@ -88,6 +107,13 @@ export const ServicesListHiddenContent = styled.div `
     gap: 16px;
 
     display: ${(props) => (props.open ? "flex" : "none")};
+`
+
+export const ServicesTextContent = styled.div `
+    display: flex;
+    flex-direction: column;
+
+    gap: 16px;
 `
 
 export const ServicesListItemTitle = styled.h3 `
@@ -106,6 +132,9 @@ export const ServicesLink = styled(Link) `
     text-decoration: none;
     width: 105px;
     margin: 0 auto;
+
+    position: relative;
+    z-index: 6;
 
     @media screen and (min-width: 768px) {
         margin: 0;
