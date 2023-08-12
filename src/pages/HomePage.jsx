@@ -13,7 +13,6 @@ export function HomePage() {
       <WhyUs />
       <Services />
       <BuyGift /> 
-
     </>
   );
 }

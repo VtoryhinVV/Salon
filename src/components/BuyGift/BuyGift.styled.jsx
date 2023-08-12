@@ -79,4 +79,12 @@ export const BuyGiftButton = styled(Link) `
     color: var(--brown);
 
     text-decoration: none;
+
+    transition: all 0.3s ease;
+
+    &:hover,
+    &:focus {
+        border-color: var(--focus);
+        color: var(--focus);
+    }
 `
