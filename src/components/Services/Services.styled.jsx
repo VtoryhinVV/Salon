@@ -74,11 +74,11 @@ export const ServicesListItem = styled.li `
     flex-direction: column;
     gap: 18px;
 
-    border: 1px solid #BDBDBD;
+    background-color: white; 
 
     cursor: pointer;
 
-    box-shadow: 0px 13px 19px 0px rgba(0, 0, 0, 0.07);
+    box-shadow: var(--shadow);
 
     @media screen and (min-width: 1200px) {
         width: 637px;
@@ -107,6 +107,13 @@ export const ServicesListHiddenContent = styled.div `
     gap: 16px;
 
     display: ${(props) => (props.open ? "flex" : "none")};
+`
+
+export const ServicesTextContent = styled.div `
+    display: flex;
+    flex-direction: column;
+
+    gap: 16px;
 `
 
 export const ServicesListItemTitle = styled.h3 `

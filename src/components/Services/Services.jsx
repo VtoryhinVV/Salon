@@ -10,6 +10,7 @@ import { ServicesSection,
     ServicesListItem, 
     ServicesListVisibleContent,
     ServicesListHiddenContent, 
+    ServicesTextContent,
     ServicesListItemTitle, 
     ServicesSvg,
     ServicesLink,
@@ -49,7 +50,11 @@ export const Services = () => {
 
                             <CSSTransition in={open === "first"} timeout={200} classNames="my-node">
                                 <ServicesListHiddenContent open={open === "first"}>
-                                    <p>Facial sculpting filler treatment can enhance the patient’s bone structure in areas such as cheeks, chin     and jawline. The Filler treatment can help both men and women to create more contoured facial features to   obtain a more masculine or feminine look, respectively.</p>
+                                    <ServicesTextContent>
+                                        <p>Dermal filler - used to sculpt, enhance, replenish and shape the face.</p>
+                                        <p>Dermal fillers are commonly used to smooth out wrinkles, add volume to areas of the face, enhance and contour facial features.</p>
+                                        <p>These gel-like substances, made from hyaluronan, which is a complex chain of carbohydrates, are naturally found in our bodies. Hyaluronan, or hyaluronic acid, is responsible for maintaining the hydration, plumpness, and youthful look of our skin.</p>
+                                    </ServicesTextContent>
                                     <ServicesLink to="/products">READ MORE</ServicesLink>
                                 </ServicesListHiddenContent>
                             </CSSTransition>
@@ -66,7 +71,11 @@ export const Services = () => {
 
                             <CSSTransition in={open === "second"} timeout={200} classNames="my-node">
                                 <ServicesListHiddenContent open={open === "second"}>
-                                    <p>Facial sculpting filler treatment can enhance the patient’s bone structure in areas such as cheeks, chin and jawline. The Filler treatment can help both men and women to create more contoured facial features to obtain a more masculine or feminine look, respectively.</p>
+                                    <ServicesTextContent>
+                                        <p>Dermal filler - used to sculpt, enhance, replenish and shape the face.</p>
+                                        <p>Dermal fillers are commonly used to smooth out wrinkles, add volume to areas of the face, enhance and contour facial features.</p>
+                                        <p>These gel-like substances, made from hyaluronan, which is a complex chain of carbohydrates, are naturally found in our bodies. Hyaluronan, or hyaluronic acid, is responsible for maintaining the hydration, plumpness, and youthful look of our skin.</p>
+                                    </ServicesTextContent>  
                                     <ServicesLink to="/products">READ MORE</ServicesLink>
                                 </ServicesListHiddenContent>
                             </CSSTransition>
@@ -83,7 +92,11 @@ export const Services = () => {
 
                             <CSSTransition in={open === "third"} timeout={200} classNames="my-node">
                                 <ServicesListHiddenContent open={open === "third"}>
-                                    <p>Facial sculpting filler treatment can enhance the patient’s bone structure in areas such as cheeks, chin and jawline. The Filler treatment can help both men and women to create more contoured facial features to obtain a more masculine or feminine look, respectively.</p>
+                                    <ServicesTextContent>
+                                        <p>Dermal filler - used to sculpt, enhance, replenish and shape the face.</p>
+                                        <p>Dermal fillers are commonly used to smooth out wrinkles, add volume to areas of the face, enhance and contour facial features.</p>
+                                        <p>These gel-like substances, made from hyaluronan, which is a complex chain of carbohydrates, are naturally found in our bodies. Hyaluronan, or hyaluronic acid, is responsible for maintaining the hydration, plumpness, and youthful look of our skin.</p>
+                                    </ServicesTextContent>
                                     <ServicesLink to="/products">READ MORE</ServicesLink>
                                 </ServicesListHiddenContent>
                             </CSSTransition>
@@ -100,7 +113,11 @@ export const Services = () => {
 
                             <CSSTransition in={open === "fourth"} timeout={200} classNames="my-node">
                                 <ServicesListHiddenContent open={open === "fourth"}>
-                                    <p>Facial sculpting filler treatment can enhance the patient’s bone structure in areas such as cheeks, chin and jawline. The Filler treatment can help both men and women to create more contoured facial features to obtain a more masculine or feminine look, respectively.</p>
+                                    <ServicesTextContent>
+                                        <p>Dermal filler - used to sculpt, enhance, replenish and shape the face.</p>
+                                        <p>Dermal fillers are commonly used to smooth out wrinkles, add volume to areas of the face, enhance and contour facial features.</p>
+                                        <p>These gel-like substances, made from hyaluronan, which is a complex chain of carbohydrates, are naturally found in our bodies. Hyaluronan, or hyaluronic acid, is responsible for maintaining the hydration, plumpness, and youthful look of our skin.</p>
+                                    </ServicesTextContent>
                                     <ServicesLink to="/products">READ MORE</ServicesLink>
                                 </ServicesListHiddenContent>
                             </CSSTransition>    
@@ -117,7 +134,11 @@ export const Services = () => {
 
                             <CSSTransition in={open === "fifth"} timeout={200} classNames="my-node">
                                 <ServicesListHiddenContent open={open === "fifth"}>
-                                    <p>Facial sculpting filler treatment can enhance the patient’s bone structure in areas such as cheeks, chin and jawline. The Filler treatment can help both men and women to create more contoured facial features to obtain a more masculine or feminine look, respectively.</p>
+                                    <ServicesTextContent>
+                                        <p>Dermal filler - used to sculpt, enhance, replenish and shape the face.</p>
+                                        <p>Dermal fillers are commonly used to smooth out wrinkles, add volume to areas of the face, enhance and contour facial features.</p>
+                                        <p>These gel-like substances, made from hyaluronan, which is a complex chain of carbohydrates, are naturally found in our bodies. Hyaluronan, or hyaluronic acid, is responsible for maintaining the hydration, plumpness, and youthful look of our skin.</p>
+                                    </ServicesTextContent>
                                     <ServicesLink to="/products">READ MORE</ServicesLink>
                                 </ServicesListHiddenContent>
                             </CSSTransition>    
