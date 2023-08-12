@@ -1,43 +1,41 @@
-import { useState } from "react";
-import { Content, Element, OpenEl } from "./Products.styled";
+import { useState } from 'react';
+import { Content, Element, OpenEl } from './Products.styled';
 
 const Products = () => {
-  const [open, setOpen] = useState("first");
-  const log = (e) => {
+  const [open, setOpen] = useState('first');
+  const log = e => {
     console.log(e);
-    // setOpen(e.target.id);
+    setOpen(e.target.id);
   };
 
   return (
     <div>
       <ul>
-        <Element id="first" onClick={log} open={open === "first"}>
+        <Element id="first" onClick={log} open={open === 'first'}>
           Заголовок 1
-          <Content>
+          <Content onClick={e => e.stopPropagation()}>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid at
             minima ex doloribus culpa. Sunt eius fugit explicabo dolorum soluta?
           </Content>
           <button>Подробней</button>
         </Element>
-        <Element open={open === "second"}>
+        <Element id="second" onClick={log} open={open === 'second'}>
           Заголовок 2
-          <Content>
+          <Content onClick={e => e.stopPropagation()}>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
             possimus saepe officia harum voluptas laudantium maxime eum
             excepturi provident molestiae.
           </Content>
           <button>Подробней</button>
-          <OpenEl id="second" onClick={log} />
         </Element>
-        <Element open={open === "third"}>
+        <Element id="third" onClick={log} open={open === 'third'}>
           Заголовок 3
-          <Content>
+          <Content onClick={e => e.stopPropagation()}>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
             possimus saepe officia harum voluptas laudantium maxime eum
             excepturi provident molestiae.
           </Content>
           <button>Подробней</button>
-          <OpenEl id="third" onClick={log} />
         </Element>
       </ul>
     </div>
