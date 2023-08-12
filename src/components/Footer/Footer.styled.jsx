@@ -30,9 +30,9 @@ export const FooterList = styled.ul`
   flex-direction: column;
   gap: 40px;
 
-  margin: 0 0 0 auto;
-
-  width: 80%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 
   text-align: center;
   align-items: center;
@@ -41,6 +41,7 @@ export const FooterList = styled.ul`
     flex-direction: row;
     gap: 20px;
     text-align: left;
+    align-items: start;
   }
   @media screen and (min-width: 1200px) {
     gap: 120px;
