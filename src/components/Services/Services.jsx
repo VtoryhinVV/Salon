@@ -40,7 +40,7 @@ export const Services = () => {
 
                         <ServicesListItem>
                             <ServicesListVisibleContent>
-                                <ServicesListItemTitle>Dermal filler / facial sculpting</ServicesListItemTitle>
+                                <ServicesListItemTitle>Dermal filler</ServicesListItemTitle>
                                 <ServicesSvg>
                                     <use href={`${svgImgs}#icon-arrow`}></use>
                                 </ServicesSvg>

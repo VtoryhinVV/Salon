@@ -117,8 +117,9 @@ export const ServicesTextContent = styled.div `
 `
 
 export const ServicesListItemTitle = styled.h3 `
-    font-size: 18px;
-    font-weight: 600;
+    font-family: Playfair Display;
+    font-size: 24px;
+    font-weight: 400;
 `
 
 export const ServicesSvg = styled.svg `
