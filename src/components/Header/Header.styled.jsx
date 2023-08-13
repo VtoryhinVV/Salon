@@ -31,6 +31,9 @@ export const Navigation = styled.nav`
 export const StyledLink = styled(NavLink)`
   color: var(--black);
   text-decoration: none;
+
+  transition: all 0.3s ease;
+
   &:hover,
   &:focus {
     color: var(--brown);
@@ -55,7 +58,15 @@ export const SocialsLink = styled.div`
     width: 26px;
     height: 26px;
     fill: #9c7f47;
+
+    transition: all 0.3s ease;
   }
+
+  & a > svg:hover,
+  & a > svg:focus {
+    fill: var(--focus);
+  }
+
   @media screen and (min-width: 768px) {
     gap: 16px;
     & svg {
