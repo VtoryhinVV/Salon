@@ -187,8 +187,17 @@ export const MainTitle = styled.div`
     letter-spacing: 0.32px;
     text-transform: uppercase;
     margin-bottom: 190px;
+
+    transition: all 0.3s ease;
+    
     @media screen and (min-width: 768px) {
       margin-bottom: 0;
+    }
+
+    &:hover,
+    &:focus {
+      border-color: var(--focus);
+      color: var(--focus);
     }
   }
 `;
