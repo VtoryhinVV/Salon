@@ -117,8 +117,9 @@ export const ServicesTextContent = styled.div `
 `
 
 export const ServicesListItemTitle = styled.h3 `
-    font-size: 18px;
-    font-weight: 600;
+    font-family: Playfair Display;
+    font-size: 24px;
+    font-weight: 400;
 `
 
 export const ServicesSvg = styled.svg `
@@ -136,8 +137,15 @@ export const ServicesLink = styled(Link) `
     position: relative;
     z-index: 6;
 
+    transition: color 0.3s ease;
+
     @media screen and (min-width: 768px) {
         margin: 0;
+    }
+
+    &:hover,
+    &:focus {
+        color: var(--focus);
     }
 `
 
@@ -152,8 +160,15 @@ export const ServicesButtonUnderList = styled(Link) `
     background-color: var(--brown);
     color: white;
 
+    transition: background-color 0.3s ease;
+
     @media screen and (min-width: 768px) {
         display: block;
+    }
+
+    &:hover,
+    &:focus {
+        background-color: var(--focus);
     }
 `
 export const ServicesButtonUnderImg = styled(Link) `
@@ -166,8 +181,15 @@ export const ServicesButtonUnderImg = styled(Link) `
     background-color: var(--brown);
     color: white;
 
+    transition: background-color 0.3s ease;
+
     @media screen and (min-width: 768px) {
         display: none;
+    }
+
+    &:hover,
+    &:focus {
+        background-color: var(--focus);
     }
 `
 
