@@ -75,9 +75,16 @@ export const LinkTo = styled(Link)`
 
   margin-bottom: 24px;
 
+  transition: all 0.3s ease;
+
   @media screen and (min-width: 768px) {
     margin-right: auto;
     margin-bottom: 0;
+  }
+
+  &:hover,
+  &:focus {
+    background: var(--focus);
   }
 `;
 
@@ -95,11 +102,18 @@ export const SocLink = styled.a`
     fill: var(--brown);
     width: 100%;
     height: 100%;
+
+    transition: all 0.3s ease;
   }
 
   @media screen and (min-width: 768px) {
     width: 32px;
     height: 32px;
+  }
+
+  & svg:hover,
+  & svg:focus {
+    fill: var(--focus);
   }
 `;
 

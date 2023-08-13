@@ -60,8 +60,10 @@ export const StyledLink = styled(Link)`
   text-decoration: none;
   font-size: 14px;
 
+  transition: all 0.3s ease;
+
   &:hover,
   &:focus {
-    color: #9c7f47;
+    color: var(--focus);
   }
 `;
