@@ -15,6 +15,7 @@ export function HomePage() {
       <Services />
       <BuyGift /> 
       <ContactUs />
+
     </>
   );
 }
