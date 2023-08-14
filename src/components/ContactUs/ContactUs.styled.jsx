@@ -163,6 +163,7 @@ export const ContactUsLinkContainer = styled.div `
 
     @media screen and (min-width: 1200px) {
         justify-content: space-between;
+        margin-top: 8px;
     }
 `
 
@@ -180,10 +181,6 @@ export const ContactUsSubmitButton = styled.button `
     &:focus {
         background-color: var(--focus);
     }
-
-    @media screen and (min-width: 1200px) {
-        margin-top: 8px;
-    }
 `
 
 export const ContactUsSvgList = styled.ul `
@@ -198,7 +195,7 @@ export const ContactUsSvgList = styled.ul `
 `
 
 export const ContactUsSvgItem = styled.li `
-    & > svg {
+    svg {
         width: 32px;
         height: 32px;
 
@@ -207,8 +204,8 @@ export const ContactUsSvgItem = styled.li `
         transition: all 0.3s ease;
     }
 
-    & > svg:hover,
-    & > svg:focus {
+    svg:hover,
+    svg:focus {
         fill: var(--focus);
     }
 `

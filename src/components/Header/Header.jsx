@@ -36,12 +36,12 @@ export const Header = () => {
             <StyledLink to="/a">Disclaimer</StyledLink>
           </Navigation>
           <SocialsLink>
-            <a href="#">
+            <a href="https://m.facebook.com/Aestheticabyanna/" target='_blank'>
               <svg>
                 <use href={`${svgImgs}#icon-facebook`}></use>
               </svg>
             </a>
-            <a href="#">
+            <a href="https://www.instagram.com/aesthetica_by_anna/" target='_blank'>
               <svg>
                 <use href={`${svgImgs}#icon-instagram`}></use>
               </svg>

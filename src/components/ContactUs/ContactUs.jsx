@@ -96,14 +96,18 @@ export const ContactUs = () => {
                         <ContactUsSubmitButton type="submit" form='ContactUsForm'>SEND MESSAGE</ContactUsSubmitButton>
                         <ContactUsSvgList>
                             <ContactUsSvgItem>
-                                <svg>
-                                    <use href={`${svgImgs}#icon-instagram`}></use>
-                                </svg>
+                                <a href="https://www.instagram.com/aesthetica_by_anna/" target="_blank" >
+                                    <svg>
+                                        <use href={`${svgImgs}#icon-instagram`}></use>
+                                    </svg>
+                                </a>
                             </ContactUsSvgItem>
                             <ContactUsSvgItem>
-                                <svg>
-                                    <use href={`${svgImgs}#icon-facebook`}></use>
-                                </svg>
+                                <a href="https://m.facebook.com/Aestheticabyanna/" target="_blank" >
+                                    <svg>
+                                        <use href={`${svgImgs}#icon-facebook`}></use>
+                                    </svg>
+                                </a>
                             </ContactUsSvgItem>
                         </ContactUsSvgList>
                     </ContactUsLinkContainer>
