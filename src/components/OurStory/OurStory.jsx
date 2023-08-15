@@ -34,12 +34,12 @@ export function OurStory() {
           <OurStiryLink>
             <LinkTo to="/about_us">Read more</LinkTo>
             <SocLinks>
-              <SocLink href="#">
+              <SocLink href="https://www.instagram.com/aesthetica_by_anna/" target="_blank" >
                 <svg>
                   <use href={`${svgImgs}#icon-instagram`}></use>
                 </svg>
               </SocLink>
-              <SocLink href="#">
+              <SocLink href="https://m.facebook.com/Aestheticabyanna/" target="_blank" >
                 <svg>
                   <use href={`${svgImgs}#icon-facebook`}></use>
                 </svg>
