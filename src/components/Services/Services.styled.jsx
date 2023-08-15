@@ -201,6 +201,6 @@ export const ServicesImg = styled.img `
     }
 
     @media screen and (min-width: 1200px) {
-        width: auto;
+        width: 470px;
     }
 `
