@@ -4,6 +4,7 @@ import { OurStory } from '../components/OurStory/OurStory';
 import { Services } from '../components/Services/Services';
 import { WhyUs } from '../components/WhyUs/WhyUs';
 import { BuyGift } from '../components/BuyGift/BuyGift';
+import { ContactUs } from '../components/ContactUs/ContactUs';
 
 export function HomePage() {
   return (
@@ -13,6 +14,7 @@ export function HomePage() {
       <WhyUs />
       <Services />
       <BuyGift /> 
+      <ContactUs />
 
     </>
   );
