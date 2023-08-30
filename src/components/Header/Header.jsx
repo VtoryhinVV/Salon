@@ -28,12 +28,10 @@ export const Header = () => {
           <Navigation>
             <StyledLink to="/">Home</StyledLink>
             <StyledLink to="/about_us">About Us</StyledLink>
-            <StyledLink to="/products">Services</StyledLink>
-            <StyledLink to="/contact_us">Pricing</StyledLink>
-            <StyledLink to="/a">Pre and Post Care</StyledLink>
-            <StyledLink to="/a">Gift Cards</StyledLink>
-            <StyledLink to="/a">Contact us</StyledLink>
-            <StyledLink to="/a">Disclaimer</StyledLink>
+            <StyledLink to="/services">Services</StyledLink>
+            <StyledLink to="/pricing">Pricing</StyledLink>
+            <StyledLink to="/vouchers">Vouchers</StyledLink>
+            <StyledLink to="/contact_us">Contact us</StyledLink>
           </Navigation>
           <SocialsLink>
             <a href="https://m.facebook.com/Aestheticabyanna/" target='_blank'>

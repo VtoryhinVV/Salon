@@ -55,7 +55,7 @@ export const Services = () => {
                                         <p>Dermal fillers are commonly used to smooth out wrinkles, add volume to areas of the face, enhance and contour facial features.</p>
                                         <p>These gel-like substances, made from hyaluronan, which is a complex chain of carbohydrates, are naturally found in our bodies. Hyaluronan, or hyaluronic acid, is responsible for maintaining the hydration, plumpness, and youthful look of our skin.</p>
                                     </ServicesTextContent>
-                                    <ServicesLink to="/products">READ MORE</ServicesLink>
+                                    <ServicesLink to="/services/dermal_filler">READ MORE</ServicesLink>
                                 </ServicesListHiddenContent>
                             </CSSTransition>
                         </ServicesListItem>
@@ -76,7 +76,7 @@ export const Services = () => {
                                         <p>Dermal fillers are commonly used to smooth out wrinkles, add volume to areas of the face, enhance and contour facial features.</p>
                                         <p>These gel-like substances, made from hyaluronan, which is a complex chain of carbohydrates, are naturally found in our bodies. Hyaluronan, or hyaluronic acid, is responsible for maintaining the hydration, plumpness, and youthful look of our skin.</p>
                                     </ServicesTextContent>  
-                                    <ServicesLink to="/products">READ MORE</ServicesLink>
+                                    <ServicesLink to="/services/lip_filler">READ MORE</ServicesLink>
                                 </ServicesListHiddenContent>
                             </CSSTransition>
                         </ServicesListItem>
@@ -97,7 +97,7 @@ export const Services = () => {
                                         <p>Dermal fillers are commonly used to smooth out wrinkles, add volume to areas of the face, enhance and contour facial features.</p>
                                         <p>These gel-like substances, made from hyaluronan, which is a complex chain of carbohydrates, are naturally found in our bodies. Hyaluronan, or hyaluronic acid, is responsible for maintaining the hydration, plumpness, and youthful look of our skin.</p>
                                     </ServicesTextContent>
-                                    <ServicesLink to="/products">READ MORE</ServicesLink>
+                                    <ServicesLink to="/services/injectables_for_men">READ MORE</ServicesLink>
                                 </ServicesListHiddenContent>
                             </CSSTransition>
                         </ServicesListItem>
@@ -118,7 +118,7 @@ export const Services = () => {
                                         <p>Dermal fillers are commonly used to smooth out wrinkles, add volume to areas of the face, enhance and contour facial features.</p>
                                         <p>These gel-like substances, made from hyaluronan, which is a complex chain of carbohydrates, are naturally found in our bodies. Hyaluronan, or hyaluronic acid, is responsible for maintaining the hydration, plumpness, and youthful look of our skin.</p>
                                     </ServicesTextContent>
-                                    <ServicesLink to="/products">READ MORE</ServicesLink>
+                                    <ServicesLink to="/services/medical">READ MORE</ServicesLink>
                                 </ServicesListHiddenContent>
                             </CSSTransition>    
                         </ServicesListItem>
@@ -139,7 +139,7 @@ export const Services = () => {
                                         <p>Dermal fillers are commonly used to smooth out wrinkles, add volume to areas of the face, enhance and contour facial features.</p>
                                         <p>These gel-like substances, made from hyaluronan, which is a complex chain of carbohydrates, are naturally found in our bodies. Hyaluronan, or hyaluronic acid, is responsible for maintaining the hydration, plumpness, and youthful look of our skin.</p>
                                     </ServicesTextContent>
-                                    <ServicesLink to="/products">READ MORE</ServicesLink>
+                                    <ServicesLink to="/products/anti_wrinkle">READ MORE</ServicesLink>
                                 </ServicesListHiddenContent>
                             </CSSTransition>    
                         </ServicesListItem>
