@@ -5,6 +5,8 @@ import { Services } from '../components/Services/Services';
 import { WhyUs } from '../components/WhyUs/WhyUs';
 import { BuyGift } from '../components/BuyGift/BuyGift';
 import { ContactUs } from '../components/ContactUs/ContactUs';
+import { Reviews } from '../components/Reviews/Reviews';
+import { Instagram } from '../components/Instagram/Instagram';
 
 export function HomePage() {
   return (
@@ -13,9 +15,10 @@ export function HomePage() {
       <OurStory />
       <WhyUs />
       <Services />
-      <BuyGift /> 
+      <BuyGift />
+      <Reviews />
+      <Instagram />
       <ContactUs />
-
     </>
   );
 }
