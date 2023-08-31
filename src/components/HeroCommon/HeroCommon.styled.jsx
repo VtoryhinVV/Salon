@@ -22,9 +22,10 @@ export const HeroTitle = styled.h1 `
     font-family: Prata;
     font-size: 48px;
     letter-spacing: 0.96px;
+    font-weight: 400;
 `
 
-export const HeroText = styled.h1 `
+export const HeroText = styled.p `
     font-weight: 700;
 `
 
