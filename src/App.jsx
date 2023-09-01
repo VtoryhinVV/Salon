@@ -1,6 +1,9 @@
 import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { HomePage } from './pages/HomePage';
+import { AboutUs } from './pages/AboutUs';
+import ContactuUs from './pages/ContactUs';
+import Products from './pages/Products';
 
 import { Layout } from './components/Layout/Layout';
 import { ServicesChoose } from './pages/ServicesChoose';
@@ -11,7 +14,7 @@ function App() {
       <Routes>
         <Route element={<Layout />}>
           <Route index element={<HomePage />} />
-          <Route path="/about_us" element={<p>About</p>} />
+          <Route path="/about_us" element={<AboutUs />} />
           <Route path="/services" element={<p>services</p>} />
 
           <Route
