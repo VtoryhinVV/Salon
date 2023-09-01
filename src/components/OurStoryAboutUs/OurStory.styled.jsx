@@ -10,8 +10,15 @@ export const OurStorySection = styled.section `
 
     & > div {
         display: flex;
+        flex-direction: column;
         gap: 60px;
         align-items: center;
+        text-align: center;
+
+        @media screen and (min-width: 768px) {
+            flex-direction: row;
+            text-align: left;
+        }
     }
 `
 
@@ -20,17 +27,20 @@ export const OurStoryInfoContainer = styled.div `
     flex-direction: column;
     gap: 24px;
 
-    width: 588px;             /* DELETE */
-
     & > h2 {
         font-family: Prata;
-        font-size: 48px;
-        letter-spacing: 0.96px;
+        font-size: 34px;
+        letter-spacing: 0.68px;
         font-weight: 400;
+
+        @media screen and (min-width: 768px) {
+            font-size: 48px;
+            letter-spacing: 0.96px;
+        }
     }
 
     & > button {
-        margin-top: 16px;
+        margin: 16px auto 0;
         padding: 12px 24px;
         width: 220px;
 
@@ -45,6 +55,10 @@ export const OurStoryInfoContainer = styled.div `
         &:focus {
             background-color: var(--focus);
         }
+
+        @media screen and (min-width: 768px) {
+            margin: 16px 0 0;
+        }
     }
 `  
 
@@ -52,4 +66,16 @@ export const OurStoryTextContainer = styled.div `
     display: flex;
     flex-direction: column;
     gap: 16px;
+`
+
+export const OurStoryImg = styled.img `
+    width: 300px;
+
+    @media screen and (min-width: 400px) {
+        width: 380px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: auto
+    }
 `

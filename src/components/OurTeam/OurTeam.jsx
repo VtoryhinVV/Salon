@@ -5,10 +5,13 @@ import {OurTeamSection,
         OurTeamListItemTextContainer,
         OurTeamListItemTitle,
         OurTeamListItemText,
+        OurTeamImg
         } from "./OurTeam.styled"
 
 import Anna from '/src/assets/img/Anna.jpg'
+import AnnaMob from '/src/assets/img/AnnaMob.jpg'
 import Georgie from '/src/assets/img/Georgie.jpg'
+import GeorgieMob from '/src/assets/img/GeorgieMob.jpg'
 
 export const OurTeam = () => {
     return <OurTeamSection>
@@ -39,7 +42,10 @@ export const OurTeam = () => {
                             </span>
                         </OurTeamListItemText>
                     </OurTeamListItemTextContainer>
-                    <img src={Anna} alt="Anna" />
+                    <picture>
+                        <source srcSet={Anna} media="(min-width: 1200px)" />
+                        <OurTeamImg src={AnnaMob} alt="Anna" />
+                    </picture> 
                 </li>
                 <li>
                     <OurTeamListItemTextContainer>
@@ -63,7 +69,10 @@ export const OurTeam = () => {
                             </span>
                         </OurTeamListItemText>
                     </OurTeamListItemTextContainer>
-                    <img src={Georgie} alt="Georgie" />
+                    <picture>
+                        <source srcSet={Georgie} media="(min-width: 1200px)" />
+                        <OurTeamImg src={GeorgieMob} alt="Georgie" />
+                    </picture>
                 </li>
             </OurTeamList>
         </Container>

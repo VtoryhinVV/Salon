@@ -1,10 +1,12 @@
 import { Container } from "../shared/Container";
 import {OurStorySection, 
         OurStoryInfoContainer, 
-        OurStoryTextContainer 
+        OurStoryTextContainer,
+        OurStoryImg,
     } from "./OurStory.styled";
 
 import VideoManeken from '/src/assets/img/VideoManeken.jpg'
+import VideoManekenMob from '/src/assets/img/VideoManekenMob.jpg'
 
 export const OurStory = () => {
     return <OurStorySection>
@@ -30,7 +32,10 @@ export const OurStory = () => {
                 </button>
             </OurStoryInfoContainer>
             <div className="video">
-                <img src={VideoManeken} alt="" />
+                <picture>
+                    <source srcSet={VideoManeken} media="(min-width: 1200px)" />
+                    <OurStoryImg src={VideoManekenMob} alt="" />
+                </picture>    
             </div>
         </Container>
     </OurStorySection>

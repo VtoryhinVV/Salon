@@ -20,13 +20,22 @@ export const HeroSection = styled.section`
 
 export const HeroTitle = styled.h1 `
     font-family: Prata;
-    font-size: 48px;
-    letter-spacing: 0.96px;
+    font-size: 34px;
+    letter-spacing: 0.68px;
     font-weight: 400;
+
+    @media screen and (min-width: 768px) {
+        font-size: 48px;
+        letter-spacing: 0.96px;
+    }
 `
 
 export const HeroText = styled.p `
-    font-weight: 700;
+    font-weight: 400;
+
+    @media screen and (min-width: 768px) {
+        font-weight: 700;
+    }
 `
 
 export const HeroButton = styled.button `
