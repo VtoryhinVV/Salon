@@ -6,11 +6,12 @@ export const MobMenuBlock = styled.div`
   background-color: var(--white);
   padding: 24px 0 40px;
   position: absolute;
-
+  top: 76px;
+  left: 0;
   z-index: 9999;
   width: 100%;
   & > div {
-    padding: 0 24px;
+    margin-right: 24px;
   }
   @media screen and (min-width: 480px) {
     width: 480px;
@@ -18,7 +19,9 @@ export const MobMenuBlock = styled.div`
     transform: translate(-50%, 0);
   }
   @media screen and (min-width: 768px) {
-    width: 768px;
+    width: 480px;
+    left: 100%;
+    transform: translate(-100%, 0);
   }
   @media screen and (min-width: 1200px) {
     display: none;
@@ -35,6 +38,10 @@ export const Navigation = styled.nav`
 export const StyledLink = styled(NavLink)`
   color: var(--black);
   text-decoration: none;
+  width: 163px;
+  height: 20px;
+  text-align: center;
+
   &:hover,
   &:focus {
     color: var(--brown);

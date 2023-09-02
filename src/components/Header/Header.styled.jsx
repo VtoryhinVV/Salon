@@ -10,6 +10,7 @@ export const HeaderNav = styled.header`
   & > div {
     display: flex;
     justify-content: space-between;
+    position: relative;
   }
 `;
 
@@ -46,7 +47,7 @@ export const SocialsLink = styled.div`
   display: flex;
   align-items: center;
   gap: 24px;
-  & a {
+  & > a {
     width: 32px;
     height: 32px;
 

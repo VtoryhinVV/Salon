@@ -1,206 +1,209 @@
 import styled from '@emotion/styled';
-import bgServices from "/img/bgServices.jpg"
+import bgServices from '/img/bgServices.jpg';
 import { Link } from 'react-router-dom';
 
-export const ServicesSection = styled.section `
-    padding: 120px 0;
+export const ServicesSection = styled.section`
+  padding: 120px 0;
 
-    h1, h2, h3, p {
-        padding: 0;
-        margin: 0;
-    }
-
-    background-image: url(${bgServices});
-
-    & > div {
-        display: flex;
-        flex-direction: column;
-        gap: 24px;
-    }
-`
-
-export const ServicesTitle = styled.h2 `
-    font-family: Prata;
-    font-size: 34px;
-    font-weight: 400;
-    letter-spacing: 0.96px;
-    text-align: center;
-
-    @media screen and (min-width: 768px) {
-        font-size: 48px;
-        text-align: left;
-    }
-`
-
-export const ServicesContent = styled.div `
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    align-items: center;
-
-    @media screen and (min-width: 768px) {
-        flex-direction: row;
-        gap: 20px;
-        align-items: flex-start;
-    }
-    @media screen and (min-width: 1200px) {
-        gap: 40px;
-    }
-
-    & > div {
-        display: flex;
-        flex-direction: column;
-        gap: 32px;
-    }
-`
-
-export const ServicesList = styled.ul `
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-
-    list-style-type: none;
-
+  h1,
+  h2,
+  h3,
+  p {
     padding: 0;
     margin: 0;
-`
+  }
 
-export const ServicesListItem = styled.li `
-    position: relative;
+  background-image: url(${bgServices});
 
-    padding: 24px;
-
+  & > div {
     display: flex;
     flex-direction: column;
-    gap: 18px;
-
-    background-color: white; 
-
-    cursor: pointer;
-
-    box-shadow: var(--shadow);
-
-    @media screen and (min-width: 1200px) {
-        width: 637px;
-    }
-`
-
-export const ServicesOpenList = styled.div`
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 5;
+    gap: 24px;
+  }
 `;
 
-export const ServicesListVisibleContent = styled.div `
-    display: flex;
-    justify-content: space-between;
+export const ServicesTitle = styled.h2`
+  font-family: Prata;
+  font-size: 34px;
+  font-weight: 400;
+  letter-spacing: 0.96px;
+  text-align: center;
 
-    align-items: center;
-`
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+    text-align: left;
+  }
+`;
 
-export const ServicesListHiddenContent = styled.div `
+export const ServicesContent = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    gap: 20px;
+    align-items: flex-start;
+  }
+  @media screen and (min-width: 1200px) {
+    gap: 40px;
+  }
+
+  & > div {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 32px;
+  }
+`;
 
-    display: ${(props) => (props.open ? "flex" : "none")};
-`
+export const ServicesList = styled.ul`
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 
-export const ServicesTextContent = styled.div `
-    display: flex;
-    flex-direction: column;
+  list-style-type: none;
 
-    gap: 16px;
-`
+  padding: 0;
+  margin: 0;
+`;
 
-export const ServicesListItemTitle = styled.h3 `
-    font-family: Playfair Display;
-    font-size: 24px;
-    font-weight: 400;
-`
+export const ServicesListItem = styled.li`
+  position: relative;
 
-export const ServicesSvg = styled.svg `
-    width: 10px;
-    height: 10px;
-    fill: var(--brown);
-`
+  padding: 24px;
 
-export const ServicesLink = styled(Link) `
-    color: var(--brown);
-    text-decoration: none;
-    width: 105px;
-    margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
 
-    position: relative;
-    z-index: 6;
+  background-color: white;
 
-    transition: color 0.3s ease;
+  cursor: pointer;
 
-    @media screen and (min-width: 768px) {
-        margin: 0;
-    }
+  box-shadow: var(--shadow);
 
-    &:hover,
-    &:focus {
-        color: var(--focus);
-    }
-`
+  @media screen and (min-width: 1200px) {
+    width: 637px;
+  }
+`;
 
-export const ServicesButtonUnderList = styled(Link) `
+export const ServicesOpenList = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+`;
+
+export const ServicesListVisibleContent = styled.div`
+  display: flex;
+  justify-content: space-between;
+
+  align-items: center;
+`;
+
+export const ServicesListHiddenContent = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  display: ${props => (props.open ? 'flex' : 'none')};
+`;
+
+export const ServicesTextContent = styled.div`
+  display: flex;
+  flex-direction: column;
+
+  gap: 16px;
+`;
+
+export const ServicesListItemTitle = styled.h3`
+  font-family: Playfair Display;
+  font-size: 24px;
+  font-weight: 400;
+`;
+
+export const ServicesSvg = styled.svg`
+  width: 10px;
+  height: 10px;
+  fill: var(--brown);
+`;
+
+export const ServicesLink = styled(Link)`
+  color: var(--brown);
+  text-decoration: none;
+  width: 105px;
+  margin: 0 auto;
+
+  position: relative;
+  z-index: 6;
+
+  transition: color 0.3s ease;
+
+  @media screen and (min-width: 768px) {
+    margin: 0;
+  }
+
+  &:hover,
+  &:focus {
+    color: var(--focus);
+  }
+`;
+
+export const ServicesButtonUnderList = styled.a`
+  display: none;
+  padding: 12px 24px;
+  text-decoration: none;
+  cursor: pointer;
+  width: 221px;
+  text-align: center;
+
+  background-color: var(--brown);
+  color: white;
+
+  transition: background-color 0.3s ease;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: var(--focus);
+  }
+`;
+export const ServicesButtonUnderImg = styled.a`
+  padding: 12px 24px;
+  text-decoration: none;
+
+  width: 221px;
+  text-align: center;
+  cursor: pointer;
+  background-color: var(--brown);
+  color: white;
+
+  transition: background-color 0.3s ease;
+
+  @media screen and (min-width: 768px) {
     display: none;
-    padding: 12px 24px;
-    text-decoration: none;
+  }
 
-    width: 221px;
-    text-align: center;
+  &:hover,
+  &:focus {
+    background-color: var(--focus);
+  }
+`;
 
-    background-color: var(--brown);
-    color: white;
+export const ServicesImg = styled.img`
+  width: 300px;
 
-    transition: background-color 0.3s ease;
+  @media screen and (min-width: 350px) {
+    width: 330px;
+  }
 
-    @media screen and (min-width: 768px) {
-        display: block;
-    }
-
-    &:hover,
-    &:focus {
-        background-color: var(--focus);
-    }
-`
-export const ServicesButtonUnderImg = styled(Link) `
-    padding: 12px 24px;
-    text-decoration: none;
-
-    width: 221px;
-    text-align: center;
-
-    background-color: var(--brown);
-    color: white;
-
-    transition: background-color 0.3s ease;
-
-    @media screen and (min-width: 768px) {
-        display: none;
-    }
-
-    &:hover,
-    &:focus {
-        background-color: var(--focus);
-    }
-`
-
-export const ServicesImg = styled.img `
-    width: 300px;
-
-    @media screen and (min-width: 350px) {
-        width: 330px;
-    }
-
-    @media screen and (min-width: 1200px) {
-        width: 470px;
-    }
-`
+  @media screen and (min-width: 1200px) {
+    width: 470px;
+  }
+`;
