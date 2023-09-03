@@ -64,7 +64,7 @@ export const OurTeamList = styled.ul`
       flex-direction: row;
       text-align: left;
 
-            & > li:nth-child(even) {
+            &:nth-of-type(even) {
                 flex-direction: row-reverse;
             }
         }
