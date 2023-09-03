@@ -1,7 +1,7 @@
 import {HeroSection,
         HeroTitle,
         HeroText,
-        HeroButton } from "./HeroCommon.styled"
+        HeroLink } from "./HeroCommon.styled"
 import { Container } from "../shared/Container"
 
 export const HeroCommon = ({title, text, buttonText}) => {
@@ -9,7 +9,11 @@ export const HeroCommon = ({title, text, buttonText}) => {
         <Container>
             <HeroTitle>{title}</HeroTitle>
             <HeroText>{text}</HeroText>
-            <HeroButton>{buttonText}</HeroButton>
+            <HeroLink href="https://bookings.gettimely.com/aesthetica7/book" 
+                target="_blank" 
+                rel="noreferrer">
+                    {buttonText}
+            </HeroLink>
         </Container>
     </HeroSection>
 }

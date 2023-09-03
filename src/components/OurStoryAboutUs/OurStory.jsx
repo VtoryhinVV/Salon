@@ -27,9 +27,9 @@ export const OurStory = () => {
                         Discover the difference of our boutique clinic, where comfort, and your well-being are at the forefront of  everything we do
                     </span>
                 </OurStoryTextContainer>
-                <button>
+                <a href="https://bookings.gettimely.com/aesthetica7/book" target="_blank" rel="noreferrer">
                     BOOK APPOINMENT
-                </button>
+                </a>
             </OurStoryInfoContainer>
             <div className="video">
                 <picture>

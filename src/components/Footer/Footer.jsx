@@ -1,4 +1,4 @@
-import logo from '/img/FooterLogo.jpg';
+import logo from "/src/assets/img/LogoFooter.png";
 import {
   FooterSection,
   FooterContainer,

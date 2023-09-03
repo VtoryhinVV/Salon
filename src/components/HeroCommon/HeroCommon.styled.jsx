@@ -38,7 +38,7 @@ export const HeroText = styled.p `
     }
 `
 
-export const HeroButton = styled.button `
+export const HeroLink = styled.a `
     width: 225px;
 
     border: 1px solid var(--brown);
@@ -47,6 +47,7 @@ export const HeroButton = styled.button `
 
     color: var(--brown);
     text-transform: uppercase;
+    text-decoration: none;
 
     transition: all 0.3s ease;
 

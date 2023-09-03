@@ -3,7 +3,7 @@ import {AdvantagesSection,
         AdvantagesTitle,
         AdvantagesList,
         AdvantagesListItem,
-        AdvantagesButton } from "./Advantages.styled"
+        AdvantagesLink } from "./Advantages.styled"
 
 import svgImgs from '/src/assets/svg/symbol-defs.svg';
 
@@ -69,7 +69,11 @@ export const Advantages = () => {
                     <p>We aim to build long-lasting relationships with our clients, providing ongoing support and care. We are here to assist you not only during your initial treatment but also throughout your entire aesthetic journey.</p>
                 </AdvantagesListItem>
             </AdvantagesList>
-            <AdvantagesButton>BOOK APPOINMENT</AdvantagesButton>
+            <AdvantagesLink href="https://bookings.gettimely.com/aesthetica7/book" 
+                target="_blank" 
+                rel="noreferrer">
+                    BOOK APPOINMENT
+            </AdvantagesLink>
         </Container>
     </AdvantagesSection>
 }

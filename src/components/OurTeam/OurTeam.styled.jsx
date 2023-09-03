@@ -64,12 +64,12 @@ export const OurTeamList = styled.ul`
       flex-direction: row;
       text-align: left;
 
-      & > li:nth-of-type(even) {
-        flex-direction: row-reverse;
-      }
+            &:nth-of-type(even) {
+                flex-direction: row-reverse;
+            }
+        }
     }
-  }
-`;
+`
 
 export const OurTeamListItemTextContainer = styled.div`
   display: flex;
