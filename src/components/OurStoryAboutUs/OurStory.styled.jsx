@@ -39,12 +39,13 @@ export const OurStoryInfoContainer = styled.div `
         }
     }
 
-    & > button {
+    & > a {
         margin: 16px auto 0;
         padding: 12px 24px;
-        width: 220px;
+        width: 225px;
+        box-sizing: border-box;
 
-        border: none;
+        text-decoration: none;
 
         background-color: var(--brown);
         color: white;

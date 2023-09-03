@@ -107,12 +107,13 @@ export const AdvantagesListItem = styled.li `
     }
 `
 
-export const AdvantagesButton = styled.button `
+export const AdvantagesLink = styled.a `
     margin-top: 16px;
     padding: 12px 24px;
     width: 220px;
 
     border: none;
+    text-decoration: none;
 
     background-color: var(--brown);
     color: white;
