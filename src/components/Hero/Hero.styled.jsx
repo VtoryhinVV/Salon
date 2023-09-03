@@ -1,6 +1,7 @@
 import styled from '@emotion/styled';
 import bgHero from '/img/bg.jpg';
 import mobBgHero from '/img/mob/bghero.jpg';
+import { NavLink } from 'react-router-dom';
 
 export const HeroSection = styled.section`
   /* background: url(${mobBgHero}) center cover no-repeat; */
@@ -11,6 +12,10 @@ export const HeroSection = styled.section`
 
   & > div {
     padding-top: 42px;
+    padding-bottom: 190px;
+    @media screen and (min-width: 768px) {
+      padding-bottom: 0;
+    }
   }
   @media (min-width: 768px) {
     & > div {
@@ -177,27 +182,23 @@ export const MainTitle = styled.div`
       width: 100%;
     }
   }
+`;
 
-  & button {
-    border: 1px solid var(--brown);
-    background: var(--white, #fff);
-    padding: 10px 24px;
+export const StyledLink = styled.a`
+  border: 1px solid var(--brown);
+  background: var(--white, #fff);
+  padding: 10px 24px;
 
-    color: var(--brown);
-    letter-spacing: 0.32px;
-    text-transform: uppercase;
-    margin-bottom: 190px;
+  color: var(--brown);
+  letter-spacing: 0.32px;
+  text-transform: uppercase;
 
-    transition: all 0.3s ease;
-    
-    @media screen and (min-width: 768px) {
-      margin-bottom: 0;
-    }
+  text-decoration: none;
+  transition: all 0.3s ease;
 
-    &:hover,
-    &:focus {
-      border-color: var(--focus);
-      color: var(--focus);
-    }
+  &:hover,
+  &:focus {
+    border-color: var(--focus);
+    color: var(--focus);
   }
 `;

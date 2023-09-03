@@ -1,5 +1,5 @@
-import { Container } from "../shared/Container";
-import { CustomBanner } from "./CustomBanner";
+import { Container } from '../shared/Container';
+import { CustomBanner } from './CustomBanner';
 import {
   AdresseInfo,
   Blur,
@@ -8,11 +8,12 @@ import {
   MainTitle,
   Ellipse,
   HeroSection,
-} from "./Hero.styled";
+  StyledLink,
+} from './Hero.styled';
 
-import phone from "/img/phone-mobile.png";
-import chatBubble from "/img/chat-bubble.png";
-import globe from "/img/globe.png";
+import phone from '/img/phone-mobile.png';
+import chatBubble from '/img/chat-bubble.png';
+import globe from '/img/globe.png';
 
 export const Hero = () => {
   return (
@@ -45,7 +46,13 @@ export const Hero = () => {
                 Step into a world of pure bliss where beauty meets luxury, and
                 let our skilled team of experts transform you from head to toe
               </p>
-              <button>Book appoinment</button>
+              <StyledLink
+                href="https://bookings.gettimely.com/aesthetica7/book"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Book appoinment
+              </StyledLink>
             </MainTitle>
           </Container>
         </TextContant>

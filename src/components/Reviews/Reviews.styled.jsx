@@ -14,8 +14,8 @@ export const ReviewsSection = styled.section`
   }
 
   & .sk_reviews_grid-content {
-    /* display: flex;
-    align-items: center; */
+    display: flex;
+    align-items: center;
   }
 
   & .sk_reviews_num_icon {
@@ -32,6 +32,10 @@ export const ReviewsSection = styled.section`
     font-family: Plus Jakarta Sans;
     font-size: 24px;
     font-style: normal;
+
+    @media screen and (min-width: 768px) and (max-width: 1200px) {
+      font-size: 16px;
+    }
   }
 
   & .sk_google_review_count {
@@ -44,10 +48,13 @@ export const ReviewsSection = styled.section`
 export const ReviewsTitle = styled.h2`
   color: var(--black);
   font-family: Prata;
-  font-size: 48px;
+  font-size: 34px;
   font-weight: 400;
   letter-spacing: 0.96px;
   text-transform: capitalize;
 
   text-align: center;
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+  }
 `;

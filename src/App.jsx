@@ -1,12 +1,12 @@
 import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import { HomePage } from './pages/HomePage';
-import { AboutUs } from './pages/AboutUs';
-import ContactuUs from './pages/ContactUs';
-import Products from './pages/Products';
 
 import { Layout } from './components/Layout/Layout';
 import { ServicesChoose } from './pages/ServicesChoose';
+import { lazy } from 'react';
+
+const HomePage = lazy(() => import('./pages/HomePage'));
+const AboutUs = lazy(() => import('./pages/AboutUs'));
 
 function App() {
   return (

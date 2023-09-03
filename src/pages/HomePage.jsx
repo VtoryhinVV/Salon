@@ -8,7 +8,7 @@ import { ContactUs } from '../components/ContactUs/ContactUs';
 import { Reviews } from '../components/Reviews/Reviews';
 import { Instagram } from '../components/Instagram/Instagram';
 
-export function HomePage() {
+function HomePage() {
   return (
     <>
       <Hero />
@@ -22,3 +22,5 @@ export function HomePage() {
     </>
   );
 }
+
+export default HomePage;

@@ -34,12 +34,20 @@ export const Header = () => {
             <StyledLink to="/contact_us">Contact us</StyledLink>
           </Navigation>
           <SocialsLink>
-            <a href="https://m.facebook.com/Aestheticabyanna/" target='_blank'>
+            <a
+              href="https://m.facebook.com/Aestheticabyanna/"
+              rel="noreferrer"
+              target="_blank"
+            >
               <svg>
                 <use href={`${svgImgs}#icon-facebook`}></use>
               </svg>
             </a>
-            <a href="https://www.instagram.com/aesthetica_by_anna/" target='_blank'>
+            <a
+              href="https://www.instagram.com/aesthetica_by_anna/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <svg>
                 <use href={`${svgImgs}#icon-instagram`}></use>
               </svg>
@@ -49,10 +57,10 @@ export const Header = () => {
                 <use href={`${svgImgs}#icon-burger`}></use>
               </svg>
             </Burger>
+            <MobMenu isOpen={isMobMenuOpen} toggleMenu={toggleMobMenu} />
           </SocialsLink>
         </Container>
       </HeaderNav>
-      <MobMenu isOpen={isMobMenuOpen} toggleMenu={toggleMobMenu} />
     </>
   );
 };
