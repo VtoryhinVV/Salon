@@ -1,12 +1,12 @@
 import styled from '@emotion/styled';
 import bgImg from '/img/bg.jpg';
-import { Formik, Form, Field, ErrorMessage } from 'formik';
+import { Form, ErrorMessage } from 'formik';
 
 export const ContactUsSection = styled.section`
   padding: 120px 0;
 
   background-image: url(${bgImg});
-
+  background-image: ${props => (props.bg ? `url(${bgImg})` : 'none')};
   & > div {
     display: flex;
     flex-direction: column;

@@ -12,6 +12,7 @@ import svgImgs from '/symbol-defs.svg';
 import { Container } from '../shared/Container';
 import { MobMenu } from '../MobMenu/MobMenu';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 export const Header = () => {
   const [isMobMenuOpen, setIsMobMenuOpen] = useState(false);
@@ -24,12 +25,16 @@ export const Header = () => {
     <>
       <HeaderNav>
         <Container>
-          <ImgLogo alt="Image" src={logo} />
+          <Link to="/">
+            <ImgLogo alt="Image" src={logo} />
+          </Link>
+
           <Navigation>
             <StyledLink to="/">Home</StyledLink>
             <StyledLink to="/about_us">About Us</StyledLink>
             <StyledLink to="/services">Services</StyledLink>
             <StyledLink to="/pricing">Pricing</StyledLink>
+            <StyledLink to="/gallery">Gallery</StyledLink>
             <StyledLink to="/vouchers">Vouchers</StyledLink>
             <StyledLink to="/contact_us">Contact us</StyledLink>
           </Navigation>

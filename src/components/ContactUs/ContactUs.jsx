@@ -39,25 +39,9 @@ const validationSchema = Yup.object().shape({
     .required('Required'),
 });
 
-export const ContactUs = () => {
-  //   const form = useRef();
-
-  // Функция, которая будет вызвана при отправке формы
+export const ContactUs = ({ back = true }) => {
   const handleSubmit = values => {
-    // Вызовите функцию sendEmail с данными формы
-    sendEmail(values)
-      .then(() => {
-        // Действия после успешной отправки
-        console.log('Почта успешно отправлена');
-      })
-      .catch(error => {
-        // Действия в случае ошибки отправки
-        console.error('Ошибка отправки почты:', error);
-      })
-      .finally(() => {
-        // Снимите флаг отправки формы
-        // setSubmitting(false);
-      });
+    sendEmail(values);
   };
 
   const sendEmail = val => {
@@ -74,7 +58,7 @@ export const ContactUs = () => {
   };
 
   return (
-    <ContactUsSection>
+    <ContactUsSection bg={back}>
       <Container>
         <ContactUsTitle>Contact Us</ContactUsTitle>
         <ContactUsTimetable>

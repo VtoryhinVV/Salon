@@ -119,7 +119,9 @@ export const SocLink = styled.a`
 
 export const OurStoryImg = styled.div`
   display: none;
-
+  & picture {
+    display: flex;
+  }
   @media screen and (min-width: 350px) {
     display: flex;
     align-items: flex-end;
