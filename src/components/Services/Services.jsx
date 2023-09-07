@@ -25,7 +25,7 @@ import ServicesPhotoMob from '/img/ServicesMob.jpg';
 import svgImgs from '/symbol-defs.svg';
 import './style.css';
 
-export const Services = () => {
+export const Services = ({ back = true }) => {
   const [open, setOpen] = useState('first');
   const openListItem = e => {
     e.stopPropagation();
@@ -33,7 +33,7 @@ export const Services = () => {
   };
 
   return (
-    <ServicesSection>
+    <ServicesSection bg={back}>
       <Container>
         <ServicesTitle>Services</ServicesTitle>
         <ServicesContent>

@@ -5,7 +5,7 @@ import { Advantages } from '../components/Advantages/Advantages';
 
 const AboutUs = () => {
   return (
-    <>
+    <main>
       <HeroCommon
         title="Discover Our story"
         text="Short story about us & meet the team"
@@ -14,7 +14,7 @@ const AboutUs = () => {
       <OurStory />
       <OurTeam />
       <Advantages />
-    </>
+    </main>
   );
 };
 

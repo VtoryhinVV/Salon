@@ -13,7 +13,15 @@ export function GoogleReviews() {
     };
 
     loadGoogleReviews();
+    return () => {
+      const script = document.getElementById(
+        'sociablekit-google-reviews-script'
+      );
+      if (script) {
+        script.parentNode.removeChild(script);
+      }
+    };
   }, []);
 
-  return <div className="sk-ww-google-reviews" data-embed-id="187349"></div>;
+  return <div className="sk-ww-google-reviews" data-embed-id="191000"></div>;
 }

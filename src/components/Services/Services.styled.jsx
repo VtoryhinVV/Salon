@@ -12,8 +12,7 @@ export const ServicesSection = styled.section`
     padding: 0;
     margin: 0;
   }
-
-  background-image: url(${bgServices});
+  background-image: ${props => (props.bg ? `url(${bgServices})` : 'none')};
 
   & > div {
     display: flex;

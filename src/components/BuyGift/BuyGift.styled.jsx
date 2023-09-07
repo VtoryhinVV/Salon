@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import { Link } from 'react-router-dom';
+import bgImg from '../../assets/img/bgGift.jpg';
 
 export const BuyGiftSection = styled.section`
   padding: 120px 0;
@@ -11,6 +11,8 @@ export const BuyGiftSection = styled.section`
     margin: 0;
     padding: 0;
   }
+
+  background-image: ${props => (props.bg ? `url(${bgImg})` : 'none')};
 
   & > div {
     display: flex;

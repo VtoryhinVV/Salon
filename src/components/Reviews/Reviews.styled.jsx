@@ -9,39 +9,25 @@ export const ReviewsSection = styled.section`
 
   padding: 120px 0;
 
+  & .sk-below-button-container {
+    padding: 0 !important;
+  }
+
   & .sk-ww-google-reviews {
-    background: none !important;
+    background: transparent !important;
   }
 
-  & .sk_reviews_grid-content {
-    display: flex;
-    align-items: center;
-  }
-
-  & .sk_reviews_num_icon {
-    font-size: 42px;
-    font-family: Plus Jakarta Sans;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 48px;
-  }
-
-  & .sk-badge-name {
-    color: var(--white, #fff);
-    text-align: center;
-    font-family: Plus Jakarta Sans;
-    font-size: 24px;
-    font-style: normal;
-
-    @media screen and (min-width: 768px) and (max-width: 1200px) {
-      font-size: 16px;
-    }
-  }
-
-  & .sk_google_review_count {
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
+  & .sk_reviews_grid-item:nth-of-type(n + 8) {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
   }
 `;
 

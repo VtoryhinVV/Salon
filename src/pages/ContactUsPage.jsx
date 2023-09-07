@@ -5,15 +5,15 @@ import { Reviews } from '../components/Reviews/Reviews';
 
 const ContactUsPage = () => {
   return (
-    <>
+    <main>
       <HeroCommon
-        title="ContactUs"
+        title="CONTACT US"
         text="Get in touch with us"
         buttonText="Book appoinment"
       />
       <ContactUs back={false} />
       <Reviews />
-    </>
+    </main>
   );
 };
 

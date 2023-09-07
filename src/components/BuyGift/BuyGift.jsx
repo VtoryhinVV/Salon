@@ -12,9 +12,9 @@ import BuyGift2 from '/img/BuyGift2.jpg';
 import BuyGiftMob1 from '/img/BuyGiftMob1.jpg';
 import BuyGiftMob2 from '/img/BuyGiftMob2.jpg';
 
-export const BuyGift = () => {
+export const BuyGift = ({ back = false }) => {
   return (
-    <BuyGiftSection>
+    <BuyGiftSection bg={back}>
       <Container>
         <BuyGiftImgContainer>
           <picture>

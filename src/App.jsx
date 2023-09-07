@@ -6,6 +6,7 @@ import { ServicesChoose } from './pages/ServicesChoose';
 import { lazy } from 'react';
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 import ContactUsPage from './pages/ContactUsPage';
+import ServicesPage from './pages/ServicesPage';
 
 const HomePage = lazy(() => import('./pages/HomePage'));
 const AboutUs = lazy(() => import('./pages/AboutUs'));
@@ -18,7 +19,7 @@ function App() {
         <Route element={<Layout />}>
           <Route index element={<HomePage />} />
           <Route path="/about_us" element={<AboutUs />} />
-          <Route path="/services" element={<p>services</p>} />
+          <Route path="/services" element={<ServicesPage />} />
           <Route
             path="/services/:servicesChoose"
             element={<ServicesChoose />}

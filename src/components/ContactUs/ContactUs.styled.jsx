@@ -5,7 +5,6 @@ import { Form, ErrorMessage } from 'formik';
 export const ContactUsSection = styled.section`
   padding: 120px 0;
 
-  background-image: url(${bgImg});
   background-image: ${props => (props.bg ? `url(${bgImg})` : 'none')};
   & > div {
     display: flex;
