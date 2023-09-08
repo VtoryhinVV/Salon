@@ -17,7 +17,11 @@ export const ReviewsSection = styled.section`
     background: transparent !important;
   }
 
-  & .sk_reviews_grid-item:nth-of-type(n + 8) {
+  & .sk_reviews_grid {
+    height: 600px !important;
+    overflow-y: auto;
+  }
+  & .sk_reviews_grid-item:nth-of-type(n + 17) {
     position: absolute;
     white-space: nowrap;
     width: 1px;

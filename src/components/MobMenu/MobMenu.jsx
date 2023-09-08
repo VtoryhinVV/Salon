@@ -19,12 +19,27 @@ export const MobMenu = ({ isOpen, toggleMenu }) => {
       </CloseBtn>
 
       <Navigation>
-        <StyledLink to="/">Home</StyledLink>
-        <StyledLink to="/about_us">About Us</StyledLink>
-        <StyledLink to="/services">Services</StyledLink>
-        <StyledLink to="/pricing">Pricing</StyledLink>
-        <StyledLink to="/vouchers">Vouchers</StyledLink>
-        <StyledLink to="/contact_us">Contact us</StyledLink>
+        <StyledLink onClick={toggleMenu} to="/">
+          Home
+        </StyledLink>
+        <StyledLink onClick={toggleMenu} to="/about_us">
+          About Us
+        </StyledLink>
+        <StyledLink onClick={toggleMenu} to="/services">
+          Services
+        </StyledLink>
+        <StyledLink onClick={toggleMenu} to="/pricing">
+          Pricing
+        </StyledLink>
+        <StyledLink onClick={toggleMenu} to="/gallery">
+          Gallery
+        </StyledLink>
+        <StyledLink onClick={toggleMenu} to="/vouchers">
+          Vouchers
+        </StyledLink>
+        <StyledLink onClick={toggleMenu} to="/contact_us">
+          Contact us
+        </StyledLink>
         <SocialsLink>
           <a
             href="https://m.facebook.com/Aestheticabyanna/"
