@@ -42,7 +42,7 @@ export const Services = ({ back = true }) => {
               <ServicesListItem>
                 <ServicesListVisibleContent>
                   <ServicesListItemTitle>Dermal filler</ServicesListItemTitle>
-                  <ServicesSvg>
+                  <ServicesSvg open={open === 'first'}>
                     <use href={`${svgImgs}#icon-arrow`}></use>
                   </ServicesSvg>
                 </ServicesListVisibleContent>
@@ -82,7 +82,7 @@ export const Services = ({ back = true }) => {
               <ServicesListItem>
                 <ServicesListVisibleContent>
                   <ServicesListItemTitle>Lip Filler</ServicesListItemTitle>
-                  <ServicesSvg>
+                  <ServicesSvg open={open === 'second'}>
                     <use href={`${svgImgs}#icon-arrow`}></use>
                   </ServicesSvg>
                 </ServicesListVisibleContent>
@@ -124,7 +124,7 @@ export const Services = ({ back = true }) => {
                   <ServicesListItemTitle>
                     Injectables for men
                   </ServicesListItemTitle>
-                  <ServicesSvg>
+                  <ServicesSvg open={open === 'third'}>
                     <use href={`${svgImgs}#icon-arrow`}></use>
                   </ServicesSvg>
                 </ServicesListVisibleContent>
@@ -166,7 +166,7 @@ export const Services = ({ back = true }) => {
                   <ServicesListItemTitle>
                     Anti Wrinkle & Wrinkle preventative
                   </ServicesListItemTitle>
-                  <ServicesSvg>
+                  <ServicesSvg open={open === 'fourth'}>
                     <use href={`${svgImgs}#icon-arrow`}></use>
                   </ServicesSvg>
                 </ServicesListVisibleContent>
@@ -206,7 +206,7 @@ export const Services = ({ back = true }) => {
               <ServicesListItem>
                 <ServicesListVisibleContent>
                   <ServicesListItemTitle>Medical</ServicesListItemTitle>
-                  <ServicesSvg>
+                  <ServicesSvg open={open === 'fifth'}>
                     <use href={`${svgImgs}#icon-arrow`}></use>
                   </ServicesSvg>
                 </ServicesListVisibleContent>
