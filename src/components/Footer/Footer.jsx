@@ -1,9 +1,11 @@
 import logo from "/src/assets/img/LogoFooter.png";
+import svgImgs from '/symbol-defs.svg';
 import {
   FooterSection,
   FooterContainer,
   FooterList,
   StyledLink,
+  SocialsLink
 } from './Footer.styled';
 import { Container } from '../shared/Container';
 
@@ -15,48 +17,56 @@ export const Footer = () => {
           <img src={logo} alt="logo" width={240} height={120} />
           <nav>
             <FooterList>
-              <div>
-                <li>
+              <li>
+                <div>
                   <StyledLink to="/">Home</StyledLink>
-                </li>
-                <li>
-                  <StyledLink to="/services">Services</StyledLink>
-                </li>
-                <li>
+                </div>
+                <div>
                   <StyledLink to="/about_us">About Us</StyledLink>
-                </li>
-              </div>
-              <div>
-                <li>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <StyledLink to="/services">Services</StyledLink>
+                </div>
+                <div>
                   <StyledLink to="/pricing">Pricing</StyledLink>
-                </li>
-                <li>
-                  <StyledLink to="/a">Booking</StyledLink>
-                </li>
-                <li>
-                  <StyledLink to="/a">Pre and Post Care</StyledLink>
-                </li>
-              </div>
-              <div>
-                <li>
-                  <StyledLink to="/a">Patient Portal Page</StyledLink>
-                </li>
-                <li>
-                  <StyledLink to="/a">Injectables for Men</StyledLink>
-                </li>
-                <li>
-                  <StyledLink to="/a">Gift Cards</StyledLink>
-                </li>
-              </div>
-              <div>
-                <li>
-                  <StyledLink to="/a">Contact</StyledLink>
-                </li>
-                <li>
-                  <StyledLink to="/a">Disclaimer</StyledLink>
-                </li>
-              </div>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <StyledLink to="/gallery">Gallery</StyledLink>
+                </div>
+                <div>
+                  <StyledLink to="/vouchers">Vouchers</StyledLink>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <StyledLink to="/contact_us">Contact</StyledLink>
+                </div>
+              </li>
             </FooterList>
+            <SocialsLink>
+                <a 
+                  href="https://m.facebook.com/Aestheticabyanna/"
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  <svg>
+                    <use href={`${svgImgs}#icon-facebook`}></use>
+                  </svg>
+                </a>
+                <a 
+                  href="https://www.instagram.com/aesthetica_by_anna/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <svg>
+                    <use href={`${svgImgs}#icon-instagram`}></use>
+                  </svg>
+                </a>
+              </SocialsLink>
           </nav>
         </FooterContainer>
       </Container>
