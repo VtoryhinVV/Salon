@@ -114,7 +114,6 @@ export const ServicesListHiddenContent = styled.div`
 export const ServicesTextContent = styled.div`
   display: flex;
   flex-direction: column;
-
   gap: 16px;
 `;
 
@@ -128,22 +127,20 @@ export const ServicesSvg = styled.svg`
   width: 10px;
   height: 10px;
   fill: var(--brown);
+
+  transition: rotate 0.3s ease;
+  rotate: ${props => (props.open ? '90deg' : 'none')};
 `;
 
 export const ServicesLink = styled(Link)`
   color: var(--brown);
   text-decoration: none;
   width: 105px;
-  margin: 0 auto;
 
   position: relative;
   z-index: 6;
 
   transition: color 0.3s ease;
-
-  @media screen and (min-width: 768px) {
-    margin: 0;
-  }
 
   &:hover,
   &:focus {

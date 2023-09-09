@@ -22,6 +22,21 @@ export const FooterContainer = styled.div`
     justify-content: space-between;
     gap: 0;
   }
+
+  & > nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+    }
+
+    @media screen and (min-width: 1200px) {
+      gap: 120px;
+    }
+  }
 `
 
 export const FooterList = styled.ul`
@@ -48,7 +63,7 @@ export const FooterList = styled.ul`
     width: 100%;
   }
 
-  div {
+  li {
     display: flex;
     flex-direction: column;
     gap: 24px;
@@ -67,3 +82,30 @@ export const StyledLink = styled(Link)`
     color: var(--focus);
   }
 `;
+
+export const SocialsLink = styled.div `
+  align-items: center;
+  display: flex;
+  gap: 16px;
+  
+  & > a {
+    width: 32px;
+    height: 32px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  & a > svg {
+    width: 24px;
+    height: 24px;
+    fill: #9c7f47;
+
+    transition: all 0.3s ease;
+  }
+
+  & a > svg:hover,
+  & a > svg:focus {
+    fill: var(--focus);
+  }
+`
