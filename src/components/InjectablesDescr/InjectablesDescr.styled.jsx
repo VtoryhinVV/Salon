@@ -1,8 +1,8 @@
 import styled from '@emotion/styled';
-import ImgLeft from '../../assets/img/medicalComf1.jpg';
-import ImgLeftMob from '../../assets/img/medicalComf1mob.jpg';
-import ImgRight from '../../assets/img/medicalComf2.jpg';
-import ImgRightMob from '../../assets/img/medicalComf2mob.jpg';
+import ImgLeft from '../../assets/img/ExampleInjection1.jpg';
+import ImgLeftMob from '../../assets/img/ExampleInjection1mob.jpg';
+import ImgRight from '../../assets/img/ExampleInjection2.jpg';
+import ImgRightMob from '../../assets/img/ExampleInjection2mob.jpg';
 
 export const ImgLeftBox = styled.div`
   background: url(${ImgLeftMob}), lightgray 50% / cover no-repeat;
@@ -27,7 +27,7 @@ export const ImgRightBox = styled.div`
   }
 `;
 
-export const MedicaSection = styled.section`
+export const InjectablesSection = styled.section`
   padding: 120px 0;
 
   & > div {
@@ -35,21 +35,22 @@ export const MedicaSection = styled.section`
     flex-direction: column;
     gap: 60px;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 1200px) {
       flex-direction: row;
     }
   }
 `;
 
-export const MedicaTextBox = styled.div`
+export const InjectablesTextBox = styled.div`
   max-width: 558px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 24px;
+  margin: 0 auto;
 `;
 
-export const MedicaTitle = styled.h2`
+export const InjectablesTitle = styled.h2`
   text-align: center;
   font-family: Prata;
   font-size: 34px;
@@ -67,7 +68,7 @@ export const MedicaTitle = styled.h2`
   }
 `;
 
-export const MedicaText = styled.p`
+export const InjectablesText = styled.p`
   margin: 0;
   text-align: center;
   @media screen and (min-width: 1200px) {
@@ -76,34 +77,9 @@ export const MedicaText = styled.p`
 `;
 
 export const AppoinmentBtn = styled.a`
-  display: none;
-  @media screen and (min-width: 768px) {
-    display: block;
-    padding: 12px 24px;
-    margin: 0 auto;
-    text-decoration: none;
-    width: 176px;
-    text-align: center;
-    cursor: pointer;
-    background-color: var(--brown);
-    color: white;
-    text-transform: uppercase;
-    transition: background-color 0.3s ease;
-
-    &:hover,
-    &:focus {
-      background-color: var(--focus);
-    }
-  }
-
-  @media screen and (min-width: 1200px) {
-    margin: 0;
-  }
-`;
-
-export const AppoinmentBtnMob = styled.a`
-  margin: 0 auto;
+  display: block;
   padding: 12px 24px;
+  margin: 0 auto;
   text-decoration: none;
   width: 176px;
   text-align: center;
@@ -117,11 +93,13 @@ export const AppoinmentBtnMob = styled.a`
   &:focus {
     background-color: var(--focus);
   }
-  @media screen and (min-width: 768px) {
-    display: none;
+
+  @media screen and (min-width: 1200px) {
+    margin: 0;
   }
 `;
-export const MedicaPictBox = styled.div`
+
+export const InjectablesPictBox = styled.div`
   display: flex;
   align-items: end;
   gap: 16px;

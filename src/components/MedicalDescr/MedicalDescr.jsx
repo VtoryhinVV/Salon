@@ -8,6 +8,8 @@ import {
   MedicaPictBox,
   ImgLeftBox,
   ImgRightBox,
+  AppoinmentBtn,
+  AppoinmentBtnMob,
 } from './MedicalDescr.styled';
 
 export const MedicalDescr = () => {
@@ -24,11 +26,25 @@ export const MedicalDescr = () => {
             Discover how our specialized Botox treatments can make a meaningful
             difference.
           </MedicaText>
+          <AppoinmentBtn
+            href="https://bookings.gettimely.com/aesthetica7/book"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Book appoinment
+          </AppoinmentBtn>
         </MedicaTextBox>
         <MedicaPictBox>
           <ImgLeftBox></ImgLeftBox>
           <ImgRightBox></ImgRightBox>
         </MedicaPictBox>
+        <AppoinmentBtnMob
+          href="https://bookings.gettimely.com/aesthetica7/book"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Book appoinment
+        </AppoinmentBtnMob>
       </Container>
     </MedicaSection>
   );

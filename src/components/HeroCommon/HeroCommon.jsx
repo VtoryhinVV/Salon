@@ -6,7 +6,12 @@ import {
 } from './HeroCommon.styled';
 import { Container } from '../shared/Container';
 
-export const HeroCommon = ({ title, text, buttonText, service = false }) => {
+export const HeroCommon = ({
+  title,
+  text,
+  buttonText = 'Book appoinment',
+  service = false,
+}) => {
   return (
     <HeroSection services={service}>
       <Container>

@@ -12,7 +12,7 @@ export const HeroSection = styled.section`
   }
   & > div {
     text-align: ${props => (props.services ? 'start' : 'center')};
-    align-items: center;
+    align-items: ${props => (props.services ? 'flex-start' : 'center')};
 
     display: flex;
     flex-direction: column;
