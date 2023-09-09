@@ -2,7 +2,7 @@ import styled from '@emotion/styled';
 
 export const GalleryBox = styled.div`
   & .alice-carousel {
-    width: 425px;
+    width: 415px;
   }
   & .alice-carousel__prev-btn,
   & .alice-carousel__next-btn {
