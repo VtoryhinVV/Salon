@@ -111,7 +111,7 @@ export const ServicesListHiddenContent = styled.div`
   display: ${props => (props.open ? 'flex' : 'none')};
 `;
 
-export const ServicesTextContent = styled.div`
+export const ServicesTextContent = styled.p`
   display: flex;
   flex-direction: column;
   gap: 16px;

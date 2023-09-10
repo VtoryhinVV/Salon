@@ -43,7 +43,7 @@ export const FooterList = styled.ul`
   list-style-type: none;
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 24px;
 
   width: 100%;
   margin: 0;
