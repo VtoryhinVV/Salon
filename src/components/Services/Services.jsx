@@ -55,22 +55,22 @@ export const Services = ({ back = true }) => {
                 >
                   <ServicesListHiddenContent open={open === 'first'}>
                     <ServicesTextContent>
-                      <p>
+                      <span>
                         Dermal filler - used to sculpt, enhance, replenish and
                         shape the face.
-                      </p>
-                      <p>
+                      </span>
+                      <span>
                         Dermal fillers are commonly used to smooth out wrinkles,
                         add volume to areas of the face, enhance and contour
                         facial features.
-                      </p>
-                      <p>
+                      </span>
+                      <span>
                         These gel-like substances, made from hyaluronan, which
                         is a complex chain of carbohydrates, are naturally found
                         in our bodies. Hyaluronan, or hyaluronic acid, is
                         responsible for maintaining the hydration, plumpness,
                         and youthful look of our skin.
-                      </p>
+                      </span>
                     </ServicesTextContent>
                     <ServicesLink to="/services/dermal_filler">
                       READ MORE
@@ -95,22 +95,9 @@ export const Services = ({ back = true }) => {
                 >
                   <ServicesListHiddenContent open={open === 'second'}>
                     <ServicesTextContent>
-                      <p>
-                        Dermal filler - used to sculpt, enhance, replenish and
-                        shape the face.
-                      </p>
-                      <p>
-                        Dermal fillers are commonly used to smooth out wrinkles,
-                        add volume to areas of the face, enhance and contour
-                        facial features.
-                      </p>
-                      <p>
-                        These gel-like substances, made from hyaluronan, which
-                        is a complex chain of carbohydrates, are naturally found
-                        in our bodies. Hyaluronan, or hyaluronic acid, is
-                        responsible for maintaining the hydration, plumpness,
-                        and youthful look of our skin.
-                      </p>
+                      <span>
+                        At Aesthetica clinic, we offer top-quality injectable services to help you achieve the perfect pout. Lip filler is a highly sought-after cosmetic procedure globally, and for good reason.
+                      </span>
                     </ServicesTextContent>
                     <ServicesLink to="/services/lip_filler">
                       READ MORE
@@ -137,22 +124,9 @@ export const Services = ({ back = true }) => {
                 >
                   <ServicesListHiddenContent open={open === 'third'}>
                     <ServicesTextContent>
-                      <p>
-                        Dermal filler - used to sculpt, enhance, replenish and
-                        shape the face.
-                      </p>
-                      <p>
-                        Dermal fillers are commonly used to smooth out wrinkles,
-                        add volume to areas of the face, enhance and contour
-                        facial features.
-                      </p>
-                      <p>
-                        These gel-like substances, made from hyaluronan, which
-                        is a complex chain of carbohydrates, are naturally found
-                        in our bodies. Hyaluronan, or hyaluronic acid, is
-                        responsible for maintaining the hydration, plumpness,
-                        and youthful look of our skin.
-                      </p>
+                      <span>
+                      At Aesthetica clinic, we have an increasing amount of male clients wanting to look and feel their best. Our experienced team is trained in providing subtle and natural-looking results, ensuring that you still look like yourself, just more youthful and with less noticeable lines and wrinkles.
+                      </span>
                     </ServicesTextContent>
                     <ServicesLink to="/services/injectables_for_men">
                       READ MORE
@@ -179,22 +153,9 @@ export const Services = ({ back = true }) => {
                 >
                   <ServicesListHiddenContent open={open === 'fourth'}>
                     <ServicesTextContent>
-                      <p>
-                        Dermal filler - used to sculpt, enhance, replenish and
-                        shape the face.
-                      </p>
-                      <p>
-                        Dermal fillers are commonly used to smooth out wrinkles,
-                        add volume to areas of the face, enhance and contour
-                        facial features.
-                      </p>
-                      <p>
-                        These gel-like substances, made from hyaluronan, which
-                        is a complex chain of carbohydrates, are naturally found
-                        in our bodies. Hyaluronan, or hyaluronic acid, is
-                        responsible for maintaining the hydration, plumpness,
-                        and youthful look of our skin.
-                      </p>
+                      <span>
+                        Botox® and Dysport® are FDA-approved neuromodulators that are specially designed to target and minimize the appearance of wrinkles and fine lines. These treatments involve the injection of a purified protein into specific facial muscles, temporarily relaxing them and reducing the appearance of wrinkles caused by repetitive facial expressions.
+                      </span>
                     </ServicesTextContent>
                     <ServicesLink to="/services/anti_wrinkle">
                       READ MORE
@@ -219,22 +180,9 @@ export const Services = ({ back = true }) => {
                 >
                   <ServicesListHiddenContent open={open === 'fifth'}>
                     <ServicesTextContent>
-                      <p>
-                        Dermal filler - used to sculpt, enhance, replenish and
-                        shape the face.
-                      </p>
-                      <p>
-                        Dermal fillers are commonly used to smooth out wrinkles,
-                        add volume to areas of the face, enhance and contour
-                        facial features.
-                      </p>
-                      <p>
-                        These gel-like substances, made from hyaluronan, which
-                        is a complex chain of carbohydrates, are naturally found
-                        in our bodies. Hyaluronan, or hyaluronic acid, is
-                        responsible for maintaining the hydration, plumpness,
-                        and youthful look of our skin.
-                      </p>
+                      <span>
+                        Botulinium Toxi A - Botox/Dysport is not only known for its remarkable anti-wrinkle effects but is also widely used for the treatment of various medical conditions. Our experienced team is dedicated to providing safe and effective Botox solutions, including treatments for hyperhidrosis, teeth grinding, and headaches.
+                      </span>
                     </ServicesTextContent>
                     <ServicesLink to="/services/medical">
                       READ MORE
