@@ -69,14 +69,8 @@ export const OurStoryTextContainer = styled.div `
     gap: 16px;
 `
 
-export const OurStoryImg = styled.img `
-    width: 300px;
-
-    @media screen and (min-width: 400px) {
-        width: 380px;
-    }
-
-    @media screen and (min-width: 1200px) {
-        width: auto
-    }
+export const OurStoryImgContainer = styled.div `
+    display: flex;
+    align-items: flex-end;
+    gap: 30px;
 `
