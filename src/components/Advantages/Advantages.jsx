@@ -17,7 +17,7 @@ export const Advantages = () => {
         <AdvantagesList>
           <AdvantagesListItem>
             <svg>
-              <use href={`${svgImgs}#icon-chevron-left`}></use>
+              <use href={`${svgImgs}#icon-hand-thumb-up`}></use>
             </svg>
             <h3>Excellence</h3>
             <p>
