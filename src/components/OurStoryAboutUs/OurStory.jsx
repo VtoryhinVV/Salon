@@ -1,14 +1,17 @@
+// import useMediaQuery from '@mui/material/useMediaQuery';
 import { Container } from "../shared/Container";
 import {OurStorySection, 
         OurStoryInfoContainer, 
         OurStoryTextContainer,
-        OurStoryImg,
+        OurStoryImgContainer,
     } from "./OurStory.styled";
 
-import VideoManeken from '/src/assets/img/VideoManeken.jpg'
-import VideoManekenMob from '/src/assets/img/VideoManekenMob.jpg'
+import Logo from '/src/assets/img/OurStoryLogo.jpg'
+import Video from '/src/assets/video/Injection.mp4'
 
 export const OurStory = () => {
+    // const isDesctop = useMediaQuery({minWidth: 1200})
+
     return <OurStorySection>
         <Container>
             <OurStoryInfoContainer>
@@ -31,12 +34,12 @@ export const OurStory = () => {
                     BOOK APPOINMENT
                 </a>
             </OurStoryInfoContainer>
-            <div className="video">
-                <picture>
-                    <source srcSet={VideoManeken} media="(min-width: 1200px)" />
-                    <OurStoryImg src={VideoManekenMob} alt="" />
-                </picture>    
-            </div>
+            <OurStoryImgContainer>
+                <video src={Video} width="324" height="615" controls />
+                {/* (isDesctop ? ( */}
+                    <img src={Logo} alt="logo" />
+                {/* )) */}
+            </OurStoryImgContainer>
         </Container>
     </OurStorySection>
 }
