@@ -4,16 +4,17 @@ import bgHero from '/img/bg.jpg';
 export const HeroSection = styled.section`
   background-image: url(${bgHero});
   padding: 120px 0;
-
+  text-align: center;
+  align-items: ${props => (props.services ? 'flex-start' : 'center')};
+  @media screen and (min-width: 768px) {
+    text-align: ${props => (props.services ? 'start' : 'center')};
+  }
   h1,
   p,
   button {
     margin: 0;
   }
   & > div {
-    text-align: ${props => (props.services ? 'start' : 'center')};
-    align-items: ${props => (props.services ? 'flex-start' : 'center')};
-
     display: flex;
     flex-direction: column;
     gap: 24px;

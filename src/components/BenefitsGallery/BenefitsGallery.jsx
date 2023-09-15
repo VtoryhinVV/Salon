@@ -1,20 +1,22 @@
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
 
-import { GalleryBox, Btn, TwoInOn } from './GalleryComponent.styled';
+import { GalleryBox, Btn, Bc } from './BenefitsGallery.styled';
 
 import svgImgs from '/symbol-defs.svg';
+import { BenefitsComponent } from '../BenefitsComponent/BenefitsComponent';
 
-export const GalleryComponent = ({ gallary }) => {
-  const { img1, img2, img3, img4 } = gallary;
-
+export const BenefitsGallery = ({ infos }) => {
   const items = [
-    <img data-value="1" src={img1} key={1} />,
-    <TwoInOn key={2}>
-      <img data-value="2" src={img2} />
-      <img data-value="3" src={img3} />
-    </TwoInOn>,
-    <img data-value="4" src={img4} key={4} />,
+    ...infos.map((info, index) => (
+      <Bc key={index}>
+        <BenefitsComponent
+          svgName={info.svgName}
+          title={info.title}
+          descr={info.descr}
+        />
+      </Bc>
+    )),
   ];
 
   const renderPrevButton = () => {

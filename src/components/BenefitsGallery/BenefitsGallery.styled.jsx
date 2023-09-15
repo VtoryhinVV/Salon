@@ -1,6 +1,7 @@
 import styled from '@emotion/styled';
 
 export const GalleryBox = styled.div`
+  margin-bottom: 24px;
   & .alice-carousel {
     width: 250px;
   }
@@ -41,11 +42,8 @@ export const GalleryBox = styled.div`
     }
   }
 `;
-export const TwoInOn = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-  width: 416px;
+export const Bc = styled.div`
+  padding: 40px 15px 25px;
 `;
 export const Btn = styled.div`
   background: none;

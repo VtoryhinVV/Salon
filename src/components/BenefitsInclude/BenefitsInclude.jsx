@@ -1,0 +1,73 @@
+import { BenefitsComponent } from '../BenefitsComponent/BenefitsComponent';
+import { BenefitsGallery } from '../BenefitsGallery/BenefitsGallery';
+import { Container } from '../shared/Container';
+import { useMediaQuery } from 'react-responsive';
+import {
+  AppoinmentBtn,
+  BenefitsList,
+  BenefitsTitle,
+  BenefitsSection,
+} from './BenefitsInclude.styled';
+
+export const BenefitsInclude = () => {
+  const isMobile = useMediaQuery({ maxWidth: 768 });
+  const BenefitsInfo = [
+    {
+      svgName: 'icon-hand-thumb-up',
+      title: 'Lip Enhancement',
+      descr:
+        'Our lip filler treatments are designed to enhance your lips in various ways. Whether you\'re looking to increase volume, enhance the "cupid\'s bow," improve hydration, correct asymmetries, enhance lip borders, lift the corners, improve texture, or soften upper lip lines, our expert team is here to help you achieve your desired results.',
+    },
+    {
+      svgName: 'icon-lock-closed',
+      title: 'Top-quality filler',
+      descr:
+        'The dermal fillers are made of hyaluronic acid, a naturally occurring substance found in our skin that is responsible for hydration and volume. We take pride in only using top-quality filler brands that are known for their safety and efficacy.',
+    },
+    {
+      svgName: 'icon-trophy',
+      title: 'Consultation',
+      descr:
+        'To ensure the best outcome for your lip filler treatment, we start with a thorough consultation. During this consultation, we will discuss your unique lip filler goals and examine your current lip shape. This allows us to determine the best technique and product suitable for you. Our experienced professionals will guide you through the entire process, answering any questions you may have and ensuring your comfort and satisfaction.',
+    },
+    {
+      svgName: 'icon-square-stack',
+      title: 'Qualified team',
+      descr:
+        'At Aesthetica, we prioritize your safety and strive to provide you with exceptional results. Our team of skilled practitioners has extensive experience in lip filler treatments, and we stay up-to-date with the latest advancements in the field to offer you the best possible outcomes.',
+    },
+  ];
+
+  return (
+    <BenefitsSection>
+      <Container>
+        <BenefitsTitle>Benefits include</BenefitsTitle>
+
+        {isMobile ? (
+          // Версия для мобильных устройств с галереей
+          <BenefitsGallery infos={BenefitsInfo} />
+        ) : (
+          // Версия для компьютеров с 6 статичными картинками
+          <BenefitsList>
+            {BenefitsInfo.map((info, index) => (
+              <BenefitsComponent
+                key={index}
+                svgName={info.svgName}
+                title={info.title}
+                descr={info.descr}
+              />
+            ))}
+          </BenefitsList>
+        )}
+
+        <AppoinmentBtn
+          href="https://bookings.gettimely.com/aesthetica7/book"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Book appoinment
+        </AppoinmentBtn>
+      </Container>
+    </BenefitsSection>
+  );
+};

@@ -3,7 +3,7 @@ import { MedicalDescr } from '../../components/MedicalDescr/MedicalDescr';
 import { MedicalGift } from '../../components/MedicalGift/MedicalGift';
 import { MedicalProcedures } from '../../components/MedicalProcedures/MedicalProcedures';
 
-const Medical = () => {
+export const Medical = () => {
   return (
     <main>
       <HeroCommon
@@ -17,5 +17,3 @@ const Medical = () => {
     </main>
   );
 };
-
-export default Medical;

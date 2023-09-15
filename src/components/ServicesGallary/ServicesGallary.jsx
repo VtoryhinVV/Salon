@@ -9,14 +9,8 @@ import {
   AppoinmentBtn,
   ToGallery,
 } from './ServicesGallary.styled';
-import photo1 from '/src/assets/img/InjectablesGl1.jpg';
-import photo2 from '/src/assets/img/InjectablesGl2.jpg';
-import photo3 from '/src/assets/img/InjectablesGl3.jpg';
-import photo4 from '/src/assets/img/InjectablesGl4.jpg';
 
-export const ServicesGallary = () => {
-  const imgGallary = { img1: photo1, img2: photo2, img3: photo3, img4: photo4 };
-
+export const ServicesGallary = ({ imgGallery }) => {
   const isMobile = useMediaQuery({ maxWidth: 1200 });
   return (
     <ServicesGallarySection>
@@ -24,10 +18,10 @@ export const ServicesGallary = () => {
         <ServicesGallaryTitle>Before and After</ServicesGallaryTitle>
         {isMobile ? (
           // Версия для мобильных устройств с галереей
-          <GalleryComponent gallary={imgGallary} />
+          <GalleryComponent gallary={imgGallery} />
         ) : (
           // Версия для компьютеров с 6 статичными картинками
-          <StaticImagesComponent gallary={imgGallary} />
+          <StaticImagesComponent gallary={imgGallery} />
         )}
         <BtnGroup>
           <AppoinmentBtn

@@ -9,13 +9,17 @@ export const ServicesGallaryTitle = styled.h2`
   margin: 0 0 40px;
 
   font-family: Prata;
-  font-size: 48px;
+  font-size: 34px;
 
   font-weight: 400;
   line-height: normal;
   letter-spacing: 0.96px;
   text-transform: capitalize;
   text-align: center;
+
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+  }
 `;
 
 export const BtnGroup = styled.div`
