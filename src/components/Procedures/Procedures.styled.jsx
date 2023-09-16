@@ -1,9 +1,10 @@
 import styled from '@emotion/styled';
 import bg from '../../assets/img/bgServMedProc.jpg';
 
-export const MedicalProceduresSect = styled.section`
+export const ProceduresSect = styled.section`
   padding: 120px 0;
-  background: url(${bg}) no-repeat;
+  background-image: ${props => (props.imgBg ? `url(${bg})` : 'none')};
+  background-repeat: no-repeat;
   background-size: cover;
 `;
 

@@ -1,8 +1,11 @@
 import styled from '@emotion/styled';
 import { NavLink } from 'react-router-dom';
 
+import imgBg from '/src/assets/img/bgServGallery.jpg';
+
 export const ServicesGallarySection = styled.section`
   padding: 120px 0;
+  background: ${props => (props.bgImg ? `url(${imgBg})` : 'none')};
 `;
 
 export const ServicesGallaryTitle = styled.h2`
@@ -25,12 +28,15 @@ export const ServicesGallaryTitle = styled.h2`
 export const BtnGroup = styled.div`
   display: flex;
   gap: 24px;
-  margin-top: 40px;
+  margin-top: 24px;
   align-items: center;
   flex-direction: column;
   @media screen and (min-width: 768px) {
     justify-content: center;
     flex-direction: row;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-top: 40px;
   }
 `;
 

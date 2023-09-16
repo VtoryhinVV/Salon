@@ -10,7 +10,6 @@ export const GalleryBox = styled.div`
     width: 50px;
     height: 50px;
     padding: 0;
-    margin-top: 24px;
     transform: translate(-100%);
     cursor: pointer;
   }

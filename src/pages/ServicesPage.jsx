@@ -7,7 +7,7 @@ const ServicesPage = () => {
     <main>
       <HeroCommon
         title="Treatments & Services"
-        text="Indulge in our luxurious beauty services"
+        texts="Indulge in our luxurious beauty services"
         buttonText="Book appoinment"
       />
 

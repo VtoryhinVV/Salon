@@ -10,10 +10,10 @@ import {
   ToGallery,
 } from './ServicesGallary.styled';
 
-export const ServicesGallary = ({ imgGallery }) => {
+export const ServicesGallary = ({ imgGallery, bg = false }) => {
   const isMobile = useMediaQuery({ maxWidth: 1200 });
   return (
-    <ServicesGallarySection>
+    <ServicesGallarySection bgImg={bg}>
       <Container>
         <ServicesGallaryTitle>Before and After</ServicesGallaryTitle>
         {isMobile ? (

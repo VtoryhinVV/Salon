@@ -23,11 +23,15 @@ export const BenefitsList = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 80px 24px;
-
+  justify-content: center;
   margin-bottom: 40px;
 
   & div {
     width: calc(50% - 12px);
+    @media screen and (min-width: 1200px) {
+      width: ${props =>
+        props.widthItem ? 'calc(33.33% - 24px)' : 'calc(50% - 12px)'};
+    }
   }
 `;
 

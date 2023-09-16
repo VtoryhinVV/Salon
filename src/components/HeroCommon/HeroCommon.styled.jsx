@@ -4,17 +4,20 @@ import bgHero from '/img/bg.jpg';
 export const HeroSection = styled.section`
   background-image: url(${bgHero});
   padding: 120px 0;
-  text-align: center;
-  align-items: ${props => (props.services ? 'flex-start' : 'center')};
-  @media screen and (min-width: 768px) {
-    text-align: ${props => (props.services ? 'start' : 'center')};
-  }
+
   h1,
   p,
   button {
     margin: 0;
   }
   & > div {
+    text-align: center;
+    align-items: center;
+    @media screen and (min-width: 1200px) {
+      align-items: ${props => (props.services ? 'flex-start' : 'center')};
+      text-align: ${props => (props.services ? 'start' : 'center')};
+    }
+
     display: flex;
     flex-direction: column;
     gap: 24px;
@@ -33,9 +36,11 @@ export const HeroTitle = styled.h1`
   }
 `;
 
-export const HeroText = styled.p`
+export const HeroText = styled.div`
   font-weight: 400;
-
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
   @media screen and (min-width: 768px) {
     font-weight: ${props => (props.services ? '400' : '700')};
   }
