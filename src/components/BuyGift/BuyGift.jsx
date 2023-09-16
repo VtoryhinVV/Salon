@@ -28,8 +28,7 @@ export const BuyGift = ({ back = false }) => {
         </BuyGiftImgContainer>
         <BuyGiftTextContainer>
           <BuyGiftTitle>
-            <span>Spread The Love With</span>
-            <span>Aesthetica Clinic Gift Vouchers</span>
+            Spread The Love With Aesthetica Clinic Gift Vouchers
           </BuyGiftTitle>
           <p>Treat your loved one with a perfect gift for any occasion.</p>
           <BuyGiftButton

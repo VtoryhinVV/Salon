@@ -7,8 +7,10 @@ export const ReviewsSection = styled.section`
   background-position: center;
   width: 100%;
 
-  padding: 120px 0;
-
+  padding: 120px 0 100px;
+  & .tutorial_link {
+    display: none !important;
+  }
   & .sk-below-button-container {
     padding: 0 !important;
   }
@@ -42,6 +44,7 @@ export const ReviewsTitle = styled.h2`
   font-weight: 400;
   letter-spacing: 0.96px;
   text-transform: capitalize;
+  margin: 0 0 40px;
 
   text-align: center;
   @media screen and (min-width: 768px) {

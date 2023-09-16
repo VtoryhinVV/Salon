@@ -29,7 +29,9 @@ export const BuyGiftSection = styled.section`
 
 export const BuyGiftImgContainer = styled.div`
   display: none;
-
+  & picture {
+    display: flex;
+  }
   @media screen and (min-width: 350px) {
     display: flex;
     align-items: flex-end;
