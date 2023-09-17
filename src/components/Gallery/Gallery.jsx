@@ -8,7 +8,7 @@ export const GalleryComp = () => {
     <GalleryCompSect>
       <Container>
         <h2>Gallery</h2>
-        <Gallery photos={photos} direction={'column'} columns={'4'} />
+        <Gallery photos={photos} direction={'column'} columns={4} margin={3} />
       </Container>
     </GalleryCompSect>
   );
