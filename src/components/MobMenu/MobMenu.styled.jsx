@@ -4,6 +4,8 @@ import { NavLink } from 'react-router-dom';
 export const MobMenuBlock = styled.div`
   display: ${props => (props.open ? 'block' : 'none')};
   background-color: var(--white);
+  border: 1px solid var(--brown-light);
+
   padding: 24px 0 40px;
   position: absolute;
   top: 76px;
