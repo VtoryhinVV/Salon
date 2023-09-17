@@ -2,6 +2,7 @@ import { HeroCommon } from '../components/HeroCommon/HeroCommon';
 import { OurStory } from '../components/OurStoryAboutUs/OurStory';
 import { OurTeam } from '../components/OurTeam/OurTeam';
 import { Advantages } from '../components/Advantages/Advantages';
+import { Instagram } from '../components/Instagram/Instagram';
 
 const AboutUs = () => {
   return (
@@ -14,6 +15,7 @@ const AboutUs = () => {
       <OurStory />
       <OurTeam />
       <Advantages />
+      <Instagram imgBg />
     </main>
   );
 };

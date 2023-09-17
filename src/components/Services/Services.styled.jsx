@@ -13,7 +13,9 @@ export const ServicesSection = styled.section`
     margin: 0;
   }
   background-image: ${props => (props.bg ? `url(${bgServices})` : 'none')};
-
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   & > div {
     display: flex;
     flex-direction: column;

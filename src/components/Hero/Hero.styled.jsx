@@ -1,10 +1,8 @@
 import styled from '@emotion/styled';
 import bgHero from '/img/bg.jpg';
 import mobBgHero from '/img/mob/bghero.jpg';
-import { NavLink } from 'react-router-dom';
 
 export const HeroSection = styled.section`
-  /* background: url(${mobBgHero}) center cover no-repeat; */
   background-image: url(${mobBgHero});
   background-size: cover;
   background-position: center;

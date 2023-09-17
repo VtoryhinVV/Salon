@@ -13,7 +13,7 @@ export const LipFiller = () => {
 
   const benefitsInfo = [
     {
-      svgName: 'icon-hand-thumb-up',
+      svgName: 'icon-lips',
       title: 'Lip Enhancement',
       descr:
         'Our lip filler treatments are designed to enhance your lips in various ways. Whether you\'re looking to increase volume, enhance the "cupid\'s bow," improve hydration, correct asymmetries, enhance lip borders, lift the corners, improve texture, or soften upper lip lines, our expert team is here to help you achieve your desired results.',

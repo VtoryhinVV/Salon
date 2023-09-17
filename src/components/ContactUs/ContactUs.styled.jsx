@@ -6,6 +6,9 @@ export const ContactUsSection = styled.section`
   padding: 120px 0;
 
   background-image: ${props => (props.bg ? `url(${bgImg})` : 'none')};
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   & > div {
     display: flex;
     flex-direction: column;

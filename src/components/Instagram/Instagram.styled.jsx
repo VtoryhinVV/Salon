@@ -1,8 +1,12 @@
 import styled from '@emotion/styled';
+import bgImg from '/src/assets/img/bgInst.jpg';
 
 export const InstagramSection = styled.section`
   padding: 100px 0;
-
+  background-image: ${props => (props.bg ? `url(${bgImg})` : 'none')};
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   @media screen and (min-width: 768px) {
     padding: 120px 0;
   }

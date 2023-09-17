@@ -3,6 +3,9 @@ import bgHero from '/img/bg.jpg';
 
 export const HeroSection = styled.section`
   background-image: url(${bgHero});
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   padding: 120px 0;
 
   h1,

@@ -5,6 +5,7 @@ export const ProceduresSect = styled.section`
   padding: 120px 0;
   background-image: ${props => (props.imgBg ? `url(${bg})` : 'none')};
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
 `;
 

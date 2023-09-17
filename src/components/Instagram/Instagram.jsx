@@ -8,9 +8,9 @@ import {
 } from './Instagram.styled';
 import { SocialWidget } from './SocialWidget';
 
-export function Instagram() {
+export function Instagram({ imgBg = false }) {
   return (
-    <InstagramSection>
+    <InstagramSection bg={imgBg}>
       <Container>
         <InstagramTitle>our instagram</InstagramTitle>
         <SocialWidget />
