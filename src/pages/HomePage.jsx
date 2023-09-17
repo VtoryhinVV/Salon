@@ -10,7 +10,7 @@ import { Instagram } from '../components/Instagram/Instagram';
 
 function HomePage() {
   return (
-    <>
+    <main>
       <Hero />
       <OurStory />
       <WhyUs />
@@ -19,7 +19,7 @@ function HomePage() {
       <Reviews />
       <Instagram />
       <ContactUs />
-    </>
+    </main>
   );
 }
 
