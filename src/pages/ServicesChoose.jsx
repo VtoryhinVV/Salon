@@ -7,13 +7,21 @@ import { DermalFiller } from './Services/DermalFiller';
 
 export const ServicesChoose = () => {
   const { servicesChoose } = useParams();
-  return (
-    <main>
-      {servicesChoose === 'dermal_filler' && <DermalFiller />}
-      {servicesChoose === 'lip_filler' && <LipFiller />}
-      {servicesChoose === 'injectables_for_men' && <InjectablesForMen />}
-      {servicesChoose === 'medical' && <Medical />}
-      {servicesChoose === 'anti_wrinkle' && <AntiWrinkle />}
-    </main>
-  );
+  const choose = sect => {
+    switch (sect) {
+      case 'dermal_filler':
+        return <DermalFiller />;
+      case 'lip_filler':
+        return <LipFiller />;
+      case 'injectables_for_men':
+        return <InjectablesForMen />;
+      case 'medical':
+        return <Medical />;
+      case 'anti_wrinkle':
+        return <AntiWrinkle />;
+      default:
+        return <></>;
+    }
+  };
+  return <main>{choose(servicesChoose)}</main>;
 };

@@ -19,10 +19,8 @@ export const BenefitsInclude = ({ benefits, three = false, gift = false }) => {
           {gift ? 'Why choose Our Gift vouchers' : 'Benefits include'}
         </BenefitsTitle>
         {isMobile ? (
-          // Версия для мобильных устройств с галереей
           <BenefitsGallery infos={benefits} />
         ) : (
-          // Версия для компьютеров с 6 статичными картинками
           <BenefitsList widthItem={three}>
             {benefits.map((info, index) => (
               <BenefitsComponent

@@ -9,6 +9,7 @@ import ContactUsPage from './pages/ContactUsPage';
 import ServicesPage from './pages/ServicesPage';
 import GalleryPage from './pages/GalleryPage';
 import { Voucher } from './pages/Voucher';
+import { PricingPage } from './pages/PricingPage';
 
 const HomePage = lazy(() => import('./pages/HomePage'));
 const AboutUs = lazy(() => import('./pages/AboutUs'));
@@ -26,7 +27,7 @@ function App() {
             path="/services/:servicesChoose"
             element={<ServicesChoose />}
           />
-          <Route path="/pricing" element={<p>pricing</p>} />
+          <Route path="/pricing" element={<PricingPage />} />
           <Route path="/gallery" element={<GalleryPage />} />
           <Route path="/vouchers" element={<Voucher />} />
           <Route path="/contact_us" element={<ContactUsPage />} />
