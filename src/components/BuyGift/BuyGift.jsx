@@ -18,12 +18,24 @@ export const BuyGift = ({ back = false }) => {
       <Container>
         <BuyGiftImgContainer>
           <picture>
-            <source srcSet={BuyGift1} media="(min-width: 1200px)" />
-            <img src={BuyGiftMob1} />
+            <source
+              srcSet={BuyGift1}
+              media="(min-width: 1200px)"
+              width="328"
+              height="474"
+              alt=""
+            />
+            <img src={BuyGiftMob1} width="182" height="264" alt="" />
           </picture>
           <picture>
-            <source srcSet={BuyGift2} media="(min-width: 1200px)" />
-            <img src={BuyGiftMob2} />
+            <source
+              srcSet={BuyGift2}
+              media="(min-width: 1200px)"
+              width="328"
+              height="524"
+              alt=""
+            />
+            <img src={BuyGiftMob2} width="182" height="291" alt="" />
           </picture>
         </BuyGiftImgContainer>
         <BuyGiftTextContainer>

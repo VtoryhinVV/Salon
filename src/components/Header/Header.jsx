@@ -57,7 +57,7 @@ export const Header = () => {
                 <use href={`${svgImgs}#icon-instagram`}></use>
               </svg>
             </a>
-            <Burger onClick={toggleMobMenu}>
+            <Burger type="button" onClick={toggleMobMenu}>
               <svg>
                 <use href={`${svgImgs}#icon-burger`}></use>
               </svg>

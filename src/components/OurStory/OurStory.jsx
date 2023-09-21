@@ -34,12 +34,18 @@ export function OurStory() {
           <OurStiryLink>
             <LinkTo to="/about_us">Read more</LinkTo>
             <SocLinks>
-              <SocLink href="https://www.instagram.com/aesthetica_by_anna/" target="_blank" >
+              <SocLink
+                href="https://www.instagram.com/aesthetica_by_anna/"
+                target="_blank"
+              >
                 <svg>
                   <use href={`${svgImgs}#icon-instagram`}></use>
                 </svg>
               </SocLink>
-              <SocLink href="https://m.facebook.com/Aestheticabyanna/" target="_blank" >
+              <SocLink
+                href="https://m.facebook.com/Aestheticabyanna/"
+                target="_blank"
+              >
                 <svg>
                   <use href={`${svgImgs}#icon-facebook`}></use>
                 </svg>
@@ -49,16 +55,34 @@ export function OurStory() {
         </OurStoryContent>
         <OurStoryImg>
           <picture>
-            <source srcSet={Rectangle557} media="(min-width: 1200px)" />
-            <img src={MobRectangle557} />
+            <source
+              srcSet={Rectangle557}
+              media="(min-width: 1200px)"
+              width="250"
+              height="474"
+              alt=""
+            />
+            <img src={MobRectangle557} width="116" height="224" alt="" />
           </picture>
           <picture>
-            <source srcSet={Rectangle558} media="(min-width: 1200px)" />
-            <img src={MobRectangle558} />
+            <source
+              srcSet={Rectangle558}
+              media="(min-width: 1200px)"
+              width="250"
+              height="524"
+              alt=""
+            />
+            <img src={MobRectangle558} width="116" height="247" alt="" />
           </picture>
           <picture>
-            <source srcSet={Rectangle559} media="(min-width: 1200px)" />
-            <img src={MobRectangle559} />
+            <source
+              srcSet={Rectangle559}
+              media="(min-width: 1200px)"
+              width="250"
+              height="474"
+              alt=""
+            />
+            <img src={MobRectangle559} width="116" height="224" alt="" />
           </picture>
         </OurStoryImg>
       </Container>

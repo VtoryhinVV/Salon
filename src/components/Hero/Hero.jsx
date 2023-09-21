@@ -26,15 +26,20 @@ export const Hero = () => {
           <Container>
             <AdresseInfo>
               <li>
-                <img src={phone} width={24} height={24} />
+                <img src={phone} width={24} height={24} alt="Phone image" />
                 <p>+6421581907</p>
               </li>
               <li>
-                <img src={chatBubble} width={24} height={24} />
+                <img
+                  src={chatBubble}
+                  width={24}
+                  height={24}
+                  alt="Chat bubble image"
+                />
                 <p>anna@aesthetica.co.nz</p>
               </li>
               <li>
-                <img src={globe} width={24} height={24} />
+                <img src={globe} width={24} height={24} alt="Planet image" />
                 <p>
                   41 Raranga Street, Marshland, Christchurch 8083, New Zealand
                 </p>

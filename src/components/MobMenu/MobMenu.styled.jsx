@@ -9,9 +9,9 @@ export const MobMenuBlock = styled.div`
   padding: 24px 0 40px;
   position: absolute;
   top: 76px;
-  left: 0;
+  left: 3px;
   z-index: 9999;
-  width: 100%;
+  width: 98%;
   & > div {
     margin-right: 24px;
   }

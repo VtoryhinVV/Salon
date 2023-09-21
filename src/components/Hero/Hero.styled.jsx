@@ -118,6 +118,9 @@ export const AdresseInfo = styled.ul`
     &:nth-of-type(3) p {
       max-width: 270px;
       text-align: center;
+      @media screen and (min-width: 1200px) {
+        max-width: 100%;
+      }
     }
   }
   @media screen and (min-width: 768px) {

@@ -36,6 +36,9 @@ export const HeroTitle = styled.h1`
   @media screen and (min-width: 768px) {
     font-size: 48px;
     letter-spacing: 0.96px;
+    /* width: 810px; */
+  }
+  @media screen and (min-width: 1200px) {
     width: 810px;
   }
 `;

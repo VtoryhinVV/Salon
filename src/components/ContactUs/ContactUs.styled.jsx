@@ -15,7 +15,6 @@ export const ContactUsSection = styled.section`
     gap: 24px;
   }
 
-  h2,
   h3,
   p,
   ul {
@@ -29,7 +28,8 @@ export const ContactUsTitle = styled.h2`
   font-size: 34px;
   font-weight: 400;
   letter-spacing: 0.96px;
-
+  margin-top: 0;
+  margin-bottom: 35px;
   text-align: center;
 
   @media screen and (min-width: 768px) {
