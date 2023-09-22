@@ -96,7 +96,10 @@ export const Services = ({ back = true }) => {
                   <ServicesListHiddenContent open={open === 'second'}>
                     <ServicesTextContent>
                       <span>
-                        At Aesthetica clinic, we offer top-quality injectable services to help you achieve the perfect pout. Lip filler is a highly sought-after cosmetic procedure globally, and for good reason.
+                        At Aesthetica clinic, we offer top-quality injectable
+                        services to help you achieve the perfect pout. Lip
+                        filler is a highly sought-after cosmetic procedure
+                        globally, and for good reason.
                       </span>
                     </ServicesTextContent>
                     <ServicesLink to="/services/lip_filler">
@@ -125,7 +128,12 @@ export const Services = ({ back = true }) => {
                   <ServicesListHiddenContent open={open === 'third'}>
                     <ServicesTextContent>
                       <span>
-                      At Aesthetica clinic, we have an increasing amount of male clients wanting to look and feel their best. Our experienced team is trained in providing subtle and natural-looking results, ensuring that you still look like yourself, just more youthful and with less noticeable lines and wrinkles.
+                        At Aesthetica clinic, we have an increasing amount of
+                        male clients wanting to look and feel their best. Our
+                        experienced team is trained in providing subtle and
+                        natural-looking results, ensuring that you still look
+                        like yourself, just more youthful and with less
+                        noticeable lines and wrinkles.
                       </span>
                     </ServicesTextContent>
                     <ServicesLink to="/services/injectables_for_men">
@@ -154,7 +162,13 @@ export const Services = ({ back = true }) => {
                   <ServicesListHiddenContent open={open === 'fourth'}>
                     <ServicesTextContent>
                       <span>
-                        Botox® and Dysport® are FDA-approved neuromodulators that are specially designed to target and minimize the appearance of wrinkles and fine lines. These treatments involve the injection of a purified protein into specific facial muscles, temporarily relaxing them and reducing the appearance of wrinkles caused by repetitive facial expressions.
+                        Botox® and Dysport® are FDA-approved neuromodulators
+                        that are specially designed to target and minimize the
+                        appearance of wrinkles and fine lines. These treatments
+                        involve the injection of a purified protein into
+                        specific facial muscles, temporarily relaxing them and
+                        reducing the appearance of wrinkles caused by repetitive
+                        facial expressions.
                       </span>
                     </ServicesTextContent>
                     <ServicesLink to="/services/anti_wrinkle">
@@ -181,7 +195,12 @@ export const Services = ({ back = true }) => {
                   <ServicesListHiddenContent open={open === 'fifth'}>
                     <ServicesTextContent>
                       <span>
-                        Botulinium Toxi A - Botox/Dysport is not only known for its remarkable anti-wrinkle effects but is also widely used for the treatment of various medical conditions. Our experienced team is dedicated to providing safe and effective Botox solutions, including treatments for hyperhidrosis, teeth grinding, and headaches.
+                        Botulinium Toxi A - Botox/Dysport is not only known for
+                        its remarkable anti-wrinkle effects but is also widely
+                        used for the treatment of various medical conditions.
+                        Our experienced team is dedicated to providing safe and
+                        effective Botox solutions, including treatments for
+                        hyperhidrosis, teeth grinding, and headaches.
                       </span>
                     </ServicesTextContent>
                     <ServicesLink to="/services/medical">
@@ -200,10 +219,21 @@ export const Services = ({ back = true }) => {
             </ServicesButtonUnderList>
           </div>
           <picture>
-            <source srcSet={ServicesPhoto} media="(min-width: 1200px)" />
-            <ServicesImg src={ServicesPhotoMob} />
+            <source
+              srcSet={ServicesPhoto}
+              media="(min-width: 1200px)"
+              width="470"
+              height="601"
+            />
+            <ServicesImg src={ServicesPhotoMob} width="330" height="422" />
           </picture>
-          <ServicesButtonUnderImg to="">BOOK APPOINMENT</ServicesButtonUnderImg>
+          <ServicesButtonUnderImg
+            href="https://bookings.gettimely.com/aesthetica7/book"
+            target="_blank"
+            rel="noreferrer"
+          >
+            BOOK APPOINMENT
+          </ServicesButtonUnderImg>
         </ServicesContent>
       </Container>
     </ServicesSection>
