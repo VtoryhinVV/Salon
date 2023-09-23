@@ -80,13 +80,20 @@ export const OurTeamListItemTextContainer = styled.div`
 export const OurTeamListItemTitle = styled.h3`
   display: flex;
   flex-direction: column;
+  justify-content: center;
 
   font-family: Playfair Display;
   font-size: 24px;
   font-weight: 400;
   line-height: normal;
 
+  @media screen and (min-width: 420px) {
+    flex-direction: row;
+  }
+
   @media screen and (min-width: 768px) {
+    flex-direction: column;
+
     font-family: Prata;
     font-size: 48px;
     font-weight: 400;

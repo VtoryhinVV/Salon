@@ -92,6 +92,11 @@ export const WhyUsText = styled.div `
         display: flex;
         align-items: center;
         gap: 9px;
+        width: 162px;
+
+        @media screen and (min-width: 768px) {
+            width: 202px;
+        }
     }
 `
 
