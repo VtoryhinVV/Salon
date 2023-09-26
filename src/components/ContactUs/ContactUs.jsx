@@ -88,7 +88,12 @@ export const ContactUs = ({ back = true }) => {
           <ContactUsContentBox>
             <ContactUsListData>
               <ContactUsItemData>
-                <ContactUsIcon src={chatBubble} width={24} height={24} />
+                <ContactUsIcon
+                  src={chatBubble}
+                  width={24}
+                  height={24}
+                  alt="Chat Bubble"
+                />
                 <ContactUsTextContainer>
                   <h3>Drop Us :</h3>
                   <p>anna@aesthetica.co.nz</p>
@@ -96,7 +101,7 @@ export const ContactUs = ({ back = true }) => {
               </ContactUsItemData>
 
               <ContactUsItemData>
-                <ContactUsIcon src={globe} width={24} height={24} />
+                <ContactUsIcon src={globe} width={24} height={24} alt="Globe" />
                 <ContactUsTextContainer>
                   <h3>Visit Us :</h3>
                   <p>
@@ -106,7 +111,7 @@ export const ContactUs = ({ back = true }) => {
               </ContactUsItemData>
 
               <ContactUsItemData>
-                <ContactUsIcon src={phone} width={24} height={24} />
+                <ContactUsIcon src={phone} width={24} height={24} alt="Phone" />
                 <ContactUsTextContainer>
                   <h3>Call Us :</h3>
                   <p>+6421581907</p>

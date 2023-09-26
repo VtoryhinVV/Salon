@@ -19,14 +19,20 @@ export function SocialWidget() {
 
   return (
     <iframe
-      src="https://snapwidget.com/embed/1042355"
+      src="https://snapwidget.com/embed/1042632"
       className="snapwidget-widget"
+      frameBorder="0"
       scrolling="no"
+      title="instagram"
       style={{
-        border: 'none',
         backgroundColor: 'transparent',
+        border: 'none',
         overflow: 'hidden',
+        // width: '765px',
         width: '100%',
+        // height: '510px',
+        margin: '0 auto 40px',
+        display: 'block',
       }}
     ></iframe>
   );

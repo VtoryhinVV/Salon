@@ -8,10 +8,39 @@ import {
 import PropTypes from 'prop-types';
 
 import svgImgs from '/symbol-defs.svg';
+import { useEffect, useRef } from 'react';
 
 export const MobMenu = ({ isOpen, toggleMenu }) => {
+  const menuRef = useRef(null);
+
+  const handleClickOutside = event => {
+    if (menuRef.current && !menuRef.current.contains(event.target)) {
+      if (event.target.dataset.action == 'BtnMob') {
+        return;
+      }
+      toggleMenu('Outside');
+    }
+  };
+
+  const handleEscKeyPress = event => {
+    if (event.key === 'Escape') {
+      toggleMenu();
+    }
+  };
+
+  useEffect(() => {
+    if (isOpen) {
+      document.addEventListener('mousedown', handleClickOutside);
+      document.addEventListener('keydown', handleEscKeyPress);
+    }
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+      document.removeEventListener('keydown', handleEscKeyPress);
+    };
+  }, [isOpen]);
   return (
-    <MobMenuBlock open={isOpen}>
+    <MobMenuBlock open={isOpen} ref={menuRef}>
       <CloseBtn onClick={toggleMenu}>
         <svg>
           <use href={`${svgImgs}#icon-close`}></use>

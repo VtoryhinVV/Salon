@@ -1,0 +1,23 @@
+{
+  "name": "Aesthetica Clinic",
+  "short_name": "AC",
+  "description": "",
+  "start_url": "/",
+  "display": "fullscreen",
+  "background_color": "white",
+  "theme_color": "white",
+  "purpose": "any maskable",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+
+  ]
+}

@@ -72,7 +72,10 @@ export const Services = ({ back = true }) => {
                         and youthful look of our skin.
                       </span>
                     </ServicesTextContent>
-                    <ServicesLink to="/services/dermal_filler">
+                    <ServicesLink
+                      to="/services/dermal_filler"
+                      href="/serveces/dermal_filler"
+                    >
                       READ MORE
                     </ServicesLink>
                   </ServicesListHiddenContent>
@@ -102,7 +105,10 @@ export const Services = ({ back = true }) => {
                         globally, and for good reason.
                       </span>
                     </ServicesTextContent>
-                    <ServicesLink to="/services/lip_filler">
+                    <ServicesLink
+                      to="/services/lip_filler"
+                      href="/serveces/lip_filler"
+                    >
                       READ MORE
                     </ServicesLink>
                   </ServicesListHiddenContent>
@@ -136,7 +142,10 @@ export const Services = ({ back = true }) => {
                         noticeable lines and wrinkles.
                       </span>
                     </ServicesTextContent>
-                    <ServicesLink to="/services/injectables_for_men">
+                    <ServicesLink
+                      to="/services/injectables_for_men"
+                      href="/serveces/injectables_for_men"
+                    >
                       READ MORE
                     </ServicesLink>
                   </ServicesListHiddenContent>
@@ -171,7 +180,10 @@ export const Services = ({ back = true }) => {
                         facial expressions.
                       </span>
                     </ServicesTextContent>
-                    <ServicesLink to="/services/anti_wrinkle">
+                    <ServicesLink
+                      to="/services/anti_wrinkle"
+                      href="/serveces/anti_wrinkle"
+                    >
                       READ MORE
                     </ServicesLink>
                   </ServicesListHiddenContent>
@@ -203,7 +215,10 @@ export const Services = ({ back = true }) => {
                         hyperhidrosis, teeth grinding, and headaches.
                       </span>
                     </ServicesTextContent>
-                    <ServicesLink to="/services/medical">
+                    <ServicesLink
+                      to="/services/medical"
+                      href="/serveces/medical"
+                    >
                       READ MORE
                     </ServicesLink>
                   </ServicesListHiddenContent>
@@ -224,8 +239,14 @@ export const Services = ({ back = true }) => {
               media="(min-width: 1200px)"
               width="470"
               height="601"
+              alt="Working example"
             />
-            <ServicesImg src={ServicesPhotoMob} width="330" height="422" />
+            <ServicesImg
+              src={ServicesPhotoMob}
+              width="330"
+              height="422"
+              alt="Working example"
+            />
           </picture>
           <ServicesButtonUnderImg
             href="https://bookings.gettimely.com/aesthetica7/book"

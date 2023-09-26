@@ -57,8 +57,14 @@ export const Header = () => {
                 <use href={`${svgImgs}#icon-instagram`}></use>
               </svg>
             </a>
-            <Burger type="button" onClick={toggleMobMenu}>
-              <svg>
+            <Burger
+              type="button"
+              aria-label="Mobile menu"
+              onClick={toggleMobMenu}
+              data-action="BtnMob"
+              // disabled={isMobMenuOpen && 'true '}
+            >
+              <svg data-action="BtnMob">
                 <use href={`${svgImgs}#icon-burger`}></use>
               </svg>
             </Burger>
