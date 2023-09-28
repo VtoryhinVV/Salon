@@ -106,6 +106,7 @@ export const ContactUs = ({ back = true }) => {
                   <h3>Visit Us :</h3>
                   <p>
                     41 Raranga Street, Marshland, Christchurch 8083, New Zealand
+                    (parking is available at front and behind the building)
                   </p>
                 </ContactUsTextContainer>
               </ContactUsItemData>

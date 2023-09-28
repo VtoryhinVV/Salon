@@ -47,10 +47,7 @@ export const Hero = () => {
             </AdresseInfo>
             <MainTitle>
               <h1>Unlock a World of Beauty and Style with Aesthetic clinic</h1>
-              <p>
-                Step into a world of pure bliss where beauty meets luxury, and
-                let our skilled team of experts transform you from head to toe
-              </p>
+              <p>Natural results, tailored treatment plans, boutique service</p>
               <StyledLink
                 href="https://bookings.gettimely.com/aesthetica7/book"
                 target="_blank"

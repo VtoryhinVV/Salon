@@ -1,7 +1,8 @@
 import styled from '@emotion/styled';
 
 export const DiscoverSection = styled.section`
-  padding: 120px 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
   h1,
   h2,

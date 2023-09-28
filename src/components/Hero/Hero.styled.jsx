@@ -189,11 +189,12 @@ export const StyledLink = styled.a`
   border: 1px solid var(--brown);
   background: var(--white, #fff);
   padding: 10px 24px;
-
+  display: block;
+  width: 221px;
   color: var(--brown);
   letter-spacing: 0.32px;
   text-transform: uppercase;
-
+  margin: 0 auto;
   text-decoration: none;
   transition: all 0.3s ease;
 

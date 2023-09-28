@@ -62,7 +62,7 @@ export const WhyUs = () => {
               <div>
                 <StyledText>5+</StyledText>
                 <FlexText>
-                  <span>Years </span>
+                  <span>Years of</span>
                   <span>experience</span>
                 </FlexText>
               </div>

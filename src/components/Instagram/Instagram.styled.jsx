@@ -8,7 +8,8 @@ export const InstagramSection = styled.section`
   background-position: center;
   background-size: cover;
   @media screen and (min-width: 768px) {
-    padding: 120px 0;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
   & .snapwidget-widget {
     height: 300px;

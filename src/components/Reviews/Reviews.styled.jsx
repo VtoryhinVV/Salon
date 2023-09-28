@@ -6,8 +6,9 @@ export const ReviewsSection = styled.section`
   background-size: cover;
   background-position: center;
   width: 100%;
+  padding-top: 60px;
+  padding-bottom: 40px;
 
-  padding: 120px 0 100px;
   & .tutorial_link {
     display: none !important;
   }

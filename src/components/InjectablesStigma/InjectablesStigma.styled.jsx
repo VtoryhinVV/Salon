@@ -6,7 +6,8 @@ import ImgRightMob from '../../assets/img/ExampleInjection4mob.jpg';
 import bg from '/img/bgOurStory.jpg';
 
 export const InjectablesSection = styled.section`
-  padding: 120px 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background: url(${bg}) no-repeat;
   background-size: cover;
 

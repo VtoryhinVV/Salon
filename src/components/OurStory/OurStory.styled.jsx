@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom';
 import bgOurStory from '/img/bgOurStory.jpg';
 
 export const SectionStory = styled.section`
-  padding: 100px 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background: url(${bgOurStory});
 
   & > div {
@@ -20,7 +21,8 @@ export const SectionStory = styled.section`
   }
 
   @media screen and (min-width: 1200px) {
-    padding: 120px 0;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 `;
 export const OurStoryContent = styled.div`

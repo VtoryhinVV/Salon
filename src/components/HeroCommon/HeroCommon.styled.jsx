@@ -6,7 +6,8 @@ export const HeroSection = styled.section`
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding: 120px 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
   h1,
   p,

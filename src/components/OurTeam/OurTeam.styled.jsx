@@ -2,7 +2,8 @@ import styled from '@emotion/styled';
 import bgOurTeam from '/src/assets/img/bgOurTeam.jpg';
 
 export const OurTeamSection = styled.section`
-  padding: 120px 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
   background-image: url(${bgOurTeam});
   background-repeat: no-repeat;
@@ -64,12 +65,12 @@ export const OurTeamList = styled.ul`
       flex-direction: row;
       text-align: left;
 
-            &:nth-of-type(even) {
-                flex-direction: row-reverse;
-            }
-        }
+      &:nth-of-type(even) {
+        flex-direction: row-reverse;
+      }
     }
-`
+  }
+`;
 
 export const OurTeamListItemTextContainer = styled.div`
   display: flex;

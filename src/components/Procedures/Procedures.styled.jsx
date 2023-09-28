@@ -2,7 +2,8 @@ import styled from '@emotion/styled';
 import bg from '../../assets/img/bgServMedProc.jpg';
 
 export const ProceduresSect = styled.section`
-  padding: 120px 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-image: ${props => (props.imgBg ? `url(${bg})` : 'none')};
   background-repeat: no-repeat;
   background-position: center;

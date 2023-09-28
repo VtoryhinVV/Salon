@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 
 export const GalleryCompSect = styled.section`
-  padding: 40px 0 120px;
+  padding: 40px 0 60px;
 
   & h2 {
     margin: 0 0 40px;

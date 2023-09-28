@@ -1,7 +1,8 @@
 import styled from '@emotion/styled';
 
 export const AdvantagesSection = styled.section`
-  padding: 120px 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
   ul,
   h2,

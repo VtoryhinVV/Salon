@@ -3,17 +3,13 @@ import bgImg from '/img/bg.jpg';
 import { Form, ErrorMessage } from 'formik';
 
 export const ContactUsSection = styled.section`
-  padding: 120px 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
   background-image: ${props => (props.bg ? `url(${bgImg})` : 'none')};
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  & > div {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-  }
 
   h3,
   p,
@@ -29,7 +25,7 @@ export const ContactUsTitle = styled.h2`
   font-weight: 400;
   letter-spacing: 0.96px;
   margin-top: 0;
-  margin-bottom: 35px;
+  margin-bottom: 24px;
   text-align: center;
 
   @media screen and (min-width: 768px) {
@@ -42,7 +38,7 @@ export const ContactUsTimetable = styled.div`
   flex-direction: column;
   gap: 16px;
 
-  margin: 0 auto;
+  margin: 0 auto 40px;
 
   & > h3 {
     text-align: center;
@@ -62,6 +58,7 @@ export const ContactUsTimetableList = styled.ul`
   text-align: left;
 
   list-style-type: none;
+  margin-bottom: 40px;
 `;
 
 export const ContactUsTimetableItem = styled.li`

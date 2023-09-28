@@ -9,11 +9,16 @@ import {
   BenefitsSection,
 } from './BenefitsInclude.styled';
 
-export const BenefitsInclude = ({ benefits, three = false, gift = false }) => {
+export const BenefitsInclude = ({
+  benefits,
+  three = false,
+  gift = false,
+  bgImg = false,
+}) => {
   const isMobile = useMediaQuery({ maxWidth: 768 });
 
   return (
-    <BenefitsSection>
+    <BenefitsSection bg={bgImg}>
       <Container>
         <BenefitsTitle>
           {gift ? 'Why choose Our Gift vouchers' : 'Benefits include'}

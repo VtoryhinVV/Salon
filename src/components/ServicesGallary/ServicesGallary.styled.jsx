@@ -4,7 +4,8 @@ import { NavLink } from 'react-router-dom';
 import imgBg from '/src/assets/img/bgServGallery.jpg';
 
 export const ServicesGallarySection = styled.section`
-  padding: 120px 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background: ${props => (props.bgImg ? `url(${imgBg})` : 'none')};
 `;
 

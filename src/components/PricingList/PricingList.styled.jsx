@@ -8,7 +8,7 @@ export const PricingSect = styled.section`
   background-size: cover;
   & > div {
     padding-top: 40px;
-    padding-bottom: 120px;
+    padding-bottom: 60px;
   }
   & ul {
     padding-left: 0;

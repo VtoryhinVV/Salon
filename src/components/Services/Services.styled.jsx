@@ -3,7 +3,8 @@ import bgServices from '/img/bgServices.jpg';
 import { Link } from 'react-router-dom';
 
 export const ServicesSection = styled.section`
-  padding: 120px 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
   h1,
   h2,

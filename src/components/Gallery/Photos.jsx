@@ -23,18 +23,18 @@ export const photos = [
   },
   {
     src: `${img6}`,
-    width: 5,
-    height: 6,
+    width: 50,
+    height: 51,
   },
   {
     src: `${img10}`,
-    width: 3,
-    height: 5,
+    width: 586,
+    height: 1000,
   },
   {
     src: `${img13}`,
-    width: 5,
-    height: 6,
+    width: 4,
+    height: 5,
   },
   {
     src: `${img2}`,
@@ -42,39 +42,39 @@ export const photos = [
     height: 1,
   },
   {
-    src: `${img7}`,
-    width: 5,
-    height: 6,
+    src: `${img8}`,
+    width: 4,
+    height: 8,
   },
 
   {
     src: `${img14}`,
-    width: 5,
-    height: 6,
+    width: 787,
+    height: 1000,
   },
   {
     src: `${img11}`,
-    width: 3,
-    height: 5,
+    width: 60,
+    height: 100,
   },
   {
     src: `${img3}`,
     width: 1,
     height: 1,
   },
-  {
-    src: `${img8}`,
-    width: 5,
-    height: 6,
-  },
 
   {
     src: `${img15}`,
-    width: 5,
-    height: 6,
+    width: 4,
+    height: 5,
   },
   {
     src: `${img4}`,
+    width: 1,
+    height: 1,
+  },
+  {
+    src: `${img7}`,
     width: 1,
     height: 1,
   },
@@ -84,18 +84,18 @@ export const photos = [
     height: 5,
   },
   {
-    src: `${img9}`,
-    width: 5,
-    height: 7,
+    src: `${img16}`,
+    width: 4,
+    height: 5,
   },
 
   {
-    src: `${img16}`,
-    width: 5,
-    height: 7,
+    src: `${img5}`,
+    width: 1,
+    height: 1,
   },
   {
-    src: `${img5}`,
+    src: `${img9}`,
     width: 1,
     height: 1,
   },

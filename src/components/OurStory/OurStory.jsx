@@ -24,12 +24,14 @@ export function OurStory() {
         <OurStoryContent>
           <h2>Our story</h2>
           <p>
-            With a focus on cosmetic injectables, our team also has expertise in
-            beauty therapy, laser technology, and skin specialization, enabling
-            us to provide comprehensive services that address skin concerns, the
-            aging process, and beautification. We are dedicated to natural
-            enhancement, actively listening to our clients&apos; unique needs
-            and striving to improve their confidence and self-esteem.
+            At Aesthetica Clinic, our team of highly experienced professionals
+            are experts in the field of cosmetic injectables. With a deep
+            commitment to the art of natural enhancement, we aim to nurture
+            confidence and boost self-esteem in all our clients. Our approach is
+            centered around actively listening to each individual&apos;s
+            specific needs, enabling us to create personalized treatment plans
+            that not only enhance their appearance but also provide a sense of
+            self-reassurance.
           </p>
           <OurStiryLink>
             <LinkTo to="/about_us">Read more</LinkTo>

@@ -1,4 +1,14 @@
 import styled from '@emotion/styled';
+import bgImg from '/src/assets/img/bgVoucher.jpg';
+
+export const BenefitsSection = styled.section`
+  background-image: ${props => (props.bg ? `url(${bgImg})` : 'none')};
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 60px;
+  padding-bottom: 60px;
+`;
 
 export const AppoinmentBtn = styled.a`
   display: block;
@@ -46,8 +56,4 @@ export const BenefitsTitle = styled.h2`
   letter-spacing: 0.96px;
   text-transform: capitalize;
   text-align: center;
-`;
-
-export const BenefitsSection = styled.section`
-  padding: 120px 0;
 `;

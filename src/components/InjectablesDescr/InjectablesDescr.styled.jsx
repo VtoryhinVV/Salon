@@ -28,7 +28,8 @@ export const ImgRightBox = styled.div`
 `;
 
 export const InjectablesSection = styled.section`
-  padding: 120px 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
   & > div {
     display: flex;
