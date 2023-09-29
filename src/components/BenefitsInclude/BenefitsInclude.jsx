@@ -43,7 +43,7 @@ export const BenefitsInclude = ({
           target="_blank"
           rel="noreferrer"
         >
-          Book appoinment
+          {gift ? 'BUY GIFT VOUCHER' : 'Book appoinment'}
         </AppoinmentBtn>
       </Container>
     </BenefitsSection>
