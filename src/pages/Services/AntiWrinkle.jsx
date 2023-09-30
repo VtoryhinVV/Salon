@@ -57,7 +57,7 @@ export const AntiWrinkle = () => {
         texts="Botox® and Dysport® are FDA-approved neuromodulators that are specially designed to target and minimize the appearance of wrinkles and fine lines. These treatments involve the injection of a purified protein into specific facial muscles, temporarily relaxing them and reducing the appearance of wrinkles caused by repetitive facial expressions."
         service={true}
       />
-      <BenefitsInclude benefits={benefitsInfo} three gift />
+      <BenefitsInclude benefits={benefitsInfo} three />
       <ServicesGallary imgGallery={gallery} bg />
     </main>
   );
