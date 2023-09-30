@@ -54,7 +54,7 @@ export const DermalFiller = () => {
   return (
     <main>
       <HeroCommon
-        title="Anti Wrinkle & Wrinkle preventative"
+        title="Dermal filler"
         texts={textHero}
         service
         many
