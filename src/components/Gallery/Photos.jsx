@@ -33,8 +33,8 @@ export const photos = [
   },
   {
     src: `${img13}`,
-    width: 4,
-    height: 5,
+    width: 395,
+    height: 600,
   },
   {
     src: `${img2}`,
@@ -49,8 +49,8 @@ export const photos = [
 
   {
     src: `${img14}`,
-    width: 787,
-    height: 1000,
+    width: 4,
+    height: 6,
   },
   {
     src: `${img11}`,
@@ -65,8 +65,8 @@ export const photos = [
 
   {
     src: `${img15}`,
-    width: 4,
-    height: 5,
+    width: 1,
+    height: 1,
   },
   {
     src: `${img4}`,
@@ -85,8 +85,8 @@ export const photos = [
   },
   {
     src: `${img16}`,
-    width: 4,
-    height: 5,
+    width: 1,
+    height: 1,
   },
 
   {

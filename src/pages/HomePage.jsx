@@ -1,4 +1,3 @@
-import '../App.css';
 import { Hero } from '../components/Hero/Hero';
 import { OurStory } from '../components/OurStory/OurStory';
 import { Services } from '../components/Services/Services';
