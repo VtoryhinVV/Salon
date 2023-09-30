@@ -22,3 +22,10 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+src/assets/img/Gallery/1.jpg
+src/assets/img/Gallery/2.jpg
+vite.config.js
+src/pages/Services/AntiWrinkle.jsx
+src/App.jsx
+package.json
+package-lock.json

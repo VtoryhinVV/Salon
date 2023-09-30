@@ -16,7 +16,7 @@ const AboutUs = lazy(() => import('./pages/AboutUs'));
 
 function App() {
   return (
-    <BrowserRouter basename={'/Salon'}>
+    <BrowserRouter>
       <ScrollToTop />
       <Routes>
         <Route element={<Layout />}>
