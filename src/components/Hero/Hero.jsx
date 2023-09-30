@@ -46,7 +46,7 @@ export const Hero = () => {
               </li>
             </AdresseInfo>
             <MainTitle>
-              <h1>Unlock a World of Beauty and Style with Aesthetic clinic</h1>
+              <h1>Unlock the world of confidence with Aesthetica clinic</h1>
               <p>Natural results, tailored treatment plans, boutique service</p>
               <StyledLink
                 href="https://bookings.gettimely.com/aesthetica7/book"
