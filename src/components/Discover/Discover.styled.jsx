@@ -74,7 +74,7 @@ export const DiscoverTextContainer = styled.div`
 
   & > p {
     @media screen and (min-width: 768px) {
-      width: 580px;
+      width: 530px;
     }
   }
 
@@ -89,11 +89,14 @@ export const DiscoverTitle = styled.h2`
 
   font-family: Prata, serif;
   font-size: 34px;
-  letter-spacing: 0.88px;
+  letter-spacing: 0.68px;
   font-weight: 400;
-  line-height: 65px;
+  line-height: 46px;
 
   @media screen and (min-width: 768px) {
     font-size: 48px;
+    line-height: 65px;
+    letter-spacing: 0.96px;
+    width: 530px;
   }
 `;

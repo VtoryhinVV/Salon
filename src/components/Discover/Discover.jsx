@@ -17,22 +17,17 @@ export const Discover = () => {
         <Container>
             <DiscoverTextContainer>
                 <DiscoverTitle>
-                    <span>
-                        Discover The Gift
-                    </span>
-                    <span>
-                        Of Beauty & Confidence
-                    </span>
+                        Discover The Gift Of Beauty & Confidence
                 </DiscoverTitle>
                 <p>Give the gift that will leave a lasting impression and make your loved ones feel truly special.</p>
             </DiscoverTextContainer>
             <DiscoverImgContainer>
                 <picture>
-                    <source srcSet={BuyGift1} media="(min-width: 1200px)" />
+                    <source srcSet={BuyGift1} media="(min-width: 768px)" />
                     <img src={BuyGiftMob1} />
                 </picture>
                 <picture>
-                    <source srcSet={BuyGift2} media="(min-width: 1200px)" />
+                    <source srcSet={BuyGift2} media="(min-width: 768px)" />
                     <img src={BuyGiftMob2} />
                 </picture>
             </DiscoverImgContainer>
