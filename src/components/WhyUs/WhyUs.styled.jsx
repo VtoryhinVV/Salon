@@ -92,9 +92,10 @@ export const WhyUsText = styled.div`
 
   & > div {
     display: flex;
-    align-items: center;
     gap: 9px;
     width: 162px;
+    text-align: left;
+    align-items: center;
 
     @media screen and (min-width: 768px) {
       width: 202px;
