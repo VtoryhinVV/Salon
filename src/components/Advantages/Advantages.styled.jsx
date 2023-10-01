@@ -35,9 +35,13 @@ export const AdvantagesTitle = styled.h2`
 
   margin-bottom: 40px !important;
 
+  @media screen and (min-width: 478px) {
+    width: 380px;
+  }
   @media screen and (min-width: 768px) {
     font-size: 45px;
     letter-spacing: 0.96px;
+    width: auto;
   }
   @media screen and (min-width: 1200px) {
     font-size: 48px;
