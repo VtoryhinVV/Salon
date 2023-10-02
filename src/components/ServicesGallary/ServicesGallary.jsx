@@ -14,6 +14,7 @@ export const ServicesGallary = ({
   imgGallery,
   bg = false,
   threeImg = false,
+  two = false,
 }) => {
   const isMobile = useMediaQuery({ maxWidth: 1200 });
   return (
@@ -23,7 +24,11 @@ export const ServicesGallary = ({
         {isMobile ? (
           <GalleryComponent gallary={imgGallery} three={threeImg} />
         ) : (
-          <StaticImagesComponent gallary={imgGallery} three={threeImg} />
+          <StaticImagesComponent
+            gallary={imgGallery}
+            three={threeImg}
+            two={two}
+          />
         )}
         <BtnGroup>
           <AppoinmentBtn

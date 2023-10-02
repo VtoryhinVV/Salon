@@ -4,12 +4,12 @@ export const StaticBlock = styled.div`
   display: flex;
   justify-content: center;
   gap: 24px;
+`;
 
-  & img {
-    width: 375px;
-    @media screen and (min-width: 1350px) {
-      width: 416px;
-    }
+export const GalleryImg = styled.img`
+  width: ${props => (props.twoImg ? '500px' : '375px')};
+  @media screen and (min-width: 1350px) {
+    width: ${props => (props.twoImg ? '100%' : '416px')};
   }
 `;
 

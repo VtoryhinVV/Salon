@@ -53,7 +53,7 @@ export const DermalFiller = () => {
     <main>
       <HeroCommon title="Dermal filler" texts={textHero} service many />
       <Procedures textInfo={infoProcedures} />
-      <ServicesGallary imgGallery={gallery} bg threeImg />
+      <ServicesGallary imgGallery={gallery} bg threeImg two />
     </main>
   );
 };
