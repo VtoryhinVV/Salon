@@ -1,3 +1,4 @@
+import CountUp from 'react-countup';
 import {
   WhyUsSection,
   ImgContainer,
@@ -60,23 +61,33 @@ export const WhyUs = () => {
           <div>
             <WhyUsText>
               <div>
-                <StyledText>5+</StyledText>
+                <StyledText>
+                  <CountUp end={5} duration={5} enableScrollSpy={true} />
+                  +
+                </StyledText>
                 <FlexText>
                   <span>Years of</span>
                   <span>experience</span>
                 </FlexText>
               </div>
               <div>
-                <StyledText>5+</StyledText>
+                <StyledText>
+                  <CountUp end={100} duration={2} enableScrollSpy={true} />
+                  +
+                </StyledText>
                 <FlexText>
-                  <span>Stars</span>
-                  <span>Google review</span>
+                  <span>Positive</span>
+                  <span>Google</span>
+                  <span>reviews</span>
                 </FlexText>
               </div>
             </WhyUsText>
             <WhyUsText>
               <div>
-                <StyledText>3000+</StyledText>
+                <StyledText>
+                  <CountUp end={3000} duration={1} enableScrollSpy={true} />
+                  +
+                </StyledText>
                 <FlexText>
                   <span>Happy</span>
                   <span>clients</span>
