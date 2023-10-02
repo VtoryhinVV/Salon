@@ -6,10 +6,9 @@ import { ServicesGallary } from '../../components/ServicesGallary/ServicesGallar
 import photo1 from '/src/assets/img/lipFilter/img1.jpg';
 import photo2 from '/src/assets/img/lipFilter/img2.jpg';
 import photo3 from '/src/assets/img/lipFilter/img3.jpg';
-import photo4 from '/src/assets/img/lipFilter/img4.jpg';
 
 export const LipFiller = () => {
-  const gallery = { img1: photo1, img2: photo2, img3: photo3, img4: photo4 };
+  const gallery = [photo1, photo2, photo3];
 
   const benefitsInfo = [
     {
@@ -45,7 +44,7 @@ export const LipFiller = () => {
         service={true}
       />
       <BenefitsInclude benefits={benefitsInfo} />
-      <ServicesGallary imgGallery={gallery} bg />
+      <ServicesGallary imgGallery={gallery} bg threeImg />
     </main>
   );
 };

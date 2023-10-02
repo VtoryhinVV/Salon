@@ -1,14 +1,12 @@
 import { HeroCommon } from '../../components/HeroCommon/HeroCommon';
 import { Procedures } from '../../components/Procedures/Procedures';
-
 import { ServicesGallary } from '../../components/ServicesGallary/ServicesGallary';
+
 import photo1 from '/src/assets/img/DermalFiller/img1.jpg';
 import photo2 from '/src/assets/img/DermalFiller/img2.jpg';
-import photo3 from '/src/assets/img/DermalFiller/img3.jpg';
-import photo4 from '/src/assets/img/DermalFiller/img4.jpg';
 
 export const DermalFiller = () => {
-  const gallery = { img1: photo1, img2: photo2, img3: photo3, img4: photo4 };
+  const gallery = [photo1, photo2];
   const textHero = [
     'Dermal filler - used to sculpt, enhance, replenish and shape the face.',
     'Dermal fillers are commonly used to smooth out wrinkles, add volume to areas of the face, enhance and contour facial features.',
@@ -53,14 +51,9 @@ export const DermalFiller = () => {
   ];
   return (
     <main>
-      <HeroCommon
-        title="Dermal filler"
-        texts={textHero}
-        service
-        many
-      />
+      <HeroCommon title="Dermal filler" texts={textHero} service many />
       <Procedures textInfo={infoProcedures} />
-      <ServicesGallary imgGallery={gallery} bg />
+      <ServicesGallary imgGallery={gallery} bg threeImg />
     </main>
   );
 };

@@ -5,16 +5,20 @@ import { GalleryBox, Btn, TwoInOn } from './GalleryComponent.styled';
 
 import svgImgs from '/symbol-defs.svg';
 
-export const GalleryComponent = ({ gallary }) => {
-  const { img1, img2, img3, img4 } = gallary;
-
+export const GalleryComponent = ({ gallary, three }) => {
   const items = [
-    <img data-value="1" src={img1} key={1} />,
+    <img data-value="1" src={gallary[0]} key={1} />,
     <TwoInOn key={2}>
-      <img data-value="2" src={img2} />
-      <img data-value="3" src={img3} />
+      <img data-value="2" src={gallary[1]} />
+      <img data-value="3" src={gallary[2]} />
     </TwoInOn>,
-    <img data-value="4" src={img4} key={4} />,
+    <img data-value="4" src={gallary[3]} key={4} />,
+  ];
+
+  const items3Img = [
+    ...gallary.map((info, index) => (
+      <img data-value="1" src={info} key={index} />
+    )),
   ];
 
   const renderPrevButton = () => {
@@ -50,7 +54,7 @@ export const GalleryComponent = ({ gallary }) => {
         renderPrevButton={renderPrevButton}
         renderNextButton={renderNextButton}
         mouseTracking
-        items={items}
+        items={three ? items3Img : items}
         controlsStrategy="alternate"
       />
     </GalleryBox>

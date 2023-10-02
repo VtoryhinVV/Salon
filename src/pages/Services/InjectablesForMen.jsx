@@ -9,7 +9,7 @@ import photo3 from '/src/assets/img/InjectablesGl3.jpg';
 import photo4 from '/src/assets/img/InjectablesGl4.jpg';
 
 export const InjectablesForMen = () => {
-  const gallery = { img1: photo1, img2: photo2, img3: photo3, img4: photo4 };
+  const gallery = [photo1, photo2, photo3, photo4];
   return (
     <main>
       <HeroCommon

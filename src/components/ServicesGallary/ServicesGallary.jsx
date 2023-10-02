@@ -10,18 +10,20 @@ import {
   ToGallery,
 } from './ServicesGallary.styled';
 
-export const ServicesGallary = ({ imgGallery, bg = false }) => {
+export const ServicesGallary = ({
+  imgGallery,
+  bg = false,
+  threeImg = false,
+}) => {
   const isMobile = useMediaQuery({ maxWidth: 1200 });
   return (
     <ServicesGallarySection bgImg={bg}>
       <Container>
         <ServicesGallaryTitle>Before and After</ServicesGallaryTitle>
         {isMobile ? (
-          // Версия для мобильных устройств с галереей
-          <GalleryComponent gallary={imgGallery} />
+          <GalleryComponent gallary={imgGallery} three={threeImg} />
         ) : (
-          // Версия для компьютеров с 6 статичными картинками
-          <StaticImagesComponent gallary={imgGallery} />
+          <StaticImagesComponent gallary={imgGallery} three={threeImg} />
         )}
         <BtnGroup>
           <AppoinmentBtn
