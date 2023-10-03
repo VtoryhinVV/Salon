@@ -35,7 +35,7 @@ export const BuyGift = ({ back = false }) => {
               height="524"
               alt=""
             />
-            <img src={BuyGiftMob2} width="182" height="291" alt="" />
+            <img src={BuyGiftMob2} width="172" height="291" alt="" />
           </picture>
         </BuyGiftImgContainer>
         <BuyGiftTextContainer>
