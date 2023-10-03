@@ -62,7 +62,7 @@ export const WhyUs = () => {
             <WhyUsText>
               <div>
                 <StyledText>
-                  <CountUp end={5} duration={5} enableScrollSpy={true} />
+                  <CountUp end={5} duration={5} enableScrollSpy={true} scrollSpyOnce={true} />
                   +
                 </StyledText>
                 <FlexText>
@@ -72,7 +72,7 @@ export const WhyUs = () => {
               </div>
               <div>
                 <StyledText>
-                  <CountUp end={100} duration={2} enableScrollSpy={true} />
+                  <CountUp end={100} duration={2} enableScrollSpy={true} scrollSpyOnce={true} />
                   +
                 </StyledText>
                 <FlexText>
@@ -85,7 +85,7 @@ export const WhyUs = () => {
             <WhyUsText>
               <div>
                 <StyledText>
-                  <CountUp end={3000} duration={1} enableScrollSpy={true} />
+                  <CountUp end={3000} duration={1} enableScrollSpy={true} scrollSpyOnce={true} />
                   +
                 </StyledText>
                 <FlexText>

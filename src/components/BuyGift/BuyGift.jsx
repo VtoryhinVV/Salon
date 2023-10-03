@@ -7,10 +7,10 @@ import {
 } from './BuyGift.styled';
 import { Container } from '../shared/Container';
 
-import BuyGift1 from '/img/BuyGift1.jpg';
-import BuyGift2 from '/img/BuyGift2.jpg';
-import BuyGiftMob1 from '/img/BuyGiftMob1.jpg';
-import BuyGiftMob2 from '/img/BuyGiftMob2.jpg';
+import BuyGift1 from '/src/assets/img/BuyGift1.jpg';
+import BuyGift2 from '/src/assets/img/BuyGift2.jpg';
+import BuyGiftMob1 from '/src/assets/img/BuyGiftMob1.jpg';
+import BuyGiftMob2 from '/src/assets/img/BuyGiftMob2.jpg';
 
 export const BuyGift = ({ back = false }) => {
   return (

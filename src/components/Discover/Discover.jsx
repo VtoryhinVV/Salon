@@ -6,10 +6,10 @@ import {
     } from './Discover.styled';
 import { Container } from '../shared/Container';
 
-import BuyGift1 from '/img/BuyGift1.jpg';
-import BuyGift2 from '/img/BuyGift2.jpg';
-import BuyGiftMob1 from '/img/BuyGiftMob1.jpg';
-import BuyGiftMob2 from '/img/BuyGiftMob2.jpg';
+import Discover1 from '/src/assets/img/Discover1.jpg';
+import Discover2 from '/src/assets/img/Discover2.jpg';
+import DiscoverMob1 from '/src/assets/img/DiscoverMob1.jpg';
+import DiscoverMob2 from '/src/assets/img/DiscoverMob2.jpg';
 
 export const Discover = () => {
     return (
@@ -23,12 +23,12 @@ export const Discover = () => {
             </DiscoverTextContainer>
             <DiscoverImgContainer>
                 <picture>
-                    <source srcSet={BuyGift1} media="(min-width: 768px)" />
-                    <img src={BuyGiftMob1} />
+                    <source srcSet={Discover1} media="(min-width: 768px)" />
+                    <img src={DiscoverMob1} />
                 </picture>
                 <picture>
-                    <source srcSet={BuyGift2} media="(min-width: 768px)" />
-                    <img src={BuyGiftMob2} />
+                    <source srcSet={Discover2} media="(min-width: 768px)" />
+                    <img src={DiscoverMob2} />
                 </picture>
             </DiscoverImgContainer>
         </Container>
