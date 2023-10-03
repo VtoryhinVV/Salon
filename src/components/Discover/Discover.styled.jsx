@@ -59,7 +59,6 @@ export const DiscoverImgContainer = styled.div`
     gap: 30px;
     & picture:nth-of-type(odd) {
       width: 100%;
-      height: 474px;
     }
   }
 `;
