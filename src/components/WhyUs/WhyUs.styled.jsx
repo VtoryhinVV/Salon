@@ -19,7 +19,7 @@ export const WhyUsSection = styled.section`
     align-items: center;
     text-align: center;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 830px) {
       flex-direction: row;
       text-align: left;
     }
@@ -85,7 +85,7 @@ export const WhyUsText = styled.div`
   gap: 24px;
   margin: 0 auto;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 830px) {
     flex-direction: row;
     margin: 0;
   }
