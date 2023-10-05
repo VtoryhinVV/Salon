@@ -151,6 +151,7 @@ export const ServicesLink = styled(Link)`
   &:hover,
   &:focus {
     color: var(--focus);
+    border-color: var(--focus);
   }
 `;
 
