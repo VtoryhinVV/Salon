@@ -38,7 +38,7 @@ export const ContactUsTimetable = styled.div`
   flex-direction: column;
   gap: 16px;
 
-  margin: 0 auto 40px;
+  margin: 0 auto 60px;
 
   & > h3 {
     text-align: center;

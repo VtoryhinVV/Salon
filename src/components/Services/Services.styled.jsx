@@ -139,11 +139,14 @@ export const ServicesLink = styled(Link)`
   color: var(--brown);
   text-decoration: none;
   width: 105px;
+  padding: 10px 24px;
 
   position: relative;
   z-index: 6;
 
   transition: color 0.3s ease;
+
+  border: 1px var(--brown) solid;
 
   &:hover,
   &:focus {
