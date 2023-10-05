@@ -11,7 +11,7 @@ const ContactUsPage = () => {
         texts="Get in touch with us"
         buttonText="Book appoinment"
       />
-      <ContactUs back={false} />
+      <ContactUs back={false} isTitle={false} />
       <Reviews />
     </main>
   );

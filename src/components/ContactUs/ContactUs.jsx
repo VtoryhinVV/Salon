@@ -39,7 +39,7 @@ const validationSchema = Yup.object().shape({
     .required('Required'),
 });
 
-export const ContactUs = ({ back = true }) => {
+export const ContactUs = ({ back = true, isTitle = true }) => {
   const handleSubmit = values => {
     sendEmail(values);
   };
@@ -60,7 +60,7 @@ export const ContactUs = ({ back = true }) => {
   return (
     <ContactUsSection bg={back}>
       <Container>
-        <ContactUsTitle>Contact Us</ContactUsTitle>
+      {isTitle && <ContactUsTitle>Contact Us</ContactUsTitle>}
         <ContactUsTimetable>
           <h3>Opening hours</h3>
           <ContactUsTimetableList>
