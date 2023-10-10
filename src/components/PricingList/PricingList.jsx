@@ -135,9 +135,9 @@ export const PricingList = () => {
   return (
     <PricingSect>
       <Container>
-        <h2>Pricing</h2>
+        <h2 data-aos="fade-down">Pricing</h2>
 
-        <ConsultationItem>
+        <ConsultationItem data-aos="fade-down">
           <h3>Consultation:</h3>
           <ul>
             <PricingItem
@@ -148,7 +148,7 @@ export const PricingList = () => {
           </ul>
         </ConsultationItem>
         <PricingTwoInOne>
-          <BotoxInfo>
+          <BotoxInfo data-aos="fade-right">
             <h3>Botox:</h3>
             <ul>
               {botox.map((info, inx) => (
@@ -156,7 +156,7 @@ export const PricingList = () => {
               ))}
             </ul>
           </BotoxInfo>
-          <div>
+          <div data-aos="fade-left">
             <h3>Dysport:</h3>
             <ul>
               {dysport.map((info, inx) => (
@@ -174,7 +174,7 @@ export const PricingList = () => {
         <PricingTwoColumn info={nasolabialFolds} />
         <PricingTwoColumn info={marionetteLines} />
         <PricingTwoColumn info={templeFiller} />
-        <HyalaseBox>
+        <HyalaseBox data-aos="fade-up">
           <HyalaseInfo>
             <h3>Hyalase (filler dissolver):</h3>
 
@@ -189,6 +189,7 @@ export const PricingList = () => {
           href="https://bookings.gettimely.com/aesthetica7/book"
           target="_blank"
           rel="noreferrer"
+          data-aos="fade-up"
         >
           Book appoinment
         </AppoinmentBtn>

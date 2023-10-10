@@ -13,8 +13,10 @@ export const Advantages = () => {
   return (
     <AdvantagesSection>
       <Container>
-        <AdvantagesTitle>The Work Values We Thrive For</AdvantagesTitle>
-        <AdvantagesList>
+        <AdvantagesTitle data-aos="fade-up">
+          The Work Values We Thrive For
+        </AdvantagesTitle>
+        <AdvantagesList data-aos="fade-up">
           <AdvantagesListItem>
             <svg>
               <use href={`${svgImgs}#icon-hand-thumb-up`}></use>
@@ -111,6 +113,7 @@ export const Advantages = () => {
           href="https://bookings.gettimely.com/aesthetica7/book"
           target="_blank"
           rel="noreferrer"
+          data-aos="fade-up"
         >
           BOOK APPOINMENT
         </AdvantagesLink>

@@ -21,7 +21,7 @@ export function OurStory() {
   return (
     <SectionStory>
       <Container>
-        <OurStoryContent>
+        <OurStoryContent data-aos="fade-right">
           <h2>Our story</h2>
           <p>
             At Aesthetica Clinic, our team of highly experienced professionals
@@ -55,7 +55,7 @@ export function OurStory() {
             </SocLinks>
           </OurStiryLink>
         </OurStoryContent>
-        <OurStoryImg>
+        <OurStoryImg data-aos="fade-left">
           <picture>
             <source
               srcSet={Rectangle557}

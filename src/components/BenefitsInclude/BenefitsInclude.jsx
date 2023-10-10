@@ -20,28 +20,31 @@ export const BenefitsInclude = ({
   return (
     <BenefitsSection bg={bgImg}>
       <Container>
-        <BenefitsTitle>
+        <BenefitsTitle data-aos="fade-down">
           {gift ? 'Why choose Our Gift vouchers' : 'Benefits include'}
         </BenefitsTitle>
-        {isMobile ? (
-          <BenefitsGallery infos={benefits} />
-        ) : (
-          <BenefitsList widthItem={three}>
-            {benefits.map((info, index) => (
-              <BenefitsComponent
-                key={index}
-                svgName={info.svgName}
-                title={info.title}
-                descr={info.descr}
-              />
-            ))}
-          </BenefitsList>
-        )}
+        <div data-aos="fade-up">
+          {isMobile ? (
+            <BenefitsGallery infos={benefits} />
+          ) : (
+            <BenefitsList widthItem={three}>
+              {benefits.map((info, index) => (
+                <BenefitsComponent
+                  key={index}
+                  svgName={info.svgName}
+                  title={info.title}
+                  descr={info.descr}
+                />
+              ))}
+            </BenefitsList>
+          )}
+        </div>
 
         <AppoinmentBtn
           href="https://bookings.gettimely.com/aesthetica7/book"
           target="_blank"
           rel="noreferrer"
+          data-aos="fade-up"
         >
           {gift ? 'BUY GIFT VOUCHER' : 'Book appoinment'}
         </AppoinmentBtn>

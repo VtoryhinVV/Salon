@@ -16,15 +16,19 @@ export const HeroCommon = ({
   return (
     <HeroSection services={service}>
       <Container>
-        <HeroTitle services={service}>{title}</HeroTitle>
+        <HeroTitle services={service} data-aos="fade-down">
+          {title}
+        </HeroTitle>
         {many ? (
-          <HeroText services={service}>
+          <HeroText services={service} data-aos="fade-down">
             {texts.map((text, index) => (
               <p key={index}>{text}</p>
             ))}
           </HeroText>
         ) : (
-          <HeroText services={service}>{texts}</HeroText>
+          <HeroText services={service} data-aos="fade-down">
+            {texts}
+          </HeroText>
         )}
         {service || (
           <HeroLink
@@ -32,6 +36,7 @@ export const HeroCommon = ({
             target="_blank"
             rel="noreferrer"
             services={service}
+            data-aos="fade-down"
           >
             {buttonText}
           </HeroLink>

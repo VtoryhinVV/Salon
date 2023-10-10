@@ -16,7 +16,7 @@ export const BuyGift = ({ back = false }) => {
   return (
     <BuyGiftSection bg={back}>
       <Container>
-        <BuyGiftImgContainer>
+        <BuyGiftImgContainer data-aos="fade-right">
           <picture>
             <source
               srcSet={BuyGift1}
@@ -38,7 +38,7 @@ export const BuyGift = ({ back = false }) => {
             <img src={BuyGiftMob2} width="172" height="291" alt="" />
           </picture>
         </BuyGiftImgContainer>
-        <BuyGiftTextContainer>
+        <BuyGiftTextContainer data-aos="fade-left">
           <BuyGiftTitle>
             Spread The Love With Aesthetica Clinic Gift Vouchers
           </BuyGiftTitle>

@@ -16,7 +16,7 @@ export const MedicalDescr = () => {
   return (
     <MedicaSection>
       <Container>
-        <MedicaTextBox>
+        <MedicaTextBox data-aos="fade-right">
           <MedicaTitle>Unlock Relief and Renewed Comfort</MedicaTitle>
           <MedicaText>
             Welcome to our Medical Botox Services, where we offer effective and
@@ -34,9 +34,9 @@ export const MedicalDescr = () => {
             Book appoinment
           </AppoinmentBtn>
         </MedicaTextBox>
-        <MedicaPictBox>
-          <ImgLeftBox></ImgLeftBox>
-          <ImgRightBox></ImgRightBox>
+        <MedicaPictBox data-aos="fade-left">
+          <ImgLeftBox />
+          <ImgRightBox />
         </MedicaPictBox>
         <AppoinmentBtnMob
           href="https://bookings.gettimely.com/aesthetica7/book"

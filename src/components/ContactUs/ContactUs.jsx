@@ -60,8 +60,10 @@ export const ContactUs = ({ back = true, isTitle = true }) => {
   return (
     <ContactUsSection bg={back}>
       <Container>
-      {isTitle && <ContactUsTitle>Contact Us</ContactUsTitle>}
-        <ContactUsTimetable>
+        {isTitle && (
+          <ContactUsTitle data-aos="fade-down">Contact Us</ContactUsTitle>
+        )}
+        <ContactUsTimetable data-aos="fade-down">
           <h3>Opening hours</h3>
           <ContactUsTimetableList>
             <ContactUsTimetableItem>
@@ -85,7 +87,7 @@ export const ContactUs = ({ back = true, isTitle = true }) => {
           </ContactUsTimetableList>
         </ContactUsTimetable>
         <ContactUsMainContent>
-          <ContactUsContentBox>
+          <ContactUsContentBox data-aos="fade-right">
             <ContactUsListData>
               <ContactUsItemData>
                 <ContactUsIcon
@@ -191,7 +193,7 @@ export const ContactUs = ({ back = true, isTitle = true }) => {
               </ContactUsSvgList>
             </ContactUsLinkContainer>
           </ContactUsContentBox>
-          <ContactUsImgContainer>
+          <ContactUsImgContainer data-aos="fade-left">
             <img src={ContactUsPhoto1} height={615} />
             <img src={ContactUsPhoto2} />
           </ContactUsImgContainer>

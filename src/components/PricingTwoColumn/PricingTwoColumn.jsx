@@ -13,7 +13,7 @@ export const PricingTwoColumn = ({
 }) => {
   const { title, price1, price2 } = info;
   return (
-    <TwoColumnBlock>
+    <TwoColumnBlock data-aos="fade-up">
       <h3>{title}</h3>
       <TwoColumnContent>
         <LeftPrice paddBotox={botox}>

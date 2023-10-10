@@ -10,7 +10,7 @@ export const Procedures = ({ textInfo, bg = false }) => {
   return (
     <ProceduresSect imgBg={bg}>
       <Container>
-        <InfoContainer>
+        <InfoContainer data-aos="fade-down">
           {textInfo.map((info, index) => (
             <ContantWhiteBox key={index} title={info.title} text={info.text} />
           ))}
@@ -19,6 +19,7 @@ export const Procedures = ({ textInfo, bg = false }) => {
           href="https://bookings.gettimely.com/aesthetica7/book"
           target="_blank"
           rel="noreferrer"
+          data-aos="fade-up"
         >
           Book appoinment
         </AppoinmentBtn>

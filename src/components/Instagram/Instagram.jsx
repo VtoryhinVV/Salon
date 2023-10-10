@@ -10,7 +10,7 @@ import { SocialWidget } from './SocialWidget';
 
 export function Instagram({ imgBg = false }) {
   return (
-    <InstagramSection bg={imgBg}>
+    <InstagramSection data-aos="fade-left" bg={imgBg}>
       <Container>
         <InstagramTitle>our instagram</InstagramTitle>
         <SocialWidget />

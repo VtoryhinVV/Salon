@@ -18,7 +18,7 @@ export const ServicesGallary = ({
 }) => {
   const isMobile = useMediaQuery({ maxWidth: 1200 });
   return (
-    <ServicesGallarySection bgImg={bg}>
+    <ServicesGallarySection bgImg={bg} data-aos="fade-up">
       <Container>
         <ServicesGallaryTitle>Before and After</ServicesGallaryTitle>
         {isMobile ? (

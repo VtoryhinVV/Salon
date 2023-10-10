@@ -4,7 +4,7 @@ import { ReviewsSection, ReviewsTitle } from './Reviews.styled';
 
 export function Reviews() {
   return (
-    <ReviewsSection>
+    <ReviewsSection data-aos="fade-right">
       <Container>
         <ReviewsTitle>What our clients say</ReviewsTitle>
         <GoogleReviews />

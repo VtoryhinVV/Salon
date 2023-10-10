@@ -27,8 +27,8 @@ export const GalleryComp = () => {
   return (
     <GalleryCompSect>
       <Container>
-        <h2>Gallery</h2>
-        <div>
+        <h2 data-aos="fade-down">Gallery</h2>
+        <div data-aos="fade-up">
           <Gallery
             photos={photos}
             direction={'column'}

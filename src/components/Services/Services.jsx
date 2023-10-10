@@ -35,9 +35,9 @@ export const Services = ({ back = true }) => {
   return (
     <ServicesSection bg={back}>
       <Container>
-        <ServicesTitle>Services</ServicesTitle>
+        <ServicesTitle data-aos="fade-right">Services</ServicesTitle>
         <ServicesContent>
-          <div>
+          <div data-aos="fade-right">
             <ServicesList>
               <ServicesListItem>
                 <ServicesListVisibleContent>
@@ -233,7 +233,7 @@ export const Services = ({ back = true }) => {
               BOOK APPOINMENT
             </ServicesButtonUnderList>
           </div>
-          <picture>
+          <picture data-aos="fade-left">
             <source
               srcSet={ServicesPhoto}
               media="(min-width: 1200px)"
@@ -252,6 +252,7 @@ export const Services = ({ back = true }) => {
             href="https://bookings.gettimely.com/aesthetica7/book"
             target="_blank"
             rel="noreferrer"
+            data-aos="fade-up"
           >
             BOOK APPOINMENT
           </ServicesButtonUnderImg>

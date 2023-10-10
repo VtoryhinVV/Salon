@@ -19,7 +19,7 @@ export const WhyUs = () => {
   return (
     <WhyUsSection>
       <Container>
-        <ImgContainer>
+        <ImgContainer data-aos="fade-right">
           <picture>
             <source
               srcSet={WhyUsDesktop1}
@@ -51,7 +51,7 @@ export const WhyUs = () => {
             <img src={WhyUsPhone3} width="118" height="224" alt="" />
           </picture>
         </ImgContainer>
-        <TextContainer>
+        <TextContainer data-aos="fade-left">
           <h2>Why us?</h2>
           <p>
             At Aesthetica Clinic, we deliver premium results using top-quality
@@ -62,7 +62,12 @@ export const WhyUs = () => {
             <WhyUsText>
               <div>
                 <StyledText>
-                  <CountUp end={5} duration={5} enableScrollSpy={true} scrollSpyOnce={true} />
+                  <CountUp
+                    end={5}
+                    duration={5}
+                    enableScrollSpy={true}
+                    scrollSpyOnce={true}
+                  />
                   +
                 </StyledText>
                 <FlexText>
@@ -72,7 +77,12 @@ export const WhyUs = () => {
               </div>
               <div>
                 <StyledText>
-                  <CountUp end={100} duration={2} enableScrollSpy={true} scrollSpyOnce={true} />
+                  <CountUp
+                    end={100}
+                    duration={2}
+                    enableScrollSpy={true}
+                    scrollSpyOnce={true}
+                  />
                   +
                 </StyledText>
                 <FlexText>
@@ -85,7 +95,12 @@ export const WhyUs = () => {
             <WhyUsText>
               <div>
                 <StyledText>
-                  <CountUp end={3000} duration={1} enableScrollSpy={true} scrollSpyOnce={true} />
+                  <CountUp
+                    end={3000}
+                    duration={1}
+                    enableScrollSpy={true}
+                    scrollSpyOnce={true}
+                  />
                   +
                 </StyledText>
                 <FlexText>

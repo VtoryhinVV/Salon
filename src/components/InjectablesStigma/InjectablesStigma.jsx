@@ -15,11 +15,11 @@ export const InjectablesStigma = () => {
   return (
     <InjectablesSection>
       <Container>
-        <InjectablesPictBox>
+        <InjectablesPictBox data-aos="fade-right">
           <ImgLeftBox></ImgLeftBox>
           <ImgRightBox></ImgRightBox>
         </InjectablesPictBox>
-        <InjectablesTextBox>
+        <InjectablesTextBox data-aos="fade-left">
           <InjectablesTitle>Stigma doesn’t exist</InjectablesTitle>
           <InjectablesText>
             We understand that some men may have concerns about the stigma
