@@ -1,6 +1,8 @@
 import styled from '@emotion/styled';
 
 export const ContainerBox = styled.div`
+  /* overflow: ${props => (props.visible ? 'visible' : 'hidden')}; */
+
   max-width: 100%;
   padding-left: 5px;
   padding-right: 5px;

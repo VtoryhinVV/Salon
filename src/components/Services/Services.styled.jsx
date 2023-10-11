@@ -140,6 +140,7 @@ export const ServicesLink = styled(Link)`
   text-decoration: none;
   width: 105px;
   padding: 10px 24px;
+  box-sizing: content-box !important;
 
   position: relative;
   z-index: 6;

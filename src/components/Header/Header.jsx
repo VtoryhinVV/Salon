@@ -24,7 +24,7 @@ export const Header = () => {
   return (
     <>
       <HeaderNav>
-        <Container>
+        <Container overflowVisible>
           <Link to="/">
             <ImgLogo alt="Image" src={logo} />
           </Link>

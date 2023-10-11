@@ -61,9 +61,9 @@ export const ContactUs = ({ back = true, isTitle = true }) => {
     <ContactUsSection bg={back}>
       <Container>
         {isTitle && (
-          <ContactUsTitle data-aos="fade-down">Contact Us</ContactUsTitle>
+          <ContactUsTitle data-aos="fade-up">Contact Us</ContactUsTitle>
         )}
-        <ContactUsTimetable data-aos="fade-down">
+        <ContactUsTimetable data-aos="fade-up">
           <h3>Opening hours</h3>
           <ContactUsTimetableList>
             <ContactUsTimetableItem>
