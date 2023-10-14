@@ -148,7 +148,7 @@ export const ContactUs = ({ back = true, isTitle = true }) => {
                 <Field
                   name="phone"
                   type="tel"
-                  placeholder="+380 XX XXX XX XX"
+                  placeholder="+64 XX XXX XX XX"
                 />
                 <ErrorMessageSt
                   name="phone"

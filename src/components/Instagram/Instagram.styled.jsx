@@ -2,15 +2,11 @@ import styled from '@emotion/styled';
 import bgImg from '/src/assets/img/bgInst.jpg';
 
 export const InstagramSection = styled.section`
-  padding: 100px 0;
+  padding: 60px 0;
   background-image: ${props => (props.bg ? `url(${bgImg})` : 'none')};
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  @media screen and (min-width: 768px) {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
   & .snapwidget-widget {
     height: 300px;
     margin-bottom: 5%;
