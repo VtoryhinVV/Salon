@@ -61,9 +61,19 @@ export const ContactUs = ({ back = true, isTitle = true }) => {
     <ContactUsSection bg={back}>
       <Container>
         {isTitle && (
-          <ContactUsTitle data-aos="fade-up">Contact Us</ContactUsTitle>
+          <ContactUsTitle
+            data-aos="fade-up"
+            data-aos-mirror="false"
+            data-aos-once="true"
+          >
+            Contact Us
+          </ContactUsTitle>
         )}
-        <ContactUsTimetable data-aos="fade-up">
+        <ContactUsTimetable
+          data-aos="fade-up"
+          data-aos-mirror="false"
+          data-aos-once="true"
+        >
           <h3>Opening hours</h3>
           <ContactUsTimetableList>
             <ContactUsTimetableItem>
@@ -87,7 +97,11 @@ export const ContactUs = ({ back = true, isTitle = true }) => {
           </ContactUsTimetableList>
         </ContactUsTimetable>
         <ContactUsMainContent>
-          <ContactUsContentBox data-aos="fade-right">
+          <ContactUsContentBox
+            data-aos="fade-right"
+            data-aos-mirror="false"
+            data-aos-once="true"
+          >
             <ContactUsListData>
               <ContactUsItemData>
                 <ContactUsIcon
@@ -145,11 +159,7 @@ export const ContactUs = ({ back = true, isTitle = true }) => {
                   component="div"
                   className="error"
                 />
-                <Field
-                  name="phone"
-                  type="tel"
-                  placeholder="+64 XX XXX XX XX"
-                />
+                <Field name="phone" type="tel" placeholder="+64 XX XXX XX XX" />
                 <ErrorMessageSt
                   name="phone"
                   component="div"
@@ -193,7 +203,11 @@ export const ContactUs = ({ back = true, isTitle = true }) => {
               </ContactUsSvgList>
             </ContactUsLinkContainer>
           </ContactUsContentBox>
-          <ContactUsImgContainer data-aos="fade-left">
+          <ContactUsImgContainer
+            data-aos="fade-left"
+            data-aos-mirror="false"
+            data-aos-once="true"
+          >
             <img src={ContactUsPhoto1} height={615} />
             <img src={ContactUsPhoto2} />
           </ContactUsImgContainer>

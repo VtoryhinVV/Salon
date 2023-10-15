@@ -10,7 +10,12 @@ import { SocialWidget } from './SocialWidget';
 
 export function Instagram({ imgBg = false }) {
   return (
-    <InstagramSection data-aos="fade-up" bg={imgBg}>
+    <InstagramSection
+      data-aos="fade-up"
+      data-aos-mirror="false"
+      data-aos-once="true"
+      bg={imgBg}
+    >
       <Container>
         <InstagramTitle>our instagram</InstagramTitle>
         <SocialWidget />

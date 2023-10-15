@@ -135,9 +135,15 @@ export const PricingList = () => {
   return (
     <PricingSect>
       <Container>
-        <h2 data-aos="fade-down">Pricing</h2>
+        <h2 data-aos="fade-down" data-aos-mirror="false" data-aos-once="true">
+          Pricing
+        </h2>
 
-        <ConsultationItem data-aos="fade-down">
+        <ConsultationItem
+          data-aos="fade-down"
+          data-aos-mirror="false"
+          data-aos-once="true"
+        >
           <h3>Consultation:</h3>
           <ul>
             <PricingItem
@@ -148,7 +154,11 @@ export const PricingList = () => {
           </ul>
         </ConsultationItem>
         <PricingTwoInOne>
-          <BotoxInfo data-aos="fade-right">
+          <BotoxInfo
+            data-aos="fade-right"
+            data-aos-mirror="false"
+            data-aos-once="true"
+          >
             <h3>Botox:</h3>
             <ul>
               {botox.map((info, inx) => (
@@ -156,7 +166,11 @@ export const PricingList = () => {
               ))}
             </ul>
           </BotoxInfo>
-          <div data-aos="fade-left">
+          <div
+            data-aos="fade-left"
+            data-aos-mirror="false"
+            data-aos-once="true"
+          >
             <h3>Dysport:</h3>
             <ul>
               {dysport.map((info, inx) => (
@@ -174,7 +188,11 @@ export const PricingList = () => {
         <PricingTwoColumn info={nasolabialFolds} />
         <PricingTwoColumn info={marionetteLines} />
         <PricingTwoColumn info={templeFiller} />
-        <HyalaseBox data-aos="fade-up">
+        <HyalaseBox
+          data-aos="fade-up"
+          data-aos-mirror="false"
+          data-aos-once="true"
+        >
           <HyalaseInfo>
             <h3>Hyalase (filler dissolver):</h3>
 

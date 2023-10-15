@@ -10,6 +10,8 @@ export const BenefitsItem = styled.div`
 
   & > h3 {
     font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 16px !important;
   }
 
   & > svg {

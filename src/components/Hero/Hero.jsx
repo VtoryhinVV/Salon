@@ -18,7 +18,11 @@ import globe from '/img/globe.png';
 export const Hero = () => {
   return (
     <HeroSection>
-      <Content data-aos="fade-down">
+      <Content
+        data-aos="fade-down"
+        data-aos-mirror="false"
+        data-aos-once="true"
+      >
         <CustomBanner />
         <Blur />
         <Ellipse />

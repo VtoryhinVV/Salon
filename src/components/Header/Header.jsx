@@ -5,6 +5,7 @@ import {
   Navigation,
   SocialsLink,
   Burger,
+  Services,
 } from './Header.styled';
 
 import logo from '../../assets/img/LogoHeader.png';
@@ -32,7 +33,28 @@ export const Header = () => {
           <Navigation>
             <StyledLink to="/">Home</StyledLink>
             <StyledLink to="/about_us">About Us</StyledLink>
-            <StyledLink to="/services">Services</StyledLink>
+            <Services>
+              <StyledLink to="/services">
+                Services
+                <svg>
+                  <use href={`${svgImgs}#icon-chevron-down`}></use>
+                </svg>
+              </StyledLink>
+              <div>
+                <StyledLink to="/services/dermal_filler">
+                  Dermal filler
+                </StyledLink>
+                <StyledLink to="/services/lip_filler">Lip Filler</StyledLink>
+                <StyledLink to="/services/injectables_for_men">
+                  Injectables for men
+                </StyledLink>
+                <StyledLink to="/services/anti_wrinkle">
+                  Anti Wrinkle & Wrinkle preventative
+                </StyledLink>
+                <StyledLink to="/services/medical">Medical</StyledLink>
+              </div>
+            </Services>
+
             <StyledLink to="/pricing">Pricing</StyledLink>
             <StyledLink to="/gallery">Gallery</StyledLink>
             <StyledLink to="/vouchers">Vouchers</StyledLink>

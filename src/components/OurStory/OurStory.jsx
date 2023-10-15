@@ -21,7 +21,11 @@ export function OurStory() {
   return (
     <SectionStory>
       <Container>
-        <OurStoryContent data-aos="fade-right">
+        <OurStoryContent
+          data-aos="fade-right"
+          data-aos-mirror="false"
+          data-aos-once="true"
+        >
           <h2>Our story</h2>
           <p>
             At Aesthetica Clinic, our team of highly experienced professionals
@@ -55,7 +59,11 @@ export function OurStory() {
             </SocLinks>
           </OurStiryLink>
         </OurStoryContent>
-        <OurStoryImg data-aos="fade-left">
+        <OurStoryImg
+          data-aos="fade-left"
+          data-aos-mirror="false"
+          data-aos-once="true"
+        >
           <picture>
             <source
               srcSet={Rectangle557}

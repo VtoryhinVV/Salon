@@ -16,7 +16,11 @@ export const MedicalDescr = () => {
   return (
     <MedicaSection>
       <Container>
-        <MedicaTextBox data-aos="fade-right">
+        <MedicaTextBox
+          data-aos="fade-right"
+          data-aos-mirror="false"
+          data-aos-once="true"
+        >
           <MedicaTitle>Unlock Relief and Renewed Comfort</MedicaTitle>
           <MedicaText>
             Welcome to our Medical Botox Services, where we offer effective and
@@ -34,7 +38,11 @@ export const MedicalDescr = () => {
             Book appoinment
           </AppoinmentBtn>
         </MedicaTextBox>
-        <MedicaPictBox data-aos="fade-left">
+        <MedicaPictBox
+          data-aos="fade-left"
+          data-aos-mirror="false"
+          data-aos-once="true"
+        >
           <ImgLeftBox />
           <ImgRightBox />
         </MedicaPictBox>

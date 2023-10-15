@@ -10,7 +10,11 @@ export const Procedures = ({ textInfo, bg = false }) => {
   return (
     <ProceduresSect imgBg={bg}>
       <Container>
-        <InfoContainer data-aos="fade-down">
+        <InfoContainer
+          data-aos="fade-down"
+          data-aos-mirror="false"
+          data-aos-once="true"
+        >
           {textInfo.map((info, index) => (
             <ContantWhiteBox key={index} title={info.title} text={info.text} />
           ))}

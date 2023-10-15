@@ -15,7 +15,11 @@ export const OurStory = () => {
   return (
     <OurStorySection>
       <Container>
-        <OurStoryInfoContainer data-aos="fade-right">
+        <OurStoryInfoContainer
+          data-aos="fade-right"
+          data-aos-mirror="false"
+          data-aos-once="true"
+        >
           <h2>Our Story</h2>
           <OurStoryTextContainer>
             <span>
@@ -54,7 +58,11 @@ export const OurStory = () => {
             BOOK APPOINMENT
           </a>
         </OurStoryInfoContainer>
-        <OurStoryImgContainer data-aos="fade-left">
+        <OurStoryImgContainer
+          data-aos="fade-left"
+          data-aos-mirror="false"
+          data-aos-once="true"
+        >
           <video src={Video} width="324" height="615" controls />
           {isDesctop && <img src={Logo} alt="logo" />}
         </OurStoryImgContainer>

@@ -16,17 +16,32 @@ export const HeroCommon = ({
   return (
     <HeroSection services={service}>
       <Container>
-        <HeroTitle services={service} data-aos="fade-down">
+        <HeroTitle
+          services={service}
+          data-aos="fade-down"
+          data-aos-mirror="false"
+          data-aos-once="true"
+        >
           {title}
         </HeroTitle>
         {many ? (
-          <HeroText services={service} data-aos="fade-down">
+          <HeroText
+            services={service}
+            data-aos="fade-down"
+            data-aos-mirror="false"
+            data-aos-once="true"
+          >
             {texts.map((text, index) => (
               <p key={index}>{text}</p>
             ))}
           </HeroText>
         ) : (
-          <HeroText services={service} data-aos="fade-down">
+          <HeroText
+            services={service}
+            data-aos="fade-down"
+            data-aos-mirror="false"
+            data-aos-once="true"
+          >
             {texts}
           </HeroText>
         )}
@@ -37,6 +52,8 @@ export const HeroCommon = ({
             rel="noreferrer"
             services={service}
             data-aos="fade-down"
+            data-aos-mirror="false"
+            data-aos-once="true"
           >
             {buttonText}
           </HeroLink>

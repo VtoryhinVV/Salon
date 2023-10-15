@@ -3,23 +3,23 @@ import bgHero from '/img/bg.jpg';
 import mobBgHero from '/img/mob/bghero.jpg';
 
 export const HeroSection = styled.section`
-  background-image: url(${mobBgHero});
   background-size: cover;
   background-position: center;
   width: 100%;
 
   & > div {
-    padding-top: 42px;
-    padding-bottom: 190px;
-    @media screen and (min-width: 768px) {
-      padding-bottom: 0;
+    @media screen and (min-width: 481px) {
+      /* padding-bottom: 190px; */
+
+      @media screen and (min-width: 768px) {
+        padding-bottom: 0;
+      }
     }
-  }
-  @media (min-width: 768px) {
-    & > div {
-      padding-top: 0;
+    @media (min-width: 768px) {
+      & > div {
+        padding-top: 0;
+      }
     }
-    background: url(${bgHero});
   }
 `;
 
@@ -33,7 +33,7 @@ export const Content = styled.div`
 export const Ellipse = styled.div`
   display: none;
 
-  @media (min-width: 768px) {
+  @media (min-width: 481px) {
     display: block;
     background-color: #9c7f47;
 
@@ -56,23 +56,44 @@ export const Ellipse = styled.div`
 export const Blur = styled.div`
   display: none;
 
-  @media (min-width: 768px) {
+  @media (min-width: 481px) {
     display: block;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 700px;
     z-index: 5;
     opacity: 0.800000011920929;
     background: var(--brown);
     mix-blend-mode: multiply;
   }
+  @media screen and (min-width: 768px) {
+    height: 500px;
+  }
+  @media screen and (min-width: 1000px) {
+    height: 600px;
+  }
+  @media screen and (min-width: 1150px) {
+    height: 700px;
+  }
+
+  @media screen and (min-width: 1250px) {
+    height: 800px;
+  }
+  @media screen and (min-width: 1400px) {
+    height: 928px;
+  }
 `;
 
 export const TextContant = styled.div`
   color: var(--white);
-
+  width: 100%;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -15%);
+  z-index: 50;
   & > div {
     margin: 0 auto;
     display: flex;
@@ -81,12 +102,8 @@ export const TextContant = styled.div`
   }
 
   @media screen and (min-width: 768px) {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%, 0);
     margin-top: 32px;
-    z-index: 50;
+
     color: var(--white);
 
     & > div {
@@ -106,7 +123,7 @@ export const AdresseInfo = styled.ul`
   flex-direction: column;
   align-items: center;
   padding: 0;
-  margin-bottom: 100px;
+  margin-bottom: 110px;
   & li {
     display: flex;
     gap: 8px;

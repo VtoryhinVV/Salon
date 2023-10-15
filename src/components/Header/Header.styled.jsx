@@ -43,6 +43,54 @@ export const StyledLink = styled(NavLink)`
     color: #9c7f47;
   }
 `;
+
+export const Services = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  position: relative;
+  & > a {
+    display: flex;
+    /* width: 188px; */
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+  }
+  & > a svg {
+    width: 16px;
+    height: 16px;
+    fill: black;
+    transition: all 0.3s ease;
+  }
+  &:hover > a svg,
+  &:focus > a svg {
+    transform: rotate(-180deg);
+    fill: var(--brown-light);
+  }
+
+  &:hover > div,
+  &:focus > div {
+    display: flex;
+  }
+  & > div {
+    display: none;
+    padding: 24px;
+    flex-direction: column;
+    position: absolute;
+    background: var(--white);
+    top: 100%;
+    left: 0;
+    z-index: 90;
+    gap: 32px;
+    transform: translate(-32%);
+
+    & > a {
+      text-align: center;
+      width: 188px;
+    }
+  }
+`;
+
 export const SocialsLink = styled.div`
   display: flex;
   align-items: center;

@@ -18,10 +18,20 @@ export const OurTeam = () => {
   return (
     <OurTeamSection>
       <Container>
-        <OurTeamTitle data-aos="fade-down">Our Team</OurTeamTitle>
+        <OurTeamTitle
+          data-aos="fade-down"
+          data-aos-mirror="false"
+          data-aos-once="true"
+        >
+          Our Team
+        </OurTeamTitle>
         <OurTeamList>
           <li>
-            <OurTeamListItemTextContainer data-aos="fade-right">
+            <OurTeamListItemTextContainer
+              data-aos="fade-right"
+              data-aos-mirror="false"
+              data-aos-once="true"
+            >
               <OurTeamListItemTitle>
                 <span>Anna (Founder) -</span>
                 <span>Registered Nurse</span>
@@ -54,13 +64,21 @@ export const OurTeam = () => {
                 </span>
               </OurTeamListItemText>
             </OurTeamListItemTextContainer>
-            <picture data-aos="fade-left">
+            <picture
+              data-aos="fade-left"
+              data-aos-mirror="false"
+              data-aos-once="true"
+            >
               <source srcSet={Anna} media="(min-width: 1200px)" />
               <OurTeamImg src={AnnaMob} alt="Anna" />
             </picture>
           </li>
           <li>
-            <OurTeamListItemTextContainer data-aos="fade-left">
+            <OurTeamListItemTextContainer
+              data-aos="fade-left"
+              data-aos-mirror="false"
+              data-aos-once="true"
+            >
               <OurTeamListItemTitle>
                 <span>Georgie -</span>
                 <span>Registered Nurse</span>
@@ -89,7 +107,11 @@ export const OurTeam = () => {
                 </span>
               </OurTeamListItemText>
             </OurTeamListItemTextContainer>
-            <picture data-aos="fade-right">
+            <picture
+              data-aos="fade-right"
+              data-aos-mirror="false"
+              data-aos-once="true"
+            >
               <source srcSet={Georgie} media="(min-width: 1200px)" />
               <OurTeamImg src={GeorgieMob} alt="Georgie" />
             </picture>

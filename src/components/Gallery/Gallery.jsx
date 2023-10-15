@@ -27,8 +27,10 @@ export const GalleryComp = () => {
   return (
     <GalleryCompSect>
       <Container>
-        <h2 data-aos="fade-down">Gallery</h2>
-        <div data-aos="fade-up">
+        <h2 data-aos="fade-down" data-aos-mirror="false" data-aos-once="true">
+          Gallery
+        </h2>
+        <div data-aos="fade-up" data-aos-mirror="false" data-aos-once="true">
           <Gallery
             photos={photos}
             direction={'column'}

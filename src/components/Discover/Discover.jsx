@@ -15,7 +15,11 @@ export const Discover = () => {
   return (
     <DiscoverSection>
       <Container>
-        <DiscoverTextContainer data-aos="fade-right">
+        <DiscoverTextContainer
+          data-aos="fade-right"
+          data-aos-mirror="false"
+          data-aos-once="true"
+        >
           <DiscoverTitle>
             Discover The Gift Of Beauty & Confidence
           </DiscoverTitle>
@@ -24,7 +28,11 @@ export const Discover = () => {
             loved ones feel truly special.
           </p>
         </DiscoverTextContainer>
-        <DiscoverImgContainer data-aos="fade-left">
+        <DiscoverImgContainer
+          data-aos="fade-left"
+          data-aos-mirror="false"
+          data-aos-once="true"
+        >
           <picture>
             <source srcSet={Discover1} media="(min-width: 768px)" />
             <img src={DiscoverMob1} />

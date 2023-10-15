@@ -8,10 +8,18 @@ import {
 export const MedicalGift = () => {
   return (
     <MedicalGiftSection>
-      <MedicalGiftTitle data-aos="fade-up">
+      <MedicalGiftTitle
+        data-aos="fade-up"
+        data-aos-mirror="false"
+        data-aos-once="true"
+      >
         Spread the love with Aesthetica clinic Gift vouchers
       </MedicalGiftTitle>
-      <MedicalGiftText data-aos="fade-up">
+      <MedicalGiftText
+        data-aos="fade-up"
+        data-aos-mirror="false"
+        data-aos-once="true"
+      >
         Treat your loved one with a perfect gift for any occasion.
       </MedicalGiftText>
       <MedicalGiftBtn

@@ -19,7 +19,11 @@ export const WhyUs = () => {
   return (
     <WhyUsSection>
       <Container>
-        <ImgContainer data-aos="fade-right">
+        <ImgContainer
+          data-aos="fade-right"
+          data-aos-mirror="false"
+          data-aos-once="true"
+        >
           <picture>
             <source
               srcSet={WhyUsDesktop1}
@@ -51,7 +55,11 @@ export const WhyUs = () => {
             <img src={WhyUsPhone3} width="118" height="224" alt="" />
           </picture>
         </ImgContainer>
-        <TextContainer data-aos="fade-left">
+        <TextContainer
+          data-aos="fade-left"
+          data-aos-mirror="false"
+          data-aos-once="true"
+        >
           <h2>Why us?</h2>
           <p>
             At Aesthetica Clinic, we deliver premium results using top-quality

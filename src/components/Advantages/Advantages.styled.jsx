@@ -16,14 +16,7 @@ export const AdvantagesSection = styled.section`
   & > div {
     display: flex;
     flex-direction: column;
-    gap: 24px;
-
-    text-align: center;
     align-items: center;
-
-    @media screen and (min-width: 768px) {
-      gap: 40px;
-    }
   }
 `;
 
@@ -32,7 +25,7 @@ export const AdvantagesTitle = styled.h2`
   font-size: 34px;
   font-weight: 400;
   letter-spacing: 0.68px;
-
+  text-align: center;
   margin-bottom: 40px !important;
 
   @media screen and (min-width: 478px) {
@@ -42,6 +35,7 @@ export const AdvantagesTitle = styled.h2`
     font-size: 45px;
     letter-spacing: 0.96px;
     width: auto;
+    margin-bottom: 80px !important;
   }
   @media screen and (min-width: 1200px) {
     font-size: 48px;
@@ -72,7 +66,7 @@ export const AdvantagesListItem = styled.li`
   display: flex;
   flex-direction: column;
   gap: 16px;
-
+  text-align: center;
   position: relative;
 
   width: 300px;
@@ -120,10 +114,9 @@ export const AdvantagesListItem = styled.li`
 `;
 
 export const AdvantagesLink = styled.a`
-  margin-top: 16px;
   padding: 12px 24px;
   width: 220px;
-
+  text-align: center;
   border: none;
   text-decoration: none;
 
@@ -135,5 +128,8 @@ export const AdvantagesLink = styled.a`
   &:hover,
   &:focus {
     background-color: var(--focus);
+  }
+  @media screen and (min-width: 768px) {
+    margin-top: 40px;
   }
 `;

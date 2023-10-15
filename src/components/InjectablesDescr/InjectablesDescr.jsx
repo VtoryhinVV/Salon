@@ -15,7 +15,11 @@ export const InjectablesDescr = () => {
   return (
     <InjectablesSection>
       <Container>
-        <InjectablesTextBox data-aos="fade-right">
+        <InjectablesTextBox
+          data-aos="fade-right"
+          data-aos-mirror="false"
+          data-aos-once="true"
+        >
           <InjectablesTitle>Youth is for everyone</InjectablesTitle>
           <InjectablesText>
             Botox is a popular choice among our male clients for reducing the
@@ -41,7 +45,11 @@ export const InjectablesDescr = () => {
             Book appoinment
           </AppoinmentBtn>
         </InjectablesTextBox>
-        <InjectablesPictBox data-aos="fade-left">
+        <InjectablesPictBox
+          data-aos="fade-left"
+          data-aos-mirror="false"
+          data-aos-once="true"
+        >
           <ImgLeftBox />
           <ImgRightBox />
         </InjectablesPictBox>

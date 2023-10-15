@@ -35,9 +35,19 @@ export const Services = ({ back = true }) => {
   return (
     <ServicesSection bg={back}>
       <Container>
-        <ServicesTitle data-aos="fade-right">Services</ServicesTitle>
+        <ServicesTitle
+          data-aos="fade-right"
+          data-aos-mirror="false"
+          data-aos-once="true"
+        >
+          Services
+        </ServicesTitle>
         <ServicesContent>
-          <div data-aos="fade-right">
+          <div
+            data-aos="fade-right"
+            data-aos-mirror="false"
+            data-aos-once="true"
+          >
             <ServicesList>
               <ServicesListItem>
                 <ServicesListVisibleContent>
@@ -233,7 +243,11 @@ export const Services = ({ back = true }) => {
               BOOK APPOINMENT
             </ServicesButtonUnderList>
           </div>
-          <picture data-aos="fade-left">
+          <picture
+            data-aos="fade-left"
+            data-aos-mirror="false"
+            data-aos-once="true"
+          >
             <source
               srcSet={ServicesPhoto}
               media="(min-width: 1200px)"
@@ -253,6 +267,8 @@ export const Services = ({ back = true }) => {
             target="_blank"
             rel="noreferrer"
             data-aos="fade-up"
+            data-aos-mirror="false"
+            data-aos-once="true"
           >
             BOOK APPOINMENT
           </ServicesButtonUnderImg>

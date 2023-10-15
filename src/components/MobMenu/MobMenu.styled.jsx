@@ -40,16 +40,48 @@ export const Navigation = styled.nav`
 export const StyledLink = styled(NavLink)`
   color: var(--black);
   text-decoration: none;
-  width: 163px;
+  width: 100%;
   height: 20px;
   text-align: center;
-
+  transition: color 0.3s ease;
   &:hover,
   &:focus {
     color: var(--brown);
   }
   &.active {
     color: var(--brown);
+  }
+`;
+
+export const Services = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  & > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+  }
+  & > a svg {
+    width: 16px;
+    height: 16px;
+    fill: black;
+  }
+  &:hover > a svg,
+  &:focus > a svg {
+    transform: rotate(-180deg);
+    fill: var(--brown-light);
+  }
+
+  &:hover > div,
+  &:focus > div {
+    display: flex;
+  }
+  & > div {
+    display: none;
+    flex-direction: column;
+    gap: 32px;
   }
 `;
 

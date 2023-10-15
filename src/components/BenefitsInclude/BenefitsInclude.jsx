@@ -20,10 +20,14 @@ export const BenefitsInclude = ({
   return (
     <BenefitsSection bg={bgImg}>
       <Container>
-        <BenefitsTitle data-aos="fade-down">
+        <BenefitsTitle
+          data-aos="fade-down"
+          data-aos-mirror="false"
+          data-aos-once="true"
+        >
           {gift ? 'Why choose Our Gift vouchers' : 'Benefits include'}
         </BenefitsTitle>
-        <div data-aos="fade-up">
+        <div data-aos="fade-up" data-aos-mirror="false" data-aos-once="true">
           {isMobile ? (
             <BenefitsGallery infos={benefits} />
           ) : (
@@ -45,6 +49,8 @@ export const BenefitsInclude = ({
           target="_blank"
           rel="noreferrer"
           data-aos="fade-up"
+          data-aos-mirror="false"
+          data-aos-once="true"
         >
           {gift ? 'BUY GIFT VOUCHER' : 'Book appoinment'}
         </AppoinmentBtn>

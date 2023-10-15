@@ -2,6 +2,7 @@ import {
   CloseBtn,
   MobMenuBlock,
   Navigation,
+  Services,
   SocialsLink,
   StyledLink,
 } from './MobMenu.styled';
@@ -54,9 +55,32 @@ export const MobMenu = ({ isOpen, toggleMenu }) => {
         <StyledLink onClick={toggleMenu} to="/about_us">
           About Us
         </StyledLink>
-        <StyledLink onClick={toggleMenu} to="/services">
-          Services
-        </StyledLink>
+        <Services>
+          <StyledLink onClick={toggleMenu} to="/services">
+            Services
+            <svg>
+              <use href={`${svgImgs}#icon-chevron-down`}></use>
+            </svg>
+          </StyledLink>
+          <div>
+            <StyledLink onClick={toggleMenu} to="/services/dermal_filler">
+              Dermal filler
+            </StyledLink>
+            <StyledLink onClick={toggleMenu} to="/services/lip_filler">
+              Lip Filler
+            </StyledLink>
+            <StyledLink onClick={toggleMenu} to="/services/injectables_for_men">
+              Injectables for men
+            </StyledLink>
+            <StyledLink onClick={toggleMenu} to="/services/anti_wrinkle">
+              Anti Wrinkle & Wrinkle preventative
+            </StyledLink>
+            <StyledLink onClick={toggleMenu} to="/services/medical">
+              Medical
+            </StyledLink>
+          </div>
+        </Services>
+
         <StyledLink onClick={toggleMenu} to="/pricing">
           Pricing
         </StyledLink>
