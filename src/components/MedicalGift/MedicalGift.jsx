@@ -5,9 +5,9 @@ import {
   MedicalGiftText,
 } from './MedicalGift.styled';
 
-export const MedicalGift = () => {
+export const MedicalGift = ({ back = false }) => {
   return (
-    <MedicalGiftSection>
+    <MedicalGiftSection bg={back}>
       <MedicalGiftTitle
         data-aos="fade-up"
         data-aos-mirror="false"

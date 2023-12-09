@@ -1,7 +1,7 @@
 {
   "name": "Aesthetica Clinic",
   "short_name": "AC",
-  "description": "",
+  "description": "Welcome to Aesthetica Clinic, the premier clinic in New Zealand for top-quality injectable treatments. Our clinic offers premium products, personalized boutique service, and expert care provided by our highly-trained medical professionals.",
   "start_url": "/",
   "display": "fullscreen",
   "background_color": "white",

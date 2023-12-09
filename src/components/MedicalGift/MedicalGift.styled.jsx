@@ -1,8 +1,13 @@
 import styled from '@emotion/styled';
+import bgImg from '../../assets/img/bgGiftMed.jpg';
 
 export const MedicalGiftSection = styled.section`
   padding-top: 60px;
   padding-bottom: 60px;
+  background-image: ${props => (props.bg ? `url(${bgImg})` : 'none')};
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 `;
 
 export const MedicalGiftTitle = styled.h2`

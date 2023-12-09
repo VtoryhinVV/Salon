@@ -12,7 +12,10 @@ export const HeroCommon = ({
   buttonText = 'Book appoinment',
   service = false,
   many,
+  linkForButton = '',
 }) => {
+  console.log('🚀 ~ file: HeroCommon.jsx:17 ~ linkForButton:', linkForButton);
+
   return (
     <HeroSection services={service}>
       <Container>
@@ -47,7 +50,9 @@ export const HeroCommon = ({
         )}
         {service || (
           <HeroLink
-            href="https://bookings.gettimely.com/aesthetica7/book"
+            href={
+              linkForButton || 'https://bookings.gettimely.com/aesthetica7/book'
+            }
             target="_blank"
             rel="noreferrer"
             services={service}

@@ -111,7 +111,7 @@ export const ContactUs = ({ back = true, isTitle = true }) => {
                   alt="Chat Bubble"
                 />
                 <ContactUsTextContainer>
-                  <h3>Drop Us :</h3>
+                  <h3>Massage Us :</h3>
                   <p>anna@aesthetica.co.nz</p>
                 </ContactUsTextContainer>
               </ContactUsItemData>
@@ -121,8 +121,9 @@ export const ContactUs = ({ back = true, isTitle = true }) => {
                 <ContactUsTextContainer>
                   <h3>Visit Us :</h3>
                   <p>
-                    41 Raranga Street, Marshland, Christchurch 8083, New Zealand
-                    (parking is available at front and behind the building)
+                    41C Raranga Street, Marshland, Christchurch 8083, New
+                    Zealand (parking is available at front and behind the
+                    building)
                   </p>
                 </ContactUsTextContainer>
               </ContactUsItemData>

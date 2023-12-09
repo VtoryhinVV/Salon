@@ -30,6 +30,7 @@ function Voucher() {
       <HeroCommon
         title="Spread the love with Aesthetica Gift Vouchers"
         buttonText="Buy gift vouchers"
+        linkForButton="https://bookings.gettimely.com/aesthetica7/bb/purchase"
       />
       <Discover />
       <BenefitsInclude benefits={benefitInfo} three gift bgImg />
