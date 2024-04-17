@@ -57,7 +57,7 @@ export const Hero = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                Book appoinment
+                Book appointment
               </StyledLink>
             </MainTitle>
           </Container>

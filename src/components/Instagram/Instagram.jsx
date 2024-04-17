@@ -25,7 +25,7 @@ export function Instagram({ imgBg = false }) {
             target="_blank"
             rel="noreferrer"
           >
-            Book appoinment
+            Book appointment
           </AppoinmentBtn>
           <InstaramBtn
             href="https://www.instagram.com/aesthetica_by_anna/"

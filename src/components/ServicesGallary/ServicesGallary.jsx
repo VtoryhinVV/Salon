@@ -41,7 +41,7 @@ export const ServicesGallary = ({
             target="_blank"
             rel="noreferrer"
           >
-            Book appoinment
+            Book appointment
           </AppoinmentBtn>
           <ToGallery to="/gallery">View more photos</ToGallery>
         </BtnGroup>

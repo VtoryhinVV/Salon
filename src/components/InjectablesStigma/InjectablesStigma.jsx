@@ -51,7 +51,7 @@ export const InjectablesStigma = () => {
             target="_blank"
             rel="noreferrer"
           >
-            Book appoinment
+            Book appointment
           </AppoinmentBtn>
         </InjectablesTextBox>
       </Container>

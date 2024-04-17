@@ -110,7 +110,7 @@ export const Advantages = () => {
           data-aos-mirror="false"
           data-aos-once="true"
         >
-          BOOK APPOINMENT
+          BOOK APPOINTMENT
         </AdvantagesLink>
       </Container>
     </AdvantagesSection>

@@ -42,7 +42,7 @@ export const InjectablesDescr = () => {
             target="_blank"
             rel="noreferrer"
           >
-            Book appoinment
+            Book appointment
           </AppoinmentBtn>
         </InjectablesTextBox>
         <InjectablesPictBox

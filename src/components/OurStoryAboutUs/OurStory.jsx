@@ -55,7 +55,7 @@ export const OurStory = () => {
             target="_blank"
             rel="noreferrer"
           >
-            BOOK APPOINMENT
+            BOOK APPOINTMENT
           </a>
         </OurStoryInfoContainer>
         <OurStoryImgContainer

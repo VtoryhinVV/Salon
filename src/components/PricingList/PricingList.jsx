@@ -209,7 +209,7 @@ export const PricingList = () => {
           rel="noreferrer"
           data-aos="fade-up"
         >
-          Book appoinment
+          Book appointment
         </AppoinmentBtn>
       </Container>
     </PricingSect>

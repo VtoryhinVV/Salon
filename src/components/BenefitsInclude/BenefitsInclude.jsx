@@ -52,7 +52,7 @@ export const BenefitsInclude = ({
           data-aos-mirror="false"
           data-aos-once="true"
         >
-          {gift ? 'BUY GIFT VOUCHER' : 'Book appoinment'}
+          {gift ? 'BUY GIFT VOUCHER' : 'Book appointment'}
         </AppoinmentBtn>
       </Container>
     </BenefitsSection>

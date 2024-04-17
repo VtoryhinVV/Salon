@@ -10,7 +10,7 @@ const AboutUs = () => {
       <HeroCommon
         title="Discover Our story"
         texts="Short story about us & meet the team"
-        buttonText="Book appoinment"
+        buttonText="Book appointment"
       />
       <OurStory />
       <OurTeam />

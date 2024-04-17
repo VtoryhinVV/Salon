@@ -9,7 +9,7 @@ const ContactUsPage = () => {
       <HeroCommon
         title="CONTACT US"
         texts="Get in touch with us"
-        buttonText="Book appoinment"
+        buttonText="Book appointment"
       />
       <ContactUs back={false} isTitle={false} />
       <Reviews />

@@ -35,7 +35,7 @@ export const MedicalDescr = () => {
             target="_blank"
             rel="noreferrer"
           >
-            Book appoinment
+            Book appointment
           </AppoinmentBtn>
         </MedicaTextBox>
         <MedicaPictBox
@@ -51,7 +51,7 @@ export const MedicalDescr = () => {
           target="_blank"
           rel="noreferrer"
         >
-          Book appoinment
+          Book appointment
         </AppoinmentBtnMob>
       </Container>
     </MedicaSection>

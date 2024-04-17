@@ -240,7 +240,7 @@ export const Services = ({ back = true }) => {
               target="_blank"
               rel="noreferrer"
             >
-              BOOK APPOINMENT
+              BOOK APPOINTMENT
             </ServicesButtonUnderList>
           </div>
           <picture
@@ -270,7 +270,7 @@ export const Services = ({ back = true }) => {
             data-aos-mirror="false"
             data-aos-once="true"
           >
-            BOOK APPOINMENT
+            BOOK APPOINTMENT
           </ServicesButtonUnderImg>
         </ServicesContent>
       </Container>

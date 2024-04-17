@@ -25,7 +25,7 @@ export const Procedures = ({ textInfo, bg = false }) => {
           rel="noreferrer"
           data-aos="fade-up"
         >
-          Book appoinment
+          Book appointment
         </AppoinmentBtn>
       </Container>
     </ProceduresSect>

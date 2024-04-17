@@ -8,7 +8,7 @@ const ServicesPage = () => {
       <HeroCommon
         title="Treatments & Services"
         texts="Indulge in our luxurious beauty services"
-        buttonText="Book appoinment"
+        buttonText="Book appointment"
       />
 
       <Services back={false} />

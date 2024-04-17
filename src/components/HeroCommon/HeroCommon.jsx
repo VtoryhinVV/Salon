@@ -9,7 +9,7 @@ import { Container } from '../shared/Container';
 export const HeroCommon = ({
   title,
   texts,
-  buttonText = 'Book appoinment',
+  buttonText = 'Book appointment',
   service = false,
   many,
   linkForButton = '',
