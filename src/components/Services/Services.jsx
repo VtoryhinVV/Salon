@@ -82,10 +82,7 @@ export const Services = ({ back = true }) => {
                         and youthful look of our skin.
                       </span>
                     </ServicesTextContent>
-                    <ServicesLink
-                      to="/services/dermal_filler"
-                      href="/serveces/dermal_filler"
-                    >
+                    <ServicesLink to="/services/dermal_filler">
                       READ MORE
                     </ServicesLink>
                   </ServicesListHiddenContent>
@@ -115,10 +112,7 @@ export const Services = ({ back = true }) => {
                         globally, and for good reason.
                       </span>
                     </ServicesTextContent>
-                    <ServicesLink
-                      to="/services/lip_filler"
-                      href="/serveces/lip_filler"
-                    >
+                    <ServicesLink to="/services/lip_filler">
                       READ MORE
                     </ServicesLink>
                   </ServicesListHiddenContent>
@@ -152,10 +146,7 @@ export const Services = ({ back = true }) => {
                         noticeable lines and wrinkles.
                       </span>
                     </ServicesTextContent>
-                    <ServicesLink
-                      to="/services/injectables_for_men"
-                      href="/serveces/injectables_for_men"
-                    >
+                    <ServicesLink to="/services/injectables_for_men">
                       READ MORE
                     </ServicesLink>
                   </ServicesListHiddenContent>
@@ -190,10 +181,7 @@ export const Services = ({ back = true }) => {
                         facial expressions.
                       </span>
                     </ServicesTextContent>
-                    <ServicesLink
-                      to="/services/anti_wrinkle"
-                      href="/serveces/anti_wrinkle"
-                    >
+                    <ServicesLink to="/services/anti_wrinkle">
                       READ MORE
                     </ServicesLink>
                   </ServicesListHiddenContent>
@@ -225,10 +213,42 @@ export const Services = ({ back = true }) => {
                         hyperhidrosis, teeth grinding, and headaches.
                       </span>
                     </ServicesTextContent>
-                    <ServicesLink
-                      to="/services/medical"
-                      href="/serveces/medical"
-                    >
+                    <ServicesLink to="/services/medical">
+                      READ MORE
+                    </ServicesLink>
+                  </ServicesListHiddenContent>
+                </CSSTransition>
+              </ServicesListItem>
+
+              <ServicesListItem>
+                <ServicesListVisibleContent>
+                  <ServicesListItemTitle>
+                    Skin rejuvenation treatments
+                  </ServicesListItemTitle>
+                  <ServicesSvg open={open === 'six'}>
+                    <use href={`${svgImgs}#icon-arrow`}></use>
+                  </ServicesSvg>
+                </ServicesListVisibleContent>
+                <ServicesOpenList id="six" onClick={openListItem} />
+
+                <CSSTransition
+                  in={open === 'six'}
+                  timeout={200}
+                  classNames="my-node"
+                >
+                  <ServicesListHiddenContent open={open === 'six'}>
+                    <ServicesTextContent>
+                      <span>
+                        Skin rejuvenation treatments are becoming very popular
+                        worldwide. Nowadays, skin health and appearance is
+                        extremely important. We move away from unnatural and
+                        fake appearance, moving towards more of a natural and
+                        effortless look. Therefore, our cosmetic injectable
+                        result priorities are becoming all about achieving a
+                        healthy, glowing and rejuvenated skin.
+                      </span>
+                    </ServicesTextContent>
+                    <ServicesLink to="/services/skin_rejuvenation_treatments">
                       READ MORE
                     </ServicesLink>
                   </ServicesListHiddenContent>

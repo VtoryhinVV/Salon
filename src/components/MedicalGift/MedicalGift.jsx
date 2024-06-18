@@ -27,6 +27,8 @@ export const MedicalGift = ({ back = false }) => {
         target="_blank"
         rel="noreferrer"
         data-aos="fade-up"
+        data-aos-mirror="false"
+        data-aos-once="true"
       >
         BUY GIFT VOUCHER
       </MedicalGiftBtn>

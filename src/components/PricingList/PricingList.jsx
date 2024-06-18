@@ -1,6 +1,7 @@
 import { PricingItem } from '../PricingItem/PricingItem';
 import { PricingTwoColumn } from '../PricingTwoColumn/PricingTwoColumn';
 import { Container } from '../shared/Container';
+import { NewPrice } from '../NewPricing/NewPrice';
 import {
   PricingSect,
   ConsultationItem,
@@ -203,11 +204,14 @@ export const PricingList = () => {
             </ul>
           </HyalaseInfo>
         </HyalaseBox>
+        <NewPrice />
         <AppoinmentBtn
           href="https://bookings.gettimely.com/aesthetica7/book"
           target="_blank"
           rel="noreferrer"
           data-aos="fade-up"
+          data-aos-mirror="false"
+          data-aos-once="true"
         >
           Book appointment
         </AppoinmentBtn>

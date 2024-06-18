@@ -111,7 +111,7 @@ export const ContactUs = ({ back = true, isTitle = true }) => {
                   alt="Chat Bubble"
                 />
                 <ContactUsTextContainer>
-                  <h3>Massage Us :</h3>
+                  <h3>Message Us :</h3>
                   <p>anna@aesthetica.co.nz</p>
                 </ContactUsTextContainer>
               </ContactUsItemData>
