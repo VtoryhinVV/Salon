@@ -2,11 +2,11 @@ import { Container } from '../shared/Container';
 import {
   SkinRejAboutInfo,
   SkinRejAboutSect,
-  VideoCont,
+  // VideoCont,
 } from './SkinRejAbout.styled';
 
-import Poster from '/src/assets/img/SkinRejuvenation.jpg';
-import Video from '/src/assets/video/SkinRejuvenation.MOV';
+// import Poster from '/src/assets/img/SkinRejuvenation.jpg';
+// import Video from '/src/assets/video/SkinRejuvenation.MOV';
 
 export const SkinRejAbout = () => {
   return (
