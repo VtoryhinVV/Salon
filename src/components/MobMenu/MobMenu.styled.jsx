@@ -37,6 +37,10 @@ export const Navigation = styled.nav`
   gap: 32px;
 `;
 
+export const BoldLink = styled.div`
+  font-weight: 700;
+`;
+
 export const StyledLink = styled(NavLink)`
   color: var(--black);
   text-decoration: none;

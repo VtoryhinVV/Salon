@@ -7,6 +7,7 @@ import {
   BenefitsList,
   BenefitsTitle,
   BenefitsSection,
+  AppoinmentBtnCont,
 } from './BenefitsInclude.styled';
 
 export const BenefitsInclude = ({
@@ -14,6 +15,8 @@ export const BenefitsInclude = ({
   three = false,
   gift = false,
   bgImg = false,
+  title = 'Why choose Our Gift vouchers',
+  btn = 'BUY GIFT VOUCHER',
 }) => {
   const isMobile = useMediaQuery({ maxWidth: 768 });
 
@@ -25,7 +28,7 @@ export const BenefitsInclude = ({
           data-aos-mirror="false"
           data-aos-once="true"
         >
-          {gift ? 'Why choose Our Gift vouchers' : 'Benefits include'}
+          {gift ? title : 'Benefits include'}
         </BenefitsTitle>
         <div data-aos="fade-up" data-aos-mirror="false" data-aos-once="true">
           {isMobile ? (
@@ -43,17 +46,18 @@ export const BenefitsInclude = ({
             </BenefitsList>
           )}
         </div>
-
-        <AppoinmentBtn
-          href="https://bookings.gettimely.com/aesthetica7/book"
-          target="_blank"
-          rel="noreferrer"
-          data-aos="fade-up"
-          data-aos-mirror="false"
-          data-aos-once="true"
-        >
-          {gift ? 'BUY GIFT VOUCHER' : 'Book appointment'}
-        </AppoinmentBtn>
+        <AppoinmentBtnCont>
+          <AppoinmentBtn
+            href="https://bookings.gettimely.com/aesthetica7/book"
+            target="_blank"
+            rel="noreferrer"
+            data-aos="fade-up"
+            data-aos-mirror="false"
+            data-aos-once="true"
+          >
+            {gift ? btn : 'Book appointment'}
+          </AppoinmentBtn>
+        </AppoinmentBtnCont>
       </Container>
     </BenefitsSection>
   );

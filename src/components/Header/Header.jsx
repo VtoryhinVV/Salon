@@ -52,6 +52,9 @@ export const Header = () => {
                   Anti Wrinkle & Wrinkle preventative
                 </StyledLink>
                 <StyledLink to="/services/medical">Medical</StyledLink>
+                <StyledLink to="/services/skin_rejuvenation_treatments">
+                  Skin Rejuvenation Treatments
+                </StyledLink>
               </div>
             </Services>
 

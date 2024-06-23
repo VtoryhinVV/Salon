@@ -14,8 +14,6 @@ export const HeroCommon = ({
   many,
   linkForButton = '',
 }) => {
-  console.log('🚀 ~ file: HeroCommon.jsx:17 ~ linkForButton:', linkForButton);
-
   return (
     <HeroSection services={service}>
       <Container>

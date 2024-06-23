@@ -45,7 +45,7 @@ export const OurStoryInfoContainer = styled.div`
   & > a {
     margin: 16px auto 0;
     padding: 12px 24px;
-    width: 225px;
+    width: 235px;
     box-sizing: border-box;
 
     text-decoration: none;

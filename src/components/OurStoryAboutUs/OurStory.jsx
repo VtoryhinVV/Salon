@@ -8,6 +8,7 @@ import {
 } from './OurStory.styled';
 
 import Logo from '/src/assets/img/OurStoryLogo.jpg';
+import Poster from '/src/assets/img/OutStoryPoster.jpg';
 import Video from '/src/assets/video/Injection.mp4';
 
 export const OurStory = () => {
@@ -63,7 +64,13 @@ export const OurStory = () => {
           data-aos-mirror="false"
           data-aos-once="true"
         >
-          <video src={Video} width="324" height="615" controls />
+          <video
+            src={Video}
+            width="324"
+            height="615"
+            controls
+            poster={Poster}
+          />
           {isDesctop && <img src={Logo} alt="logo" />}
         </OurStoryImgContainer>
       </Container>

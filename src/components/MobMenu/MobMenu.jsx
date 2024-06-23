@@ -1,4 +1,5 @@
 import {
+  BoldLink,
   CloseBtn,
   MobMenuBlock,
   Navigation,
@@ -62,7 +63,7 @@ export const MobMenu = ({ isOpen, toggleMenu }) => {
               <use href={`${svgImgs}#icon-chevron-down`}></use>
             </svg>
           </StyledLink>
-          <div>
+          <BoldLink>
             <StyledLink onClick={toggleMenu} to="/services/dermal_filler">
               Dermal filler
             </StyledLink>
@@ -78,7 +79,13 @@ export const MobMenu = ({ isOpen, toggleMenu }) => {
             <StyledLink onClick={toggleMenu} to="/services/medical">
               Medical
             </StyledLink>
-          </div>
+            <StyledLink
+              onClick={toggleMenu}
+              to="/services/skin_rejuvenation_treatments"
+            >
+              Skin Rejuvenation Treatments
+            </StyledLink>
+          </BoldLink>
         </Services>
 
         <StyledLink onClick={toggleMenu} to="/pricing">

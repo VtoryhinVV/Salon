@@ -10,13 +10,17 @@ export const BenefitsSection = styled.section`
   padding-bottom: 60px;
 `;
 
+export const AppoinmentBtnCont = styled.div`
+  display: flex;
+  align-items: center;
+`;
+
 export const AppoinmentBtn = styled.a`
-  display: block;
+  display: inline-block;
   padding: 12px 24px;
   margin: 0 auto;
   text-decoration: none;
-  width: 176px;
-  text-align: center;
+
   cursor: pointer;
   background-color: var(--brown);
   color: white;
