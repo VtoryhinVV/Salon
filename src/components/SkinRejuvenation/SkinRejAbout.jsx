@@ -54,7 +54,7 @@ export const SkinRejAbout = () => {
             </li>
           </ul>
         </SkinRejAboutInfo>
-        <VideoCont
+        {/* <VideoCont
           data-aos="fade-left"
           data-aos-mirror="false"
           data-aos-once="true"
@@ -63,7 +63,7 @@ export const SkinRejAbout = () => {
             <source src={Video} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
-        </VideoCont>
+        </VideoCont> */}
       </Container>
     </SkinRejAboutSect>
   );
