@@ -8,11 +8,41 @@ import {
 } from './OurStory.styled';
 
 import Logo from '/src/assets/img/OurStoryLogo.jpg';
-import Poster from '/src/assets/img/OutStoryPoster.jpg';
 import Video from '/src/assets/video/Injection.mp4';
+import { useEffect, useRef } from 'react';
 
 export const OurStory = () => {
   const isDesctop = useMediaQuery({ minWidth: 1200 });
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    const video = videoRef.current;
+    const observer = new IntersectionObserver(
+      entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            video.play();
+          } else {
+            video.pause();
+          }
+        });
+      },
+      {
+        threshold: 0.5, // 50% видео должно быть в поле зрения для воспроизведения
+      }
+    );
+
+    if (video) {
+      observer.observe(video);
+    }
+
+    return () => {
+      if (video) {
+        observer.unobserve(video);
+      }
+    };
+  }, []);
+
   return (
     <OurStorySection>
       <Container>
@@ -67,9 +97,11 @@ export const OurStory = () => {
           <video
             src={Video}
             width="324"
-            height="615"
+            height="576"
             controls
-            poster={Poster}
+            ref={videoRef}
+            loop
+            muted
           />
           {isDesctop && <img src={Logo} alt="logo" />}
         </OurStoryImgContainer>

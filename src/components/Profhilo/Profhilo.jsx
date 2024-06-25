@@ -8,13 +8,44 @@ import {
   WhatIsProfhilo,
   WhatIsProfhiloInfo,
 } from './Profhilo.styled';
-import Poster from '/src/assets/img/OutStoryPoster.jpg';
 import Video from '/src/assets/video/IdealCandidates.mp4';
-
 import WhatIsProfhiloImg from '/src/assets/img/WhatIsProfhilo.jpg';
 import WhatIsProfhiloImgMob from '/src/assets/img/WhatIsProfhiloMob.jpg';
 import Logo from '/src/assets/img/OurStoryLogo.jpg';
+
+import { useEffect, useRef } from 'react';
+
 export const Profhilo = () => {
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    const video = videoRef.current;
+    const observer = new IntersectionObserver(
+      entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            video.play();
+          } else {
+            video.pause();
+          }
+        });
+      },
+      {
+        threshold: 0.5, // 50% видео должно быть в поле зрения для воспроизведения
+      }
+    );
+
+    if (video) {
+      observer.observe(video);
+    }
+
+    return () => {
+      if (video) {
+        observer.unobserve(video);
+      }
+    };
+  }, []);
+
   return (
     <ProfhiloSect>
       <Container>
@@ -76,7 +107,7 @@ export const Profhilo = () => {
           >
             <img src={Logo} width="324" height="665" alt="Logo" />
             <VideoCont>
-              <video controls>
+              <video controls ref={videoRef} loop muted>
                 <source src={Video} type="video/mp4" />
                 Your browser does not support the video tag.
               </video>

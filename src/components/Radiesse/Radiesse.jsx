@@ -14,7 +14,37 @@ import Video from '/src/assets/video/Radiesse.mp4';
 import RadiesseImg from '/src/assets/img/Radiesse.jpg';
 import RadiesseMob from '/src/assets/img/RadiesseMob.jpg';
 import Logo from '/src/assets/img/OurStoryLogo.jpg';
+import { useEffect, useRef } from 'react';
 export const Radiesse = () => {
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    const video = videoRef.current;
+    const observer = new IntersectionObserver(
+      entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            video.play();
+          } else {
+            video.pause();
+          }
+        });
+      },
+      {
+        threshold: 0.5, // 50% видео должно быть в поле зрения для воспроизведения
+      }
+    );
+
+    if (video) {
+      observer.observe(video);
+    }
+
+    return () => {
+      if (video) {
+        observer.unobserve(video);
+      }
+    };
+  }, []);
   return (
     <RadiesseSect>
       <Container>
@@ -79,7 +109,7 @@ export const Radiesse = () => {
           >
             <img src={Logo} width="324" height="665" alt="Logo" />
             <VideoCont>
-              <video controls>
+              <video controls ref={videoRef} loop muted>
                 <source src={Video} type="video/mp4" />
                 Your browser does not support the video tag.
               </video>

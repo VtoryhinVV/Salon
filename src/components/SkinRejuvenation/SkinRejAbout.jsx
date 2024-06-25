@@ -2,6 +2,7 @@ import { Container } from '../shared/Container';
 import {
   SkinRejAboutInfo,
   SkinRejAboutSect,
+  VideoCont,
   // VideoCont,
 } from './SkinRejAbout.styled';
 
@@ -64,6 +65,18 @@ export const SkinRejAbout = () => {
             Your browser does not support the video tag.
           </video>
         </VideoCont> */}
+        <VideoCont
+          data-aos="fade-left"
+          data-aos-mirror="false"
+          data-aos-once="true"
+        >
+          {/* <iframe
+            src="https://drive.google.com/file/d/10NMo4iv49svesnnFq2r3yfBSr_Hgh0Lq/preview"
+            width="640"
+            height="480"
+            allow="autoplay"
+          ></iframe> */}
+        </VideoCont>
       </Container>
     </SkinRejAboutSect>
   );
