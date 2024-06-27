@@ -4,7 +4,6 @@ import { Frequently } from '../../components/Frequently/Frequently';
 import { HeroCommon } from '../../components/HeroCommon/HeroCommon';
 import { Profhilo } from '../../components/Profhilo/Profhilo';
 import { Radiesse } from '../../components/Radiesse/Radiesse';
-import { SkinRejAbout } from '../../components/SkinRejuvenation/SkinRejAbout';
 import { MedicalGift } from '../../components/MedicalGift/MedicalGift';
 
 export const SkinRejuvenation = () => {
@@ -89,7 +88,6 @@ export const SkinRejuvenation = () => {
         service
         many
       />
-      <SkinRejAbout />
       <Profhilo />
       <BenefitsInclude
         benefits={benefitsInfo}
@@ -103,7 +101,7 @@ export const SkinRejuvenation = () => {
         benefits={benefitsInfo2}
         three
         gift
-        title="Benefits of Profhilo®"
+        title="Benefits of Radiesse®"
         btn="Book appointment"
       />
       <Frequently />

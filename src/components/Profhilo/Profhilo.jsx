@@ -20,11 +20,25 @@ export const Profhilo = () => {
 
   useEffect(() => {
     const video = videoRef.current;
+
+    const handleUserInteraction = () => {
+      if (video && video.paused) {
+        video.play().catch(error => {
+          console.error('Video play failed: ', error);
+        });
+      }
+    };
+
+    document.addEventListener('click', handleUserInteraction);
+    document.addEventListener('keydown', handleUserInteraction);
+
     const observer = new IntersectionObserver(
       entries => {
         entries.forEach(entry => {
           if (entry.isIntersecting) {
-            video.play();
+            video.play().catch(error => {
+              console.error('Video play failed: ', error);
+            });
           } else {
             video.pause();
           }
@@ -43,6 +57,8 @@ export const Profhilo = () => {
       if (video) {
         observer.unobserve(video);
       }
+      document.removeEventListener('click', handleUserInteraction);
+      document.removeEventListener('keydown', handleUserInteraction);
     };
   }, []);
 

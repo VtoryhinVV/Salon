@@ -15,16 +15,31 @@ import RadiesseImg from '/src/assets/img/Radiesse.jpg';
 import RadiesseMob from '/src/assets/img/RadiesseMob.jpg';
 import Logo from '/src/assets/img/OurStoryLogo.jpg';
 import { useEffect, useRef } from 'react';
+
 export const Radiesse = () => {
   const videoRef = useRef(null);
 
   useEffect(() => {
     const video = videoRef.current;
+
+    const handleUserInteraction = () => {
+      if (video && video.paused) {
+        video.play().catch(error => {
+          console.error('Video play failed: ', error);
+        });
+      }
+    };
+
+    document.addEventListener('click', handleUserInteraction);
+    document.addEventListener('keydown', handleUserInteraction);
+
     const observer = new IntersectionObserver(
       entries => {
         entries.forEach(entry => {
           if (entry.isIntersecting) {
-            video.play();
+            video.play().catch(error => {
+              console.error('Video play failed: ', error);
+            });
           } else {
             video.pause();
           }
@@ -43,8 +58,11 @@ export const Radiesse = () => {
       if (video) {
         observer.unobserve(video);
       }
+      document.removeEventListener('click', handleUserInteraction);
+      document.removeEventListener('keydown', handleUserInteraction);
     };
   }, []);
+
   return (
     <RadiesseSect>
       <Container>

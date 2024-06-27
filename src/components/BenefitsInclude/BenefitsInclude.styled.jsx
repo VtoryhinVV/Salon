@@ -58,6 +58,6 @@ export const BenefitsTitle = styled.h2`
   font-weight: 400;
   line-height: normal;
   letter-spacing: 0.96px;
-  text-transform: capitalize;
+
   text-align: center;
 `;

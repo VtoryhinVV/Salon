@@ -15,7 +15,7 @@ export const BenefitsInclude = ({
   three = false,
   gift = false,
   bgImg = false,
-  title = 'Why choose Our Gift vouchers',
+  title = 'Why Сhoose Our Gift Vouchers',
   btn = 'BUY GIFT VOUCHER',
 }) => {
   const isMobile = useMediaQuery({ maxWidth: 768 });
@@ -28,7 +28,7 @@ export const BenefitsInclude = ({
           data-aos-mirror="false"
           data-aos-once="true"
         >
-          {gift ? title : 'Benefits include'}
+          {gift ? title : 'Benefits Include'}
         </BenefitsTitle>
         <div data-aos="fade-up" data-aos-mirror="false" data-aos-once="true">
           {isMobile ? (
