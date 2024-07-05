@@ -3,7 +3,7 @@ import { MedicalDescr } from '../../components/MedicalDescr/MedicalDescr';
 import { MedicalGift } from '../../components/MedicalGift/MedicalGift';
 import { Procedures } from '../../components/Procedures/Procedures';
 
-export const Medical = () => {
+const Medical = () => {
   const infoProcedures = [
     {
       title: 'Hyperhidrosis (Excessive Sweating) Treatment',
@@ -35,3 +35,5 @@ export const Medical = () => {
     </main>
   );
 };
+
+export default Medical;

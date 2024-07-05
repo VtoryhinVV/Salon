@@ -9,60 +9,11 @@ import {
   WhatIsRadiesseInfo,
 } from './Radiesse.styled';
 
-import Video from '/src/assets/video/Radiesse.mp4';
-
-import RadiesseImg from '/src/assets/img/Radiesse.jpg';
-import RadiesseMob from '/src/assets/img/RadiesseMob.jpg';
+import RadiesseImg from '/src/assets/img/Radiesse.png';
+import RadiesseMob from '/src/assets/img/RadiesseMob.png';
 import Logo from '/src/assets/img/OurStoryLogo.jpg';
-import { useEffect, useRef } from 'react';
 
 export const Radiesse = () => {
-  const videoRef = useRef(null);
-
-  useEffect(() => {
-    const video = videoRef.current;
-
-    const handleUserInteraction = () => {
-      if (video && video.paused) {
-        video.play().catch(error => {
-          console.error('Video play failed: ', error);
-        });
-      }
-    };
-
-    document.addEventListener('click', handleUserInteraction);
-    document.addEventListener('keydown', handleUserInteraction);
-
-    const observer = new IntersectionObserver(
-      entries => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            video.play().catch(error => {
-              console.error('Video play failed: ', error);
-            });
-          } else {
-            video.pause();
-          }
-        });
-      },
-      {
-        threshold: 0.5, // 50% видео должно быть в поле зрения для воспроизведения
-      }
-    );
-
-    if (video) {
-      observer.observe(video);
-    }
-
-    return () => {
-      if (video) {
-        observer.unobserve(video);
-      }
-      document.removeEventListener('click', handleUserInteraction);
-      document.removeEventListener('keydown', handleUserInteraction);
-    };
-  }, []);
-
   return (
     <RadiesseSect>
       <Container>
@@ -127,10 +78,15 @@ export const Radiesse = () => {
           >
             <img src={Logo} width="324" height="665" alt="Logo" />
             <VideoCont>
-              <video controls ref={videoRef} loop muted>
-                <source src={Video} type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
+              <iframe
+                width="100%"
+                height="100%"
+                src={`https://www.youtube.com/embed/SBTaKoIDWQw?autoplay=1&mute=1&loop=1&playlist=SBTaKoIDWQw`}
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
             </VideoCont>
           </IdealCandidatesVisual>
           <IdealCandidatesInfo

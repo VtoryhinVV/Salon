@@ -127,22 +127,29 @@ export const IdealCandidatesInfo = styled.div`
 `;
 
 export const VideoCont = styled.div`
-  & video {
-    display: none;
-    @media screen and (min-width: 310px) {
-      display: block;
-      width: 300px;
-      height: 530px;
-    }
+  display: none;
+  @media screen and (min-width: 310px) {
+    display: block;
+    width: 300px;
+    height: 530px;
+  }
 
-    @media screen and (min-width: 410px) {
-      width: 320px;
-      height: 570px;
-    }
+  @media screen and (min-width: 410px) {
+    width: 320px;
+    height: 570px;
+  }
 
-    @media screen and (min-width: 1200px) {
-      width: 344px;
-      height: 615px;
-    }
+  @media screen and (min-width: 1200px) {
+    width: 344px;
+    height: 615px;
+  }
+  position: relative;
+  /* padding-bottom: 56.25%; */
+  /* height: 0; */
+
+  & iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
   }
 `;

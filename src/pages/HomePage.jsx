@@ -7,7 +7,7 @@ import { ContactUs } from '../components/ContactUs/ContactUs';
 import { Reviews } from '../components/Reviews/Reviews';
 import { Instagram } from '../components/Instagram/Instagram';
 
-function HomePage() {
+const HomePage = () => {
   return (
     <main>
       <Hero />
@@ -20,6 +20,6 @@ function HomePage() {
       <ContactUs />
     </main>
   );
-}
+};
 
 export default HomePage;

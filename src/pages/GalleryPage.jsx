@@ -1,11 +1,11 @@
 import { GalleryComp } from '../components/Gallery/Gallery';
 
-function GalleryPage() {
+const GalleryPage = () => {
   return (
     <main>
       <GalleryComp />
     </main>
   );
-}
+};
 
 export default GalleryPage;

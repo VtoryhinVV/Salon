@@ -7,7 +7,7 @@ import photo1 from '/src/assets/img/lipFilter/img1.jpg';
 import photo2 from '/src/assets/img/lipFilter/img2.jpg';
 import photo3 from '/src/assets/img/lipFilter/img3.jpg';
 
-export const LipFiller = () => {
+const LipFiller = () => {
   const gallery = [photo1, photo2, photo3];
 
   const benefitsInfo = [
@@ -48,3 +48,5 @@ export const LipFiller = () => {
     </main>
   );
 };
+
+export default LipFiller;

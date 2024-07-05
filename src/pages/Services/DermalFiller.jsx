@@ -5,7 +5,7 @@ import { ServicesGallary } from '../../components/ServicesGallary/ServicesGallar
 import photo1 from '/src/assets/img/DermalFiller/img1.jpg';
 import photo2 from '/src/assets/img/DermalFiller/img2.jpg';
 
-export const DermalFiller = () => {
+const DermalFiller = () => {
   const gallery = [photo1, photo2];
   const textHero = [
     'Dermal filler - used to sculpt, enhance, replenish and shape the face.',
@@ -57,3 +57,4 @@ export const DermalFiller = () => {
     </main>
   );
 };
+export default DermalFiller;

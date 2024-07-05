@@ -8,7 +8,7 @@ import photo2 from '/src/assets/img/InjectablesGl2.jpg';
 import photo3 from '/src/assets/img/InjectablesGl3.jpg';
 import photo4 from '/src/assets/img/InjectablesGl4.jpg';
 
-export const InjectablesForMen = () => {
+const InjectablesForMen = () => {
   const gallery = [photo1, photo2, photo3, photo4];
   return (
     <main>
@@ -23,3 +23,5 @@ export const InjectablesForMen = () => {
     </main>
   );
 };
+
+export default InjectablesForMen;

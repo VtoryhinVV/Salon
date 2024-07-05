@@ -3,7 +3,7 @@ import { Discover } from '../components/Discover/Discover';
 import { BenefitsInclude } from '../components/BenefitsInclude/BenefitsInclude';
 import { ContactUs } from '../components/ContactUs/ContactUs';
 
-function Voucher() {
+const Voucher = () => {
   const benefitInfo = [
     {
       svgName: 'icon-hand-thumb-up',
@@ -37,6 +37,6 @@ function Voucher() {
       <ContactUs back={false} />
     </main>
   );
-}
+};
 
 export default Voucher;

@@ -6,7 +6,7 @@ import { Profhilo } from '../../components/Profhilo/Profhilo';
 import { Radiesse } from '../../components/Radiesse/Radiesse';
 import { MedicalGift } from '../../components/MedicalGift/MedicalGift';
 
-export const SkinRejuvenation = () => {
+const SkinRejuvenation = () => {
   const textHero = [
     'Skin rejuvenation treatments are becoming very popular worldwide. Nowadays, skin health and appearance is extremely important. We move away from unnatural and fake appearance, moving towards more of a natural and effortless look. Therefore, our cosmetic injectable result priorities are becoming all about achieving a healthy, glowing and rejuvenated skin.',
   ];
@@ -110,3 +110,5 @@ export const SkinRejuvenation = () => {
     </main>
   );
 };
+
+export default SkinRejuvenation;
