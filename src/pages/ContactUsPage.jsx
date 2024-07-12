@@ -8,7 +8,7 @@ const ContactUsPage = () => {
     <main>
       <HeroCommon
         title="CONTACT US"
-        texts="Get in touch with us"
+        // texts="Get in touch with us"
         buttonText="Book appointment"
       />
       <ContactUs back={false} isTitle={false} />

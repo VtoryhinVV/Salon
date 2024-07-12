@@ -8,7 +8,7 @@ import { Container } from '../shared/Container';
 
 export const HeroCommon = ({
   title,
-  texts,
+  texts = '',
   buttonText = 'Book appointment',
   service = false,
   many,

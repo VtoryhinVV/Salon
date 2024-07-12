@@ -2,7 +2,7 @@ import styled from '@emotion/styled';
 
 export const MembershipOptionsSect = styled.section`
   padding-top: 120px;
-  padding-bottom: 120px;
+  padding-bottom: 100px;
 
   h2,
   p,
@@ -36,20 +36,18 @@ export const MembershipOptionsImg = styled.div`
 export const MembershipOptionsInfo = styled.div`
   & h2 {
     font-family: Prata;
-    font-size: 38px;
+    display: none;
+    font-size: 48px;
     font-weight: 400;
     margin-bottom: 24px;
     @media screen and (min-width: 1200px) {
-      font-size: 48px;
+      display: block;
     }
   }
   & ul {
     margin: 0;
     padding: 0;
     list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
   }
 
   & li {
@@ -57,7 +55,7 @@ export const MembershipOptionsInfo = styled.div`
     display: flex;
     flex-direction: column;
     gap: 24px;
-
+    margin-bottom: 24px;
     align-items: start;
 
     box-shadow: 0px 13px 19px 0px #00000012;
