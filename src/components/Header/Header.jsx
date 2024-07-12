@@ -41,18 +41,16 @@ export const Header = () => {
                 </svg>
               </StyledLink>
               <div>
-                <StyledLink to="/services/dermal_filler">
-                  Dermal filler
-                </StyledLink>
-                <StyledLink to="/services/lip_filler">Lip Filler</StyledLink>
-                <StyledLink to="/services/injectables_for_men">
+                <StyledLink to="/dermal_filler">Dermal filler</StyledLink>
+                <StyledLink to="/lip_filler">Lip Filler</StyledLink>
+                <StyledLink to="/injectables_for_men">
                   Injectables for men
                 </StyledLink>
-                <StyledLink to="/services/anti_wrinkle">
+                <StyledLink to="/anti_wrinkle">
                   Anti Wrinkle & Wrinkle preventative
                 </StyledLink>
-                <StyledLink to="/services/medical">Medical</StyledLink>
-                <StyledLink to="/services/skin_rejuvenation_treatments">
+                <StyledLink to="/medical">Medical</StyledLink>
+                <StyledLink to="/skin_rejuvenation_treatments">
                   Skin Rejuvenation Treatments
                 </StyledLink>
               </div>
@@ -62,6 +60,9 @@ export const Header = () => {
             <StyledLink to="/gallery">Gallery</StyledLink>
             <StyledLink to="/vouchers">Vouchers</StyledLink>
             <StyledLink to="/contact_us">Contact us</StyledLink>
+
+            {/* Member */}
+            <StyledLink to="/memberships">Memberships</StyledLink>
           </Navigation>
           <SocialsLink>
             <a

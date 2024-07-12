@@ -79,7 +79,28 @@ const SkinRejuvenation = () => {
         'Experience minimal downtime with Radiesse®, allowing you to return to your daily activities with little interruption.',
     },
   ];
-
+  const question = [
+    {
+      question: 'How much does Profhilo cost?',
+      answer: `The price for 1 syringe (2ml) is $800. This is enough for one area for eg Face Or Neck. 
+       The package for Face and Neck area x1 treatment is $1450.`,
+    },
+    {
+      question: 'Is there a downside to Profhilo?',
+      answer:
+        'Profhilo is typically considered a safe treatment, however, just like any other cosmetic procedure, there are potential side effects. These can include: redness, swelling, bruising and mild discomfort at the injection site. These symptoms pass quickly, within a day to few days time.',
+    },
+    {
+      question: 'How long does Radiesse last?',
+      answer:
+        'Radiesse is a long-lasting dermal filler. The results of this injection last up to 2 years.',
+    },
+    {
+      question: 'Does Radiesse look natural?',
+      answer:
+        'You can expect natural-looking, long-lasting, and effective results when you receive Radiesse treatment. The result is natural due to the product stimulating your body to renew itself on its own by producing more collagen.',
+    },
+  ];
   return (
     <main>
       <HeroCommon
@@ -104,7 +125,7 @@ const SkinRejuvenation = () => {
         title="Benefits of Radiesse®"
         btn="Book appointment"
       />
-      <Frequently />
+      <Frequently data={question} />
       <DisclaimerSkin />
       <MedicalGift back />
     </main>

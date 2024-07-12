@@ -82,9 +82,7 @@ export const Services = ({ back = true }) => {
                         and youthful look of our skin.
                       </span>
                     </ServicesTextContent>
-                    <ServicesLink to="/services/dermal_filler">
-                      READ MORE
-                    </ServicesLink>
+                    <ServicesLink to="/dermal_filler">READ MORE</ServicesLink>
                   </ServicesListHiddenContent>
                 </CSSTransition>
               </ServicesListItem>
@@ -112,9 +110,7 @@ export const Services = ({ back = true }) => {
                         globally, and for good reason.
                       </span>
                     </ServicesTextContent>
-                    <ServicesLink to="/services/lip_filler">
-                      READ MORE
-                    </ServicesLink>
+                    <ServicesLink to="/lip_filler">READ MORE</ServicesLink>
                   </ServicesListHiddenContent>
                 </CSSTransition>
               </ServicesListItem>
@@ -146,7 +142,7 @@ export const Services = ({ back = true }) => {
                         noticeable lines and wrinkles.
                       </span>
                     </ServicesTextContent>
-                    <ServicesLink to="/services/injectables_for_men">
+                    <ServicesLink to="/injectables_for_men">
                       READ MORE
                     </ServicesLink>
                   </ServicesListHiddenContent>
@@ -181,9 +177,7 @@ export const Services = ({ back = true }) => {
                         facial expressions.
                       </span>
                     </ServicesTextContent>
-                    <ServicesLink to="/services/anti_wrinkle">
-                      READ MORE
-                    </ServicesLink>
+                    <ServicesLink to="/anti_wrinkle">READ MORE</ServicesLink>
                   </ServicesListHiddenContent>
                 </CSSTransition>
               </ServicesListItem>
@@ -213,9 +207,7 @@ export const Services = ({ back = true }) => {
                         hyperhidrosis, teeth grinding, and headaches.
                       </span>
                     </ServicesTextContent>
-                    <ServicesLink to="/services/medical">
-                      READ MORE
-                    </ServicesLink>
+                    <ServicesLink to="/medical">READ MORE</ServicesLink>
                   </ServicesListHiddenContent>
                 </CSSTransition>
               </ServicesListItem>
@@ -248,7 +240,7 @@ export const Services = ({ back = true }) => {
                         healthy, glowing and rejuvenated skin.
                       </span>
                     </ServicesTextContent>
-                    <ServicesLink to="/services/skin_rejuvenation_treatments">
+                    <ServicesLink to="/skin_rejuvenation_treatments">
                       READ MORE
                     </ServicesLink>
                   </ServicesListHiddenContent>

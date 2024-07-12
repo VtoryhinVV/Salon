@@ -137,8 +137,9 @@ export const ServicesSvg = styled.svg`
 
 export const ServicesLink = styled(Link)`
   color: var(--brown);
+  display: inline-block;
   text-decoration: none;
-  width: 105px;
+  max-width: 105px;
   padding: 10px 24px;
   box-sizing: content-box !important;
 

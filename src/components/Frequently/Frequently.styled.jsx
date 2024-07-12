@@ -22,6 +22,7 @@ export const FrequentlySect = styled.section`
     & > div {
       flex-direction: row;
       justify-content: space-between;
+      align-items: baseline;
     }
   }
 `;

@@ -64,25 +64,22 @@ export const MobMenu = ({ isOpen, toggleMenu }) => {
             </svg>
           </StyledLink>
           <BoldLink>
-            <StyledLink onClick={toggleMenu} to="/services/dermal_filler">
+            <StyledLink onClick={toggleMenu} to="/dermal_filler">
               Dermal filler
             </StyledLink>
-            <StyledLink onClick={toggleMenu} to="/services/lip_filler">
+            <StyledLink onClick={toggleMenu} to="/lip_filler">
               Lip Filler
             </StyledLink>
-            <StyledLink onClick={toggleMenu} to="/services/injectables_for_men">
+            <StyledLink onClick={toggleMenu} to="/injectables_for_men">
               Injectables for men
             </StyledLink>
-            <StyledLink onClick={toggleMenu} to="/services/anti_wrinkle">
+            <StyledLink onClick={toggleMenu} to="/anti_wrinkle">
               Anti Wrinkle & Wrinkle preventative
             </StyledLink>
-            <StyledLink onClick={toggleMenu} to="/services/medical">
+            <StyledLink onClick={toggleMenu} to="/medical">
               Medical
             </StyledLink>
-            <StyledLink
-              onClick={toggleMenu}
-              to="/services/skin_rejuvenation_treatments"
-            >
+            <StyledLink onClick={toggleMenu} to="/skin_rejuvenation_treatments">
               Skin Rejuvenation Treatments
             </StyledLink>
           </BoldLink>
@@ -99,6 +96,9 @@ export const MobMenu = ({ isOpen, toggleMenu }) => {
         </StyledLink>
         <StyledLink onClick={toggleMenu} to="/contact_us">
           Contact us
+        </StyledLink>
+        <StyledLink onClick={toggleMenu} to="/memberships">
+          Memberships
         </StyledLink>
         <SocialsLink>
           <a

@@ -6,8 +6,8 @@ export const HeroSection = styled.section`
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 120px;
+  padding-bottom: 120px;
 
   h1,
   p,
@@ -55,7 +55,7 @@ export const HeroText = styled.div`
 `;
 
 export const HeroLink = styled.a`
-  width: 225px;
+  /* width: 225px; */
   display: ${props => (props.services ? 'none' : 'block')};
   border: 1px solid var(--brown);
   background: var(--white, #fff);

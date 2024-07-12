@@ -17,6 +17,7 @@ export const ContainerBox = styled.div`
 
   @media screen and (min-width: 1200px) {
     width: 1200px;
+    padding: 0;
   }
   @media screen and (min-width: 1310px) {
     width: 1300px;

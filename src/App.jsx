@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 import { Layout } from './components/Layout/Layout';
-// import { ServicesChoose } from './pages/ServicesChoose';
+
 import { lazy, Suspense } from 'react';
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 
@@ -30,6 +30,7 @@ const ServicesPage = lazy(() => import('./pages/ServicesPage'));
 const GalleryPage = lazy(() => import('./pages/GalleryPage'));
 const Voucher = lazy(() => import('./pages/Voucher'));
 const PricingPage = lazy(() => import('./pages/PricingPage'));
+const MembershipsPage = lazy(() => import('./pages/MembershipsPage'));
 
 function App() {
   useEffect(() => {
@@ -47,22 +48,23 @@ function App() {
             <Route index element={<HomePage />} />
             <Route path="/about_us" element={<AboutUs />} />
             <Route path="/services" element={<ServicesPage />} />
-            <Route path="/services/dermal_filler" element={<DermalFiller />} />
-            <Route path="/services/lip_filler" element={<LipFiller />} />
+            <Route path="/dermal_filler" element={<DermalFiller />} />
+            <Route path="/lip_filler" element={<LipFiller />} />
             <Route
-              path="/services/injectables_for_men"
+              path="/injectables_for_men"
               element={<InjectablesForMen />}
             />
-            <Route path="/services/medical" element={<Medical />} />
-            <Route path="/services/anti_wrinkle" element={<AntiWrinkle />} />
+            <Route path="/medical" element={<Medical />} />
+            <Route path="/anti_wrinkle" element={<AntiWrinkle />} />
             <Route
-              path="/services/skin_rejuvenation_treatments"
+              path="/skin_rejuvenation_treatments"
               element={<SkinRejuvenation />}
             />
             <Route path="/pricing" element={<PricingPage />} />
             <Route path="/gallery" element={<GalleryPage />} />
             <Route path="/vouchers" element={<Voucher />} />
             <Route path="/contact_us" element={<ContactUsPage />} />
+            <Route path="/memberships" element={<MembershipsPage />} />
             <Route path="*" element={<HomePage />} />
           </Route>
         </Routes>

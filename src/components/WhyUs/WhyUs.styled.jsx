@@ -19,7 +19,7 @@ export const WhyUsSection = styled.section`
     align-items: center;
     text-align: center;
 
-    @media screen and (min-width: 830px) {
+    @media screen and (min-width: 1200px) {
       flex-direction: row;
       text-align: left;
     }
@@ -46,7 +46,7 @@ export const ImgContainer = styled.div`
   @media screen and (min-width: 1200px) {
     display: flex;
     align-items: flex-end;
-    gap: 30px;
+    /* gap: 30px; */
   }
 `;
 
@@ -85,7 +85,7 @@ export const WhyUsText = styled.div`
   gap: 24px;
   margin: 0 auto;
 
-  @media screen and (min-width: 830px) {
+  @media screen and (min-width: 1200px) {
     flex-direction: row;
     margin: 0;
   }
