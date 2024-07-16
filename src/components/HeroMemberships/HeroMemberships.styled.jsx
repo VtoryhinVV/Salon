@@ -17,11 +17,6 @@ export const HeroSection = styled.section`
   & > div {
     text-align: center;
     align-items: center;
-    @media screen and (min-width: 1200px) {
-      align-items: ${props => (props.services ? 'flex-start' : 'center')};
-      text-align: ${props => (props.services ? 'start' : 'center')};
-    }
-
     display: flex;
     flex-direction: column;
     gap: 24px;
@@ -37,10 +32,6 @@ export const HeroTitle = styled.h1`
   @media screen and (min-width: 768px) {
     font-size: 48px;
     letter-spacing: 0.96px;
-    /* width: 810px; */
-  }
-  @media screen and (min-width: 1200px) {
-    width: 810px;
   }
 `;
 
@@ -49,14 +40,9 @@ export const HeroText = styled.div`
   display: flex;
   flex-direction: column;
   gap: 16px;
-  @media screen and (min-width: 768px) {
-    font-weight: ${props => (props.services ? '400' : '700')};
-  }
 `;
 
-export const HeroLink = styled.a`
-  /* width: 225px; */
-  display: ${props => (props.services ? 'none' : 'block')};
+export const HeroLink = styled.button`
   border: 1px solid var(--brown);
   background: var(--white, #fff);
   padding: 12px 24px;
@@ -64,25 +50,7 @@ export const HeroLink = styled.a`
   color: var(--brown);
   text-transform: uppercase;
   text-decoration: none;
-
-  transition: all 0.3s ease;
-
-  &:hover,
-  &:focus {
-    border-color: var(--focus);
-    color: var(--focus);
-  }
-`;
-
-export const HeroLinkBtn = styled.a`
-  border: 1px solid var(--brown);
-  background: var(--white, #fff);
-  padding: 12px 24px;
-
-  color: var(--brown);
-  text-transform: uppercase;
-  text-decoration: none;
-
+  cursor: pointer;
   transition: all 0.3s ease;
 
   &:hover,

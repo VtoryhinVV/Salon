@@ -1,8 +1,7 @@
 import styled from '@emotion/styled';
 
 export const HowItWorksSection = styled.section`
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding: 60px 0;
 
   h2,
   p,
@@ -22,6 +21,9 @@ export const HowItWorksSection = styled.section`
       flex-direction: row;
       text-align: left;
     }
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 120px 0;
   }
 `;
 

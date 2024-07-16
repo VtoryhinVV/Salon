@@ -1,8 +1,7 @@
 import styled from '@emotion/styled';
 
 export const MembershipOptionsSect = styled.section`
-  padding-top: 120px;
-  padding-bottom: 100px;
+  padding: 60px 0;
 
   h2,
   p,
@@ -11,81 +10,61 @@ export const MembershipOptionsSect = styled.section`
     padding: 0;
   }
 
-  & > div {
-    display: flex;
-    flex-direction: column;
-    gap: 60px;
-    align-items: center;
-    text-align: center;
-
-    @media screen and (min-width: 1200px) {
-      flex-direction: row;
-      text-align: left;
-    }
-  }
-`;
-
-export const MembershipOptionsImg = styled.div`
-  display: flex;
-  align-items: baseline;
-  gap: 18px;
   @media screen and (min-width: 1200px) {
-    gap: 30px;
+    padding: 120px 0;
   }
 `;
+
 export const MembershipOptionsInfo = styled.div`
   & h2 {
     font-family: Prata;
-    display: none;
-    font-size: 48px;
+    font-size: 34px;
     font-weight: 400;
     margin-bottom: 24px;
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 24px;
     @media screen and (min-width: 1200px) {
-      display: block;
+      font-size: 48px;
+      margin-bottom: 40px;
     }
   }
   & ul {
     margin: 0;
     padding: 0;
     list-style: none;
-  }
-
-  & li {
-    padding: 32px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 24px;
-    margin-bottom: 24px;
-    align-items: start;
+    @media screen and (min-width: 1200px) {
+      gap: 40px;
+    }
+  }
 
-    box-shadow: 0px 13px 19px 0px #00000012;
+  & a {
+    padding: 24px 0;
+    border-radius: 25px;
+    text-align: center;
+    display: inline-block;
 
-    & p {
-      font-family: Playfair Display;
-      font-size: 24px;
-      font-weight: 400;
-      line-height: 31.99px;
-      text-align: left;
-      /* margin-bottom: 24px; */
+    color: white;
+    background-color: var(--brown);
+    text-transform: uppercase;
+    text-decoration: none;
+
+    transition: background-color 0.3s ease;
+
+    &:hover,
+    &:focus {
+      background-color: var(--focus);
+    }
+    @media screen and (min-width: 420px) {
+      width: 380px;
     }
 
-    & a {
-      display: inline-block;
-      border: 1px solid var(--brown);
-
-      padding: 12px 24px;
-
-      color: var(--brown);
-      text-transform: uppercase;
-      text-decoration: none;
-
-      transition: all 0.3s ease;
-
-      &:hover,
-      &:focus {
-        border-color: var(--focus);
-        color: var(--focus);
-      }
+    @media screen and (min-width: 1200px) {
+      width: 427px;
     }
   }
 `;

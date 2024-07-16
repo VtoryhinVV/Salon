@@ -4,7 +4,7 @@ import { keyframes } from '@emotion/react';
 import { Link } from 'react-router-dom';
 
 export const FrequentlySect = styled.section`
-  padding: 100px 0;
+  padding: 60px 0;
   background-image: url(${bg});
   background-repeat: no-repeat;
   background-position: center;

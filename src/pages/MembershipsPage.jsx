@@ -1,8 +1,10 @@
-import { BenefitsInclude } from '../components/BenefitsInclude/BenefitsInclude';
+import { useRef } from 'react';
 import { Frequently } from '../components/Frequently/Frequently';
 import { HeroCommon } from '../components/HeroCommon/HeroCommon';
 import { HowItWorks } from '../components/HowItWorks/HowItWorks';
+import { KeyBenefits } from '../components/KeyBenefits/KeyBenefits';
 import { MembershipOptions } from '../components/MembershipOptions/MembershipOptions';
+import { HeroMemberships } from '../components/HeroMemberships/HeroMemberships';
 
 const MembershipsPage = () => {
   const benefitsInfo = [
@@ -68,24 +70,27 @@ const MembershipsPage = () => {
         'Yes, we can adjust the timeframe of receiving the treatments. Please send us an email or come in the clinic.',
     },
   ];
+  const membershipRef = useRef(null);
+
+  const scrollToMembership = () => {
+    if (membershipRef.current) {
+      membershipRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
   return (
     <main>
-      <HeroCommon
+      <HeroMemberships
         title="Aesthetica clinic memberships"
         texts="Elevate Your Aesthetic Journey: Exclusive Benefits with Our Membership Plans"
         buttonText="Join Now"
-        linkForButton="#"
+        linkForButton="#Options"
+        onScroll={scrollToMembership}
       />
       <HowItWorks />
-      <BenefitsInclude
-        benefits={benefitsInfo}
-        three
-        gift
-        bgImg
-        title="Key Benefits"
-        btn="Book appointment"
-      />
-      <MembershipOptions />
+      <KeyBenefits keys={benefitsInfo} />
+      <div ref={membershipRef}>
+        <MembershipOptions />
+      </div>
       <Frequently data={question} />
     </main>
   );
